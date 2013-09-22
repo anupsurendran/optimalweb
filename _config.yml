@@ -1,4 +1,4 @@
 name: Optimal.io
 pygments: true
-base_url: /optimalweb
+baseurl: /optimalweb
 permalink: :title

@@ -1,0 +1,4 @@
+name: Optimal.io
+pygments: true
+base_url: /optimalweb
+permalink: :title

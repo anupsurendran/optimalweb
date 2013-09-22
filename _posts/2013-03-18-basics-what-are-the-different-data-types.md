@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: "Basics : What are the different Data Types"
+alias: /post/45674711699/basics-what-are-the-different-data-types
 tags: 
 - data types
 ---

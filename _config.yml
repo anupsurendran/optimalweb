@@ -2,3 +2,4 @@ name: Optimal.io
 pygments: true
 baseurl: 
 permalink: :title
+markdown: kramdown

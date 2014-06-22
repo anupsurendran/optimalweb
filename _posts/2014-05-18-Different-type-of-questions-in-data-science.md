@@ -34,8 +34,10 @@ Causal question are usually asked to find out what happens to one variable when 
 6. **Mechanistic**
 Mechanistic type of modelling requires the most amount of effort. It requires you to understand the exact changes in variables that lead to changes in other variables for individual objects.
 
-		"All other things being equal, mechanistic models are more powerful since they tell you about the underlying processes driving patterns. They are more likely to work correctly when extrapolating beyond the observed conditions."
--Bolker (2008) Ecological models and Data in R, p7.
+		"All other things being equal, mechanistic models are more powerful since they tell you 
+		about the underlying processes driving patterns. They are more likely to work 
+		correctly when extrapolating beyond the observed conditions."
+		-Bolker (2008) Ecological models and Data in R, p7.
 
 	- Incredibly hard to infer, except in simple situations
 	- Usually modeled by a deterministic set of equations (physical/engineering science)

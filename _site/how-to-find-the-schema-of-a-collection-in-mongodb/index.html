@@ -41,7 +41,7 @@
           <ul>
              <li><a href="http://www.Optimal.io">Home</a></li>
              <li><a href="/about/">About</a></li>
-            <li><a href="http://www.secondprism.com">Sponsor's site</a></li>
+            <li><a href="http://www.surveyanalytics.com">Sponsor's site</a></li>
           </ul>
         </div>
             
@@ -56,24 +56,29 @@
 
 <div class="post">
 <p>The last two commands are equivalent to the SQL command below</p>
-<div class='highlight'><pre><code class='sql'><span class='k'>Describe</span> <span class='k'>Table</span>
+
+<div class="highlight"><pre><code class="sql"><span class="k">Describe</span> <span class="k">Table</span>
 </code></pre></div>
+
 <p>Open a mongo shell and run the following commands :</p>
-<div class='highlight'><pre><code class='bash'>MongoDB shell version: 2.4.5
+
+<div class="highlight"><pre><code class="bash">MongoDB shell version: 2.4.5
 &gt; show dbs
-<span class='nb'>local </span>0.078125GB
+<span class="nb">local </span>0.078125GB
 todo 0.453125GB
 &gt; use todo
 switched to db todo
 &gt; show collections
 system.indexes
 tasks
-&gt; var <span class='nv'>schematodo</span> <span class='o'>=</span> db.tasks.findOne<span class='o'>()</span>;
-&gt; <span class='k'>for</span> <span class='o'>(</span>var key in schematodo<span class='o'>)</span> <span class='o'>{</span> print <span class='o'>(</span>key<span class='o'>)</span> ; <span class='o'>}</span>
+&gt; var <span class="nv">schematodo</span> <span class="o">=</span> db.tasks.findOne<span class="o">()</span>;
+&gt; <span class="k">for</span> <span class="o">(</span>var key in schematodo<span class="o">)</span> <span class="o">{</span> print <span class="o">(</span>key<span class="o">)</span> ; <span class="o">}</span>
 _id
 label
 content
 </code></pre></div>
+
+
 </div>
 
       </section>
@@ -91,7 +96,7 @@ content
    }(document, 'script', 'facebook-jssdk'));</script>
   <div class="fb-like" data-href="http://www.optimal.io" data-width="150" data-show-faces="true" data-send="true"></div>
         <!-- About Me -->
-        <p><img class="avatar" height="112px" src="/assets/img/anup.jpeg"> This blog is maintained primarily by Anup Surendran. He is a small fan of big data and data visualization. Please visit the sponsor of this blog <a href="http://www.secondprism.com">Secondprism</a></p>
+        <p><img class="avatar" height="112px" src="/assets/img/anup.jpeg"> This blog is maintained primarily by Anup Surendran. He is a small fan of big data and data visualization. He is currently using data to drive product usage and optimizing solutions for large customers.
         <!-- Social icons -->
         <p>
           <a target="_blank" href="mailto:anup.surendran@gmail.com"><img src="/assets/img/mail.png" id="icon"></a>
@@ -101,6 +106,14 @@ content
         <!-- Recent Articles -->
         <h3>Recent Articles</h3>
           
+            <p> 
+              <a href="/Building-Alexa-For-Mobile-Statistics">How we are building Alexa for the mobile industry.</a>
+            </p>
+        
+            <p> 
+              <a href="/Different-type-of-questions-in-data-science">What are the different type of questions a Data Scientist would ask ?</a>
+            </p>
+        
             <p> 
               <a href="/how-to-add-a-svg-image-in-d3">How to add a SVG image in D3</a>
             </p>
@@ -131,14 +144,6 @@ content
         
             <p> 
               <a href="/nosql-vs-sql-comparison-summary">NoSQL vs SQL Comparison Summary</a>
-            </p>
-        
-            <p> 
-              <a href="/how-to-find-the-schema-of-a-collection-in-mongodb">How to find the schema of a collection in MongoDB</a>
-            </p>
-        
-            <p> 
-              <a href="/4-use-cases-of-using-mongodb-and-hadoop-together">4 use cases of using MongoDB and Hadoop together</a>
             </p>
         
       </section>

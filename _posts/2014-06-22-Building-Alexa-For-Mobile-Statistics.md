@@ -1,5 +1,5 @@
 ---
-ilayout: post
+layout: post
 title: How we are building Alexa for the mobile industry.
 tags:
 - alexa
@@ -37,4 +37,29 @@ What we did was tweak this infrastructure to ask permission to collect 'passive'
 ## Results of running on a Panel of users for 3 months
 -------------------------------------------------------
 
+Here are some of the key statistics of the panel we used to collect mobile app usage metrics :
+	
+	- 990 people participated 
+	- Incentives like Amazon Gift cards were given for participation 
+	- Females : 57%
+	- 56% had an undergraduate degree
+	- 14% had an income over $150K
+	- Data collected over 3 months
+
+We collected 'passively' the data around the top mobile apps running on this panel. Here is the chart produced for the most frequently running apps.
+
+After we got the data on the servers, we used R to ensure we have complete samples and this is what we got :
+
+### Top Moble Apps running in our panel
+
+![Top Mobile Apps Running in the Panel]({{ site.baseurl }}/assets/img/TopRunningMobileApps-Alexa.png "Like Alexa's statistics : Top Mobile Apps Running")
+
+### Frequency counts of the mobile applications (screenshot from R console)
+
+![Frequency count of Moble Apps running ]({{ site.baseurl }}/assets/img/top-running-mobile-apps-r-results.png "Like Alexa's statistics : Count of Mobile Apps Running")
+
+
+
+
+ 
 	  

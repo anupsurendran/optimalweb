@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How we are building Alexa for the mobile industry.</title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- syntax highlighting CSS -->
+
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
+    
+    <!-- SEO Meta Tags -->
+    <link rel="author" href="http://linkedin.com/in/anupsurendran"/>
+
+    <!-- Tracking Codes -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-39640175-1', 'optimal.io');
+      ga('send', 'pageview');
+    </script>
+
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+
+      <div id="logo">
+        <h2><a href="/">Optimal.io</a></h2> <h3>a quest for optimal data</h3>
+      </div>
+
+        <div id="nav">
+          <ul>
+             <li><a href="http://www.Optimal.io">Home</a></li>
+             <li><a href="/about/">About</a></li>
+            <li><a href="http://www.surveyanalytics.com">Sponsor's site</a></li>
+          </ul>
+        </div>
+            
+      </div>
+    </header>
+
+    <div class="container">
+
+      <section id="content">
+              <h2>How we are building Alexa for the mobile industry.</h2>
+<p class="meta">22 Jun 2014</p>
+
+<div class="post">
+<p><em>Where is the Univeral Mobile Statistics Site ?</em></p>
+
+<p>It’s a mobile world - everybody knows that. It’s been like this for almost a decade now. The funniest thing is that we still don’t have an <a href="http://www.Alexa.com">Alexa</a> for the mobile industry. There is no publicly available source currently which I can take a look at to see where my / my company’s mobile application ranks amongst other apps of the sametype. There are challenges to get statistics from mobile applications - distribute processing, offline/online support, hybrid applications all lead to </p>
+
+<p>In my opinion there are three ways to do this.  </p>
+
+<ol>
+  <li>
+    <p><strong>Google could ask their Google Analytics mobile users to publish their mobile statistics publicly.</strong> </p>
+
+    <p>I know that this is a completely different model which will conflict with their existing service model where the end customers will not agree to because its their ‘private’ metrics. </p>
+
+    <p>Even if Google goes down with this model, there is a challenge of proving that the metrics is correct. What I mean by that is that the Analytics code ( UA-*** ) could have been used in one of the company’s existing mobile application which was already popular and therefore prevents an easy verifiable method to prove the identity of the mobile application.</p>
+  </li>
+  <li>
+    <p><strong>Users call an api to publish their user statistics.</strong></p>
+
+    <p>Again this proves to be a non-verifiable way of ensuring the statistics is accurate.</p>
+  </li>
+  <li>
+    <p><strong>A 3rd Party runs device level statistics and collects it centrally.</strong></p>
+
+    <p>A mobile phone is a personal device.  Running a process there to collect information requires permissions from users and has an intrinsic resistance built up. But if you think through this problem, and if use inferential statistics, you could identify a sample which represents your population you want to get data from. You could incentivize them to get the data you need (ie. sending only app related data back to your servers).   </p>
+  </li>
+</ol>
+
+<h2 id="which-option-did-we-choose">Which option did we choose?</h2>
+<hr />
+<p>We, at <a href="http://www.SurveyAnalytics.com">Survey Analytics</a> have chosen going down the path of #3 above. As a company it was an easy path for us because we already had a Panel management software. Just to help you understand -  a Panel management software typically supports survey panels which allows you to create a list of respondents that you can invite to participate in surveys over and over again. These respondents are referred to as panelists, where each panelist subscribes to a survey panel and provides demographic information about himself/herself. The incentives for the respondents vary depending on how motivated they are to provide feedback.</p>
+
+<p>What we did was tweak this infrastructure to ask permission to collect ‘passive’ data.  So essentially from a panelist’s standpoint they first download a mobile application (called SurveySwipe) and as soon as they login for the first time they get prompted with the Terms and Conditions (T&amp;C) to collect non personal data from their mobile applications. The most important thing in terms of design is that the collection of the data is based on ‘triggers’ so that we don’t collect data always but based it on days of the week and time of the day or an external trigger like filling out a survey.</p>
+
+<h2 id="results-of-running-on-a-panel-of-users-for-3-months">Results of running on a Panel of users for 3 months</h2>
+<hr />
+
+<p>Here are some of the key statistics of the panel we used to collect mobile app usage metrics :</p>
+
+<pre><code>- 990 people participated 
+- Incentives like Amazon Gift cards were given for participation 
+- Females : 57%
+- 56% had an undergraduate degree
+- 14% had an income over $150K
+- Data collected over 3 months
+</code></pre>
+
+<p>We collected ‘passively’ the data around the top mobile apps running on this panel. Here is the chart produced for the most frequently running apps.</p>
+
+<p>After we got the data on the servers, we used R to ensure we have complete samples and this is what we got :</p>
+
+<h3 id="top-moble-apps-running-in-our-panel">Top Moble Apps running in our panel</h3>
+
+<p><img src="/assets/img/TopRunningMobileApps-Alexa.png" alt="Top Mobile Apps Running in the Panel" title="Like Alexa's statistics : Top Mobile Apps Running" /></p>
+
+<h3 id="frequency-counts-of-the-mobile-applications-screenshot-from-r-console">Frequency counts of the mobile applications (screenshot from R console)</h3>
+
+<p><img src="/assets/img/top-running-mobile-apps-r-results.png" alt="Frequency count of Moble Apps running " title="Like Alexa's statistics : Count of Mobile Apps Running" /></p>
+
+
+</div>
+
+      </section>
+
+      <section id="sidebar">
+   <a href="https://twitter.com/share" class="twitter-share-button" data-via="paper">Tweet</a>
+   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+   <div id="fb-root"></div>
+   <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=133431956450";
+    fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));</script>
+  <div class="fb-like" data-href="http://www.optimal.io" data-width="150" data-show-faces="true" data-send="true"></div>
+        <!-- About Me -->
+        <p><img class="avatar" height="112px" src="/assets/img/anup.jpeg"> This blog is maintained primarily by Anup Surendran. He is a small fan of big data and data visualization. He is currently using data to drive product usage and optimizing solutions for large customers.
+        <!-- Social icons -->
+        <p>
+          <a target="_blank" href="mailto:anup.surendran@gmail.com"><img src="/assets/img/mail.png" id="icon"></a>
+          <a target="_blank" href="http://twitter.com/paper"><img src="/assets/img/twitter.png" id="icon"></a>
+          <a target="_blank" href="http://www.linkedin.com/in/anupsurendran"><img src="/assets/img/linkedin.png" id="icon"></a>
+        </p>
+        <!-- Recent Articles -->
+        <h3>Recent Articles</h3>
+          
+            <p> 
+              <a href="/Building-Alexa-For-Mobile-Statistics">How we are building Alexa for the mobile industry.</a>
+            </p>
+        
+            <p> 
+              <a href="/Different-type-of-questions-in-data-science">What are the different type of questions a Data Scientist would ask ?</a>
+            </p>
+        
+            <p> 
+              <a href="/how-to-add-a-svg-image-in-d3">How to add a SVG image in D3</a>
+            </p>
+        
+            <p> 
+              <a href="/how-to-create-crosstabs-in-spss-in-3-simple-steps">3 simple steps to create cross-tabs in SPSS ?</a>
+            </p>
+        
+            <p> 
+              <a href="/What-is-a-dichotomous-variable">What is a Dichotomous Variable?</a>
+            </p>
+        
+            <p> 
+              <a href="/introduction-to-bayesian-analysis">Introduction to Bayesian analysis</a>
+            </p>
+        
+            <p> 
+              <a href="/introduction-to-decision-trees">Introduction to Decision Trees</a>
+            </p>
+        
+            <p> 
+              <a href="/4-typical-inductive-learning-problems">4 Typical inductive learning problems</a>
+            </p>
+        
+            <p> 
+              <a href="/sharding-in-mongodb">Sharding in MongoDB</a>
+            </p>
+        
+            <p> 
+              <a href="/nosql-vs-sql-comparison-summary">NoSQL vs SQL Comparison Summary</a>
+            </p>
+        
+      </section>
+    </div>
+
+    <footer>
+      <div class="site-source">
+        Built with Jekyll and Hosted on GitHub Pages.
+      </div>
+    </footer> 
+    
+    <!-- JS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/js/auto-tagging.js" type="text/javascript"></script> 
+  </body>
+</html>

@@ -3,9 +3,9 @@ layout: post
 title: What is Hive ?
 tags: 
 - hive
-- data warehouse
-- big data
-- sql on hadoop
+- bigdata
+- sql_on_hadoop
+- data
 ---
 It is a Data Warehouse system layer built on Hadoop.
 Allows you to define a structure for your unstructured Big data.

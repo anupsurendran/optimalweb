@@ -5,6 +5,7 @@ tags:
 - mongodb
 - sharding
 - bigdata
+- data
 ---
 Sharding, can also be called horizontal scaling. The scaling approach divides the data set and distributes the data over multiple servers. Each of this server can be called a shard. Each shard is an independent database, and collectively, the shards make up a single logical database. 
 

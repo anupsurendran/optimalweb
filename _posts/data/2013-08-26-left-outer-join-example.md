@@ -5,6 +5,7 @@ tags:
 - left outer join
 - data scientist
 - sql joins
+- data
 ---
 So I have a products table :
 

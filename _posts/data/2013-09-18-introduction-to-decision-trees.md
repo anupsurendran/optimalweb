@@ -4,6 +4,7 @@ title: Introduction to Decision Trees
 tags: 
 - machine learning
 - decisiontree
+- data
 ---
 A decision tree is a classic and natural model of learning. It can be applied to many machine learning problems. The best way to introduce this would be with an example using binary classiﬁcation.
 

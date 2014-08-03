@@ -5,6 +5,7 @@ tags:
 - nosql
 - sql
 - nosql vs sql comparison
+- data
 ---
 Types
 ------

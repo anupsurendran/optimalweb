@@ -5,6 +5,7 @@ tags:
 - machine learning
 - basics
 - datascientist
+- data
 ---
 1. **Regression** : trying to predict a real value. For instance, predict the value of a stock tomorrow given its past performance. Or predictyour score on the data science ﬁnal exam based on your homework scores.
 2. **Binary Classiﬁcation** : trying to predict a simple yes/no response.For instance, predict whether you will enjoy this material or not.Or predict whether a user review of the newest Google product is positive or negative about the product.

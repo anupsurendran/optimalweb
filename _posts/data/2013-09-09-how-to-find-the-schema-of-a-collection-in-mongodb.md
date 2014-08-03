@@ -5,6 +5,7 @@ tags:
 - tips
 - mongodb
 - mongodb command line
+- data
 ---
 
 The last two commands are equivalent to the SQL command below

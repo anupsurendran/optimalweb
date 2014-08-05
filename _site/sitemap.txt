@@ -1,12 +1,16 @@
 
+/about/index.html
 /archive.html
 /atom.xml
 /categories.html
+/data.html
+/index.html
 /index.html
 /pages.html
 /rss.xml
 /sitemap.txt
 /tags.html
+/topic.html
 
 /Building-Alexa-For-Mobile-Statistics
 /Different-type-of-questions-in-data-science

@@ -8,7 +8,7 @@ tags:
 - find top apps running on mobile
 ---
 
-*Where ASDFASDF is the Univeral Mobile Statistics Site ?*
+*Where is the Univeral Mobile Statistics Site ?*
 
 It's a mobile world - everybody knows that. It's been like this for almost a decade now. The funniest thing is that we still don't have an [Alexa](http://www.Alexa.com) for the mobile industry. There is no publicly available source currently which I can take a look at to see where my / my company's mobile application ranks amongst other apps of the sametype. There are challenges to get statistics from mobile applications - distribute processing, offline/online support, hybrid applications all lead to 
 

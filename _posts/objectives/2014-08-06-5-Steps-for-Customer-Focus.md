@@ -3,10 +3,9 @@ layout: post
 title: Customer Focus in 5 steps.
 category: objectives
 tags:
-- alexa
-- mobile statistics
-- alexa for mobile
-- find top apps running on mobile
+- product management
+- customer objectives
+- customer focus
 ---
 
 *A great experience happens when you understand your Customers at a very deep level*

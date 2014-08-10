@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customer Focus in 5 steps.
-category: direct
+category: objectives
 tags:
 - alexa
 - mobile statistics

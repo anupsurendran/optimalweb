@@ -9,56 +9,53 @@ tags:
 
 *What is the number one complaint which comes from the Sales team ?*
 
-In my brief experience managing a Sales team, the key complaint which typically comes up is - "Leads are not goodas they were before". Week after week this came up. Now quantifying that was not easy unless I ran a [cohort analysis](https://en.wikipedia.org/wiki/Cohort_analysis).  
+In my brief experience managing a Sales team, the key complaint which typically comes up is - "Leads are not good as they were before". Week after week this came up. Now quantifying that was not easy unless I ran a [cohort analysis](https://en.wikipedia.org/wiki/Cohort_analysis).  
 
-In my opinion there are three ways to do this.  
+Here is the output of the cohort analysis I ran using Google Spreadsheets.
 
-1. **Google could ask their Google Analytics mobile users to publish their mobile statistics publicly.** 
+![Cohort Analysis using Google Spreadsheets]({{ site.baseurl }}/assets/img/cohort-analysis-googlespreadsheet.png "Cohort analysis graph with google spreadsheet and no R")
 
-	I know that this is a completely different model which will conflict with their existing service model where the end customers will not agree to because its their 'private' metrics. 
+There are 5 broad steps to measuring lead quality using cohort analysis :
 
-	Even if Google goes down with this model, there is a challenge of proving that the metrics is correct. What I mean by that is that the Analytics code ( UA-*** ) could have been used in one of the company's existing mobile application which was already popular and therefore prevents an easy verifiable method to prove the identity of the mobile application.
+1.**Get the data around when the user signed up and registered** 
 
-2. **Users call an api to publish their user statistics.**
+This should include all users who registered / signed up using your "Free Trial" or "30 Day Trial". This ideally would contain the unique identifier for the user and the timestamp when they signed up on.
 
-	Again this proves to be a non-verifiable way of ensuring the statistics is accurate.
+Here is a link to the [sample google spreadsheet for user registration](https://docs.google.com/spreadsheets/d/19l6tNgXZuasCkOUvsyIqwqaAJuxM7pfO5xw7GTDiprc/edit?usp=sharing). The second sheet (User Signup Data) contains the user information. The key information to start off is in column A, D and E.
 
-3. **A 3rd Party runs device level statistics and collects it centrally.**
+2.**Add additional data around when the user converted to a customer**
 
-	A mobile phone is a personal device.  Running a process there to collect information requires permissions from users and has an intrinsic resistance built up. But if you think through this problem, and if use inferential statistics, you could identify a sample which represents your population you want to get data from. You could incentivize them to get the data you need (ie. sending only app related data back to your servers).   
+![User data when they converted to customers]({{ site.baseurl }}/assets/img/user-data-googlespreadsheet.png "User conversion data in google spreadsheet")
 
-## Which option did we choose?
-------------------------------
-We, at [Survey Analytics](http://www.SurveyAnalytics.com) have chosen going down the path of #3 above. As a company it was an easy path for us because we already had a Panel management software. Just to help you understand -  a Panel management software typically supports survey panels which allows you to create a list of respondents that you can invite to participate in surveys over and over again. These respondents are referred to as panelists, where each panelist subscribes to a survey panel and provides demographic information about himself/herself. The incentives for the respondents vary depending on how motivated they are to provide feedback.
+This is the timestamp around when the user converted into a customer (a paid user). This is essentially column D (ts) in the same sheet    
 
-What we did was tweak this infrastructure to ask permission to collect 'passive' data.  So essentially from a panelist's standpoint they first download a mobile application (called SurveySwipe) and as soon as they login for the first time they get prompted with the Terms and Conditions (T&C) to collect non personal data from their mobile applications. The most important thing in terms of design is that the collection of the data is based on 'triggers' so that we don't collect data always but based it on days of the week and time of the day or an external trigger like filling out a survey.
+3.**The real cohort**
 
-## Results of running on a Panel of users for 3 months
--------------------------------------------------------
+The third sheet will contain the months for which you need to do the analysis both in the column and the row. We also will convert the date into the UNIX timestamp format.
 
-Here are some of the key statistics of the panel we used to collect mobile app usage metrics :
-	
-	- 990 people participated 
-	- Incentives like Amazon Gift cards were given for participation 
-	- Females : 57%
-	- 56% had an undergraduate degree
-	- 14% had an income over $150K
-	- Data collected over 3 months
+![Column Timestamp Format]({{ site.baseurl }}/assets/img/cohort-date-format-googlespreadsheet.png "UNIX Timestamp format for months")
 
-We collected 'passively' the data around the top mobile apps running on this panel. Here is the chart produced for the most frequently running apps.
+This same thing is also applied across for the months at the top.
 
-After we got the data on the servers, we used R to ensure we have complete samples and this is what we got :
+After you get this basic matrix, then the real magic is using the "SUMIF" within each of the cells to get the answer to "Get me the count of users who signed up this month and also became a customer".  The formula looks like this in the google spreadhseet.
 
-### Top Moble Apps running in our panel
+`=SUMIFS('Users Signup Data'!$H$2:$H$118,'Users Signup Data'!$F$2:$F$118,">"&$A$3, `
+`'Users Signup Data'!$F$2:$F$118,"<"&$A$4,'Users Signup Data'!$G$2:$G$118,">"&C1, `
+`'Users Signup Data'!$G$2:$G$118,"<"&D1)`
 
-![Top Mobile Apps Running in the Panel]({{ site.baseurl }}/assets/img/TopRunningMobileApps-Alexa.png "Like Alexa's statistics : Top Mobile Apps Running")
+You can look at the individual columns for each of the month the google spreadsheet.
 
-### Frequency counts of the mobile applications (screenshot from R console)
+We also found out the total new revenue we got based on the conversion which is towards the end of the spreadsheet.
 
-![Frequency count of Moble Apps running ]({{ site.baseurl }}/assets/img/top-running-mobile-apps-r-results.png "Like Alexa's statistics : Count of Mobile Apps Running")
+`=SUMIFS('Users Signup Data'!$C$2:$C$118,`
+`'Users Signup Data'!$F$2:$F$118,">"&A3,'Users Signup Data'!$F$2:$F$118,"<"&A4)`
 
+## What are the key things we learned ?
+---------------------------------------
 
+These are the lessons learned :
 
+* That we could find out lead quality by revenue generated over a period of time. 
+* In the samplesheet lead quality has actually decreased.
+* You don't need complicated models to measure lead quality (as you see a simple Google spreadsheet and formulas will help you get the results you need)
 
- 
-	  

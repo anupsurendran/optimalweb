@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Optimal.io</title>
+ <link href="/" rel="self"/>
+ <link href=""/>
+ <updated>2015-06-24T08:55:36-05:00</updated>
+ <id></id>
+ <author>
+   <name>Anup Surendran</name>
+   <email>blah@email.test</email>
+ </author>
+
+ 
+ <entry>
+   <title>How to measure Lead Quality using Google Spreadsheet and Cohort Analysis.</title>
+   <link href="/How-to-measure-lead-quality-using-google-spreadsheets-cohort-analysis"/>
+   <updated>2015-06-23T00:00:00-05:00</updated>
+   <id>/How-to-measure-lead-quality-using-google-spreadsheets-cohort-analysis</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;What is the number one complaint which comes from the Sales team ?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In my brief experience managing a Sales team, the key complaint which typically comes up is - “Leads are not good as they were before”. Week after week this came up. Now quantifying that was not easy unless I ran a &lt;a href=&quot;https://en.wikipedia.org/wiki/Cohort_analysis&quot;&gt;cohort analysis&lt;/a&gt;.  &lt;/p&gt;
+
+&lt;p&gt;Here is the output of the cohort analysis I ran using Google Spreadsheets.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/cohort-analysis-googlespreadsheet.png&quot; alt=&quot;Cohort Analysis using Google Spreadsheets&quot; title=&quot;Cohort analysis graph with google spreadsheet and no R&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are 5 broad steps to measuring lead quality using cohort analysis :&lt;/p&gt;
+
+&lt;p&gt;1.&lt;strong&gt;Get the data around when the user signed up and registered&lt;/strong&gt; &lt;/p&gt;
+
+&lt;p&gt;This should include all users who registered / signed up using your “Free Trial” or “30 Day Trial”. This ideally would contain the unique identifier for the user and the timestamp when they signed up on.&lt;/p&gt;
+
+&lt;p&gt;Here is a link to the &lt;a href=&quot;https://docs.google.com/spreadsheets/d/19l6tNgXZuasCkOUvsyIqwqaAJuxM7pfO5xw7GTDiprc/edit?usp=sharing&quot;&gt;sample google spreadsheet for user registration&lt;/a&gt;. The second sheet (User Signup Data) contains the user information. The key information to start off is in column A, D and E.&lt;/p&gt;
+
+&lt;p&gt;2.&lt;strong&gt;Add additional data around when the user converted to a customer&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/user-data-googlespreadsheet.png&quot; alt=&quot;User data when they converted to customers&quot; title=&quot;User conversion data in google spreadsheet&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the timestamp around when the user converted into a customer (a paid user). This is essentially column D (ts) in the same sheet    &lt;/p&gt;
+
+&lt;p&gt;3.&lt;strong&gt;The real cohort&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The third sheet will contain the months for which you need to do the analysis both in the column and the row. We also will convert the date into the UNIX timestamp format.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/cohort-date-format-googlespreadsheet.png&quot; alt=&quot;Column Timestamp Format&quot; title=&quot;UNIX Timestamp format for months&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This same thing is also applied across for the months at the top.&lt;/p&gt;
+
+&lt;p&gt;After you get this basic matrix, then the real magic is using the “SUMIF” within each of the cells to get the answer to “Get me the count of users who signed up this month and also became a customer”.  The formula looks like this in the google spreadhseet.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;=SUMIFS('Users Signup Data'!$H$2:$H$118,'Users Signup Data'!$F$2:$F$118,&quot;&amp;gt;&quot;&amp;amp;$A$3, &lt;/code&gt;
+&lt;code&gt;'Users Signup Data'!$F$2:$F$118,&quot;&amp;lt;&quot;&amp;amp;$A$4,'Users Signup Data'!$G$2:$G$118,&quot;&amp;gt;&quot;&amp;amp;C1, &lt;/code&gt;
+&lt;code&gt;'Users Signup Data'!$G$2:$G$118,&quot;&amp;lt;&quot;&amp;amp;D1)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;You can look at the individual columns for each of the month the google spreadsheet.&lt;/p&gt;
+
+&lt;p&gt;We also found out the total new revenue we got based on the conversion which is towards the end of the spreadsheet.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;=SUMIFS('Users Signup Data'!$C$2:$C$118,&lt;/code&gt;
+&lt;code&gt;'Users Signup Data'!$F$2:$F$118,&quot;&amp;gt;&quot;&amp;amp;A3,'Users Signup Data'!$F$2:$F$118,&quot;&amp;lt;&quot;&amp;amp;A4)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;what-are-the-key-things-we-learned-&quot;&gt;What are the key things we learned ?&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;These are the lessons learned :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;That we could find out lead quality by revenue generated over a period of time. &lt;/li&gt;
+  &lt;li&gt;In the samplesheet lead quality has actually decreased.&lt;/li&gt;
+  &lt;li&gt;You don’t need complicated models to measure lead quality (as you see a simple Google spreadsheet and formulas will help you get the results you need)&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Font Design for your Product</title>
+   <link href="/Choosing-the-Right-Fonts"/>
+   <updated>2014-08-10T00:00:00-05:00</updated>
+   <id>/Choosing-the-Right-Fonts</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;Fonts bring attention to your message&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Size does matter&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Depending on what you need your customers to read first you must size the fonts appropriately. This is especially true for content based websites and for help files. Consistency of size throughout the product for page titles, breadcrumbs and settings is critical and should be part of your styleguide. Places where you do not want to grab that much attention,  areas within the product more often skipped by a customer are places you can use small fonts.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Backgrounds and Context&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is more of an advertising technique but equally applicable in product design. Let’s say you have two texts of the same font size. I can easily grab more attention to one of the texts by applying a darker background or just highlighting it with a different background color. With fancy Javascript libraries nowadays I can also dynamically add a transition to that text or add an arrow (pointer) to that text to force the users to look there.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Purpose driven fonts&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The messages here is that you need find what purpose each font has withing your product / content. Quoting &lt;a href=&quot;http://www.sitepoint.com/author/jgeorge/&quot;&gt;Jame George&lt;/a&gt; - Some fonts have predefined purposes - for example “Stencil” . Stenciling is meant to be bold. Because of its rugged constructivist nature, it is usually used on something that has to do with buildings or structures. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/font-design-guideline-stencil.jpg&quot; alt=&quot;Purpose driven Fonts&quot; title=&quot;Stencil Font Purpose&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You might see Stencil used on the side of a sheet metal tool box, but it’s not likely that you would see it on a wedding invitation, or something that is designed to be formal or elegant. Stencil is thick with sharp edges, and it is very masculine in nature. It isn’t inviting or warm, and its overall purpose is not so much decorative as it is utilitarian.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Contrast of font styles&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is another technique which helps add more clarity to font responsibilities within your content or product. In terms of content it is important to have a different font for your title and your body. The same thing applies to your product, a good example within the context of a form is a different font for each section of a Form and a different font for your Form fields.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Readability&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ensure that the Fonts for your key messages are readable. Keep it simple, easy-to-read, enough spacing between the letters. A good rule of thumb is that typically no running Fonts are used within product screens. There are cases when some products do need running Fonts and it’s usually when they want to show a personable message or when they want to send out a more engaging invitation to a user. In cases like this the Font size makes a big difference.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Customer Focus in 5 steps.</title>
+   <link href="/5-Steps-for-Customer-Focus"/>
+   <updated>2014-08-06T00:00:00-05:00</updated>
+   <id>/5-Steps-for-Customer-Focus</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;A great experience happens when you understand your Customers at a very deep level&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Step 1.	&lt;strong&gt;Identify their Goals and related Processes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Understanding how your customers work, what they do every day and how they react is key to understanding their key processes. Once you start understanding their goals and their associated processes then you can see how the product or solution you put forward fits into those processes. The friction of using a product has to be minimal and it has to fit  within these key steps of the process itself. Now I agree that you won’t be able to influence processes which are external to the product but you know within the within the product itself you will have What I call micro-process flows which you can streamline to make your customers life easy.&lt;/p&gt;
+
+&lt;p&gt;Step 2.	&lt;strong&gt;Talk to at least 3 customers / potentials a week&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It is really important to you be in touch with your customers almost on a daily basis. That might not be possible but aiming to talk to you at least three customers in a Vieck is feasible. You should aim for at least three customers / prospects per product line you manage or you’re responsible for. Get in front of prospects on a sales call. Get on to support calls saw you know what kind of issues your customers face and get frustrated with. &lt;/p&gt;
+
+&lt;p&gt;Step 3. &lt;strong&gt;Let them come up with ideas&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Listen carefully. Customers express pain points but they also give you ideas on how to solve them. It’s easy to ask them for more ideas on how to improve the product and this gives you a competitive advantage. It gives them a chance to influence your product or service. It shows them that there are things in their lives ( like your product ) which they can influence.&lt;/p&gt;
+
+&lt;p&gt;Step 4. &lt;strong&gt;Commit to something&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Customers love the fact that you are listening to them. But most importantly if you give them a timeline around some of their asks / ideas  that’s when they get ecstatic!. Even if it is a small thing which can make their lives easier it makes a difference.&lt;/p&gt;
+
+&lt;p&gt;Step 5. &lt;strong&gt;Manage expectations and communicate often&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is where most product companies or for that matter service companies fail. So you promised them that they get their new fancy report by let’s say X date. Then that never happens because you are trying to fight fires within the company. The simplest thing to do is send them an email and explain that there is a delay and that you looking into revised timelines. You can also communicate through your product. You can have a feature announcement section in an easily accessible place so people know that things have changed which are relevant to them. You could also give them sneak previews of your new features or even your next months roadmap. &lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How we are building Alexa for the mobile industry.</title>
+   <link href="/Building-Alexa-For-Mobile-Statistics"/>
+   <updated>2014-06-22T00:00:00-05:00</updated>
+   <id>/Building-Alexa-For-Mobile-Statistics</id>
+   <content type="html">&lt;p&gt;&lt;em&gt;Where is the test  Univeral Mobile Statistics Site ?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s a mobile world - everybody knows that. It’s been like this for almost a decade now. The funniest thing is that we still don’t have an &lt;a href=&quot;http://www.Alexa.com&quot;&gt;Alexa&lt;/a&gt; for the mobile industry. There is no publicly available source currently which I can take a look at to see where my / my company’s mobile application ranks amongst other apps of the sametype. There are challenges to get statistics from mobile applications - distribute processing, offline/online support, hybrid applications all lead to &lt;/p&gt;
+
+&lt;p&gt;In my opinion there are three ways to do this.  &lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Google could ask their Google Analytics mobile users to publish their mobile statistics publicly.&lt;/strong&gt; &lt;/p&gt;
+
+    &lt;p&gt;I know that this is a completely different model which will conflict with their existing service model where the end customers will not agree to because its their ‘private’ metrics. &lt;/p&gt;
+
+    &lt;p&gt;Even if Google goes down with this model, there is a challenge of proving that the metrics is correct. What I mean by that is that the Analytics code ( UA-*** ) could have been used in one of the company’s existing mobile application which was already popular and therefore prevents an easy verifiable method to prove the identity of the mobile application.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Users call an api to publish their user statistics.&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Again this proves to be a non-verifiable way of ensuring the statistics is accurate.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;A 3rd Party runs device level statistics and collects it centrally.&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;A mobile phone is a personal device.  Running a process there to collect information requires permissions from users and has an intrinsic resistance built up. But if you think through this problem, and if use inferential statistics, you could identify a sample which represents your population you want to get data from. You could incentivize them to get the data you need (ie. sending only app related data back to your servers).   &lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;which-option-did-we-choose&quot;&gt;Which option did we choose?&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;We, at &lt;a href=&quot;http://www.SurveyAnalytics.com&quot;&gt;Survey Analytics&lt;/a&gt; have chosen going down the path of #3 above. As a company it was an easy path for us because we already had a Panel management software. Just to help you understand -  a Panel management software typically supports survey panels which allows you to create a list of respondents that you can invite to participate in surveys over and over again. These respondents are referred to as panelists, where each panelist subscribes to a survey panel and provides demographic information about himself/herself. The incentives for the respondents vary depending on how motivated they are to provide feedback.&lt;/p&gt;
+
+&lt;p&gt;What we did was tweak this infrastructure to ask permission to collect ‘passive’ data.  So essentially from a panelist’s standpoint they first download a mobile application (called SurveySwipe) and as soon as they login for the first time they get prompted with the Terms and Conditions (T&amp;amp;C) to collect non personal data from their mobile applications. The most important thing in terms of design is that the collection of the data is based on ‘triggers’ so that we don’t collect data always but based it on days of the week and time of the day or an external trigger like filling out a survey.&lt;/p&gt;
+
+&lt;h2 id=&quot;results-of-running-on-a-panel-of-users-for-3-months&quot;&gt;Results of running on a Panel of users for 3 months&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;Here are some of the key statistics of the panel we used to collect mobile app usage metrics :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- 990 people participated 
+- Incentives like Amazon Gift cards were given for participation 
+- Females : 57%
+- 56% had an undergraduate degree
+- 14% had an income over $150K
+- Data collected over 3 months
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We collected ‘passively’ the data around the top mobile apps running on this panel. Here is the chart produced for the most frequently running apps.&lt;/p&gt;
+
+&lt;p&gt;After we got the data on the servers, we used R to ensure we have complete samples and this is what we got :&lt;/p&gt;
+
+&lt;h3 id=&quot;top-moble-apps-running-in-our-panel&quot;&gt;Top Moble Apps running in our panel&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/TopRunningMobileApps-Alexa.png&quot; alt=&quot;Top Mobile Apps Running in the Panel&quot; title=&quot;Like Alexa's statistics : Top Mobile Apps Running&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;frequency-counts-of-the-mobile-applications-screenshot-from-r-console&quot;&gt;Frequency counts of the mobile applications (screenshot from R console)&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/top-running-mobile-apps-r-results.png&quot; alt=&quot;Frequency count of Moble Apps running &quot; title=&quot;Like Alexa's statistics : Count of Mobile Apps Running&quot; /&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What are the different type of questions a Data Scientist would ask ?</title>
+   <link href="/Different-type-of-questions-in-data-science"/>
+   <updated>2014-05-18T00:00:00-05:00</updated>
+   <id>/Different-type-of-questions-in-data-science</id>
+   <content type="html">&lt;p&gt;These are the different classifications of questions a Data Scientist can ask :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Exploratory&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Descriptive&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Inferential&lt;/strong&gt;
+Often, you do not have access to the whole data (better called population) you are interested in investigating, but only a limited number of data instead. For example, you might be interested in the exam marks of all students in Canada. It is not feasible to measure all exam marks of all students in the whole of Canada, so you have to measure a smaller sample of students (e.g., 100 students), which are used to represent the larger population of all Canada students. Properties of samples, such as the mean or standard deviation, are not called parameters, but statistics. Inferential statistics are techniques that allow us to use these samples to make generalizations about the populations from which the samples were drawn.&lt;/p&gt;
+
+    &lt;p&gt;Usually almost every statistics driven company uses this to publish results. For example, Nielson ratings gather information from a small sample of homes and are used to infer the television-viewing patterns of an entire country.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Predictive&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Causal&lt;/strong&gt;
+Causal question are usually asked to find out what happens to one variable when you change another.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Implementation usually requires randomized studies&lt;/li&gt;
+      &lt;li&gt;There are approaches to inferring causation in non-randomized studies&lt;/li&gt;
+      &lt;li&gt;Causal models are said to be the “gold standard” for data analysis&lt;/li&gt;
+      &lt;li&gt;Type of data set applied to: Randomized Trial Data Set – data from a randomized study&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;Causal analysis aims to explain the causal relations between variables. If you want to indicate explicit causality, your study must include an experiment. You compare the control and treatment groups, for example, with variance analysis.  i&lt;/p&gt;
+
+    &lt;p&gt;You may also use regression analysis, which measures causality in a weaker way. Regression analysis enables you to explore the influence of several variables on a single variable at the same time. Regression analysis may also focus on exploring the intensity of the influence of a single variable.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Mechanistic&lt;/strong&gt;
+Mechanistic type of modelling requires the most amount of effort. It requires you to understand the exact changes in variables that lead to changes in other variables for individual objects.&lt;/p&gt;
+
+    &lt;pre&gt;&lt;code&gt; &quot;All other things being equal, mechanistic models are more powerful since they tell you 
+ about the underlying processes driving patterns. They are more likely to work 
+ correctly when extrapolating beyond the observed conditions.&quot;
+ -Bolker (2008) Ecological models and Data in R, p7.
+&lt;/code&gt;&lt;/pre&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Incredibly hard to infer, except in simple situations&lt;/li&gt;
+      &lt;li&gt;Usually modeled by a deterministic set of equations (physical/engineering science)&lt;/li&gt;
+      &lt;li&gt;Generally the random component of the data is measurement error&lt;/li&gt;
+      &lt;li&gt;If the equations are known but the parameters are not, they may be inferred with data analysis&lt;/li&gt;
+      &lt;li&gt;Type of data set applied to: Randomized Trial Data Set – data about all components of the system&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to add a SVG image in D3</title>
+   <link href="/how-to-add-a-svg-image-in-d3"/>
+   <updated>2014-01-02T00:00:00-06:00</updated>
+   <id>/how-to-add-a-svg-image-in-d3</id>
+   <content type="html">&lt;p&gt;First of all - Happy 2014 to all of you!.&lt;/p&gt;
+
+&lt;p&gt;In D3, you have the option of importing XML. SVG is and XML based vector image format.&lt;/p&gt;
+
+&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/assets/infographics/&amp;quot;&lt;/span&gt; 
+       &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;svgSource&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+&lt;span class=&quot;s2&quot;&gt;&amp;quot;image/svg+xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;			
+ &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;importedNode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;importNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;documentElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	
+	&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#svg-image&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;g#&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;documentElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+			&lt;span class=&quot;nx&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;x&amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;200px&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			&lt;span class=&quot;nx&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;200px&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;p&gt;If you are interested in generating dynamic Infographics automatically - try Secondprism’s 
+&lt;a href=&quot;http://app.secondprism.com/assets/product/infographic_for_dashboard.html&quot;&gt;Infographic generator here&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>3 simple steps to create cross-tabs in SPSS ?</title>
+   <link href="/how-to-create-crosstabs-in-spss-in-3-simple-steps"/>
+   <updated>2013-10-09T00:00:00-05:00</updated>
+   <id>/how-to-create-crosstabs-in-spss-in-3-simple-steps</id>
+   <content type="html">&lt;h3 id=&quot;step-1---get-the-spss-file-and-understand-which-variables-you-will-be-using-for-your-crosstabs&quot;&gt;Step 1 - Get the SPSS file and understand which variables you will be using for your crosstabs.&lt;/h3&gt;
+
+&lt;p&gt;I had the following source file and wanted to find out differences between shopping behaviour of Males and Females for a specific event.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/spss-input-file-for-analysis.png&quot; alt=&quot;SPSS Source file for cross tabs&quot; title=&quot;SPSS file&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;My independent variables  are therefore - Gender ( Male, Female)  and my dependent varable is the question  - ‘Do you shop on Black Friday?’&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2---add-the-variables-on-spss-under-analyze--descriptives--crosstabs&quot;&gt;Step 2 - Add the variables on SPSS under Analyze &amp;gt; Descriptives &amp;gt; Crosstabs&lt;/h3&gt;
+
+&lt;p&gt;Check the screenshot below&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/spss-crosstab-menu-option.png&quot; alt=&quot;SPSS Menu for Crosstabs&quot; title=&quot;SPSS Menu for Crosstab&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Choose the variables you want to see in the crosstab&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/spss-cross-tab-variables.png&quot; alt=&quot;SPSS Variables for Crosstabs&quot; title=&quot;Select variables for SPSS Crosstab&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;step-3---create-crosstab-with-percentage-values&quot;&gt;Step 3 - Create Crosstab with percentage values&lt;/h3&gt;
+
+&lt;p&gt;Then choose the Statistics option &amp;gt; Chi-square&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/spss-chi-square.png&quot; alt=&quot;SPSS Chi-square&quot; title=&quot;SPSS Chi-square&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And under option Cells, ensure you have clicked on Percentage &amp;gt; Columns&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/spss-crosstab-column-percentage.png&quot; alt=&quot;SPSS Column percentage&quot; title=&quot;SPSS column percentage&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And once you have this setup you can generate the report which looks like this for my example:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/crosstab-report-generated-from-spss.png&quot; alt=&quot;SPSS Crosstab report&quot; title=&quot;SPSS Crosstab report&quot; /&gt; &lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What is a Dichotomous Variable?</title>
+   <link href="/What-is-a-dichotomous-variable"/>
+   <updated>2013-10-09T00:00:00-05:00</updated>
+   <id>/What-is-a-dichotomous-variable</id>
+   <content type="html">&lt;p&gt;A very complicated name for a very simple thing. It is also called Dichotomous outcome variable or just Dichotomous outcome. It  means “having only two possible values”, e.g. “yes/no”, “male/female”, “head/tail”, “age &amp;gt; 35 / age &amp;lt;= 35” etc. From a data capture standpoint, these are usually captured on surveys as radio buttons.&lt;/p&gt;
+
+&lt;p&gt;The outcome of an experiment with coin tossing is dichotomous (“head” or “tail”); the variable “biological sex” in a social study is dichotomous (“male” or “female”).
+Dichotomous variables are the simplest and intuitively clear type of random variable s. For this reason mental (and real) coin-tossing experiments are often used in introductory courses in statistics and probability. Nevertheless, statistical methods developed for analysis of dichotomous variables are often more complex, both conceptually and mathematically, than parallel methods for continuous variables.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introduction to Bayesian analysis</title>
+   <link href="/introduction-to-bayesian-analysis"/>
+   <updated>2013-09-21T00:00:00-05:00</updated>
+   <id>/introduction-to-bayesian-analysis</id>
+   <content type="html">&lt;p&gt;The key ingredients to a Bayesian analysis are the likelihood function, which reﬂects information about the parameters contained in the data, and the prior distribution, which quantiﬁes what is known about the parameters before observing data.
+The prior distribution and likelihood can be easily combined to form the posterior distribution, which represents total knowledge about the parameters after the data have been observed.&lt;/p&gt;
+
+&lt;h3 id=&quot;fundamentals-of-a-bayesian-analysis&quot;&gt;Fundamentals of a Bayesian Analysis&lt;/h3&gt;
+
+&lt;p&gt;A typical Bayesian analysis can be outlined in the following steps :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Formulate a probability model for the data.&lt;/li&gt;
+  &lt;li&gt;Decide on a prior distribution, which quantiﬁes the uncertainty in the values of the unknown model parameters before the data are observed.&lt;/li&gt;
+  &lt;li&gt;Observe the data, and construct the likelihood function ) based on the data and the probability model formulated in step 1. The likelihood is then combined with the prior distribution from step 2 to determine the posterior distribution, which quantiﬁes the uncertainty in the values of the unknown model parameters after the data are observed.&lt;/li&gt;
+  &lt;li&gt;Summarize important features of the posterior distribution, or calculate quantities of interest based on the posterior distribution. These quantities constitute statistical outputs, such as point estimates and intervals.&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Introduction to Decision Trees</title>
+   <link href="/introduction-to-decision-trees"/>
+   <updated>2013-09-18T00:00:00-05:00</updated>
+   <id>/introduction-to-decision-trees</id>
+   <content type="html">&lt;p&gt;A decision tree is a classic and natural model of learning. It can be applied to many machine learning problems. The best way to introduce this would be with an example using binary classiﬁcation.&lt;/p&gt;
+
+&lt;p&gt;Suppose that your goal is to predict whether some unknown passenger in  will enjoy some unknown future flight he/she is going to take. You have to simply predict with an answer of  “yes”or “no.”
+In order to make a guess, your’re allowed to ask binary questions about the passenger under consideration.&lt;/p&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;ss&quot;&gt;Machine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Are&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;going&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vacation?&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;You&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Yes&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;Machine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flight&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;early&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;morning?&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;You&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Yes&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;Machine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flight&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;more&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;than&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hours?&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;You&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Yes&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;Machine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;passenger&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;will&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;enjoy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The goal in learning is to ﬁgure out what questions to ask, in whatorder to ask them, and what answer to predict once you have askedenough questions.
+The decision tree is so-called because we can write our set of questions and guesses in a tree format. Usually the answers would decide how to navigate the tree.
+Diagramatically, the questions are usually written in the internal nodes (rectangles) and the guesses are written in the leaves (ovals). Each non-terminal node has two children: the left child speciﬁes what to do if the answer to the question is “no” and the right child speciﬁes what to do ifit is “yes.”&lt;/p&gt;
+
+&lt;p&gt;More learning at  &lt;a href=&quot;http://www.optimal.io&quot;&gt;Optimal.io&lt;/a&gt; &lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>4 Typical inductive learning problems</title>
+   <link href="/4-typical-inductive-learning-problems"/>
+   <updated>2013-09-16T00:00:00-05:00</updated>
+   <id>/4-typical-inductive-learning-problems</id>
+   <content type="html">&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Regression&lt;/strong&gt; : trying to predict a real value. For instance, predict the value of a stock tomorrow given its past performance. Or predictyour score on the data science ﬁnal exam based on your homework scores.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Binary Classiﬁcation&lt;/strong&gt; : trying to predict a simple yes/no response.For instance, predict whether you will enjoy this material or not.Or predict whether a user review of the newest Google product is positive or negative about the product.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Multiclass Classiﬁcation&lt;/strong&gt; : trying to put an example into one of a number of classes. For instance, predict whether a news story is about entertainment, sports, politics, religion, etc. Or predict whether a CS course is Systems, Theory, AI or Other.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Ranking&lt;/strong&gt; : trying to put a set of objects in order of relevance. For instance, predicting what order to put web pages in, in response to a user query. Or predict Alice’s ranked preferences over courses she hasn’t taken.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;More learning @ &lt;a href=&quot;http://www.optimal.io&quot;&gt;Optimal.io&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Sharding in MongoDB</title>
+   <link href="/sharding-in-mongodb"/>
+   <updated>2013-09-13T00:00:00-05:00</updated>
+   <id>/sharding-in-mongodb</id>
+   <content type="html">&lt;p&gt;Sharding, can also be called horizontal scaling. The scaling approach divides the data set and distributes the data over multiple servers. Each of this server can be called a shard. Each shard is an independent database, and collectively, the shards make up a single logical database. &lt;/p&gt;
+
+&lt;h3 id=&quot;what-other-components-are-required-for-mongodb-sharding&quot;&gt;What other components are required for MongoDB sharding?&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/how-to-do-mongodb-sharding.png&quot; alt=&quot;Horizontal scaling using MongoDB sharding&quot; title=&quot;MongoDB sharding&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Like mentioned above, the Shards stores the data. For ensuring that shards are highly available, you need to have replica sets . We will go into more details later around replica sets, but for now the easiest way to explain this is - you could have a primary shard which you can write to and a second shard which is paired with the primary shard hosting the same data which you can read from.
+When you do sharding, you would need to know which shard to get the data from.  This is done by the Query Router. The Query Router direct requests to the appropriate shard or shards. It processes and targets operations to shards and then returns results to the clients. &lt;/p&gt;
+
+&lt;h3 id=&quot;how-does-the-query-router-know-which-shard-to-get-the-data-from&quot;&gt;How does the query router know which shard to get the data from ?&lt;/h3&gt;
+&lt;p&gt;This information is stored in Config servers. They store the cluster’s metadata. This data contains a mapping of the cluster’s data set to the shards. The query router uses this data to route requests to the right shards.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>NoSQL vs SQL Comparison Summary</title>
+   <link href="/nosql-vs-sql-comparison-summary"/>
+   <updated>2013-09-09T00:00:00-05:00</updated>
+   <id>/nosql-vs-sql-comparison-summary</id>
+   <content type="html">&lt;h2 id=&quot;types&quot;&gt;Types&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;SQL&lt;/strong&gt; : One type (SQL database) with minor variations&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;NOSQL&lt;/strong&gt; : Many different types including key-value stores, document databases, wide-column stores, and graph databases
+ 
+Schemas
+——-
+&lt;strong&gt;SQL&lt;/strong&gt;: Structure and data types are fixed in advance. To store information about a new data item, the entire database must be altered, during which time the database must be taken offline.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;NOSQL&lt;/strong&gt;: Typically dynamic. Records can add new information on the fly, and unlike SQL table rows, dissimilar data can be stored together as necessary. For some databases (e.g., wide-column stores), it is somewhat more challenging to add new fields dynamically.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How to find the schema of a collection in MongoDB</title>
+   <link href="/how-to-find-the-schema-of-a-collection-in-mongodb"/>
+   <updated>2013-09-09T00:00:00-05:00</updated>
+   <id>/how-to-find-the-schema-of-a-collection-in-mongodb</id>
+   <content type="html">&lt;p&gt;The last two commands are equivalent to the SQL command below&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;Describe&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;Table&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Open a mongo shell and run the following commands :&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;MongoDB shell version: 2.4.5
+&amp;gt; show dbs
+&lt;span class=&quot;nb&quot;&gt;local &lt;/span&gt;0.078125GB
+todo 0.453125GB
+&amp;gt; use todo
+switched to db todo
+&amp;gt; show collections
+system.indexes
+tasks
+&amp;gt; var &lt;span class=&quot;nv&quot;&gt;schematodo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; db.tasks.findOne&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;;
+&amp;gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;var key in schematodo&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; print &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;key&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; ; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+_id
+label
+content
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>4 use cases of using MongoDB and Hadoop together</title>
+   <link href="/4-use-cases-of-using-mongodb-and-hadoop-together"/>
+   <updated>2013-09-08T00:00:00-05:00</updated>
+   <id>/4-use-cases-of-using-mongodb-and-hadoop-together</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/img/hadoop-batch-aggregation.png&quot; alt=&quot;Hadoop Data Warehouse&quot; title=&quot;Hadoop Batch Aggregation&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/hadoop-data-warehouse.png&quot; alt=&quot;Hadoop Data Warehouse&quot; title=&quot;Hadoop Data Warehouse&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/hadoop-etl-from-mongodb.png&quot; alt=&quot;Hadoop ETL from MongoDB&quot; title=&quot;Hadoop ETL from MongoDB&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/hadoop-etl-to-mongodb.png&quot; alt=&quot;Hadoop ETL to MongoDB&quot; title=&quot;Hadoop ETL to MongoDB&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can read about the use cases here at MongoDB.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Big Data Applications - 2013</title>
+   <link href="/big-data-applications-2013"/>
+   <updated>2013-09-07T00:00:00-05:00</updated>
+   <id>/big-data-applications-2013</id>
+   <content type="html">&lt;h2 id=&quot;here-are-the-companies-in-the-big-data-application-stack&quot;&gt;Here are the companies in the Big Data application stack&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/big-data-applications.png&quot; alt=&quot;Big Data Applications&quot; title=&quot;These are applications who are playing in the Big data space&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Hadoop Data Types</title>
+   <link href="/hadoop-data-types"/>
+   <updated>2013-09-06T00:00:00-05:00</updated>
+   <id>/hadoop-data-types</id>
+   <content type="html">&lt;p&gt;Here is a high level overview of Writable and InputFormat Data types which are used in Hadoop&lt;/p&gt;
+
+&lt;p&gt;Here is a Detailed class diagram for these two data types. Thanks to Xu Fei&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/hadoop-data-type-inputformat-interface.png&quot; alt=&quot;Hadoop Input Format Interface&quot; title=&quot;Hadoop Input Format Interface&quot; /&gt;
+&lt;img src=&quot;/assets/img/hadoop-data-type-writable-interface.png&quot; alt=&quot;Hadoop Writable Interface&quot; title=&quot;Hadoop Writable Interface&quot; /&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>3 Differences between a MapReduce Combiner and Reducer ?</title>
+   <link href="/3-differences-between-a-mapreduce-combiner-and-reducer"/>
+   <updated>2013-09-05T00:00:00-05:00</updated>
+   <id>/3-differences-between-a-mapreduce-combiner-and-reducer</id>
+   <content type="html">&lt;p&gt;Think of a Combiner as a function of your map output. This you can primarily use for decreasing the amount of data needed to be processed by Reducers. In some cases, because of the nature of the algorithm you implement, this function can be the same as the Reducer. But in some other cases this function can of course be different.&lt;/p&gt;
+
+&lt;p&gt;A combiner will still be implementing the Reducer interface. Combiners can only be used in specific cases which are going to be job dependent. &lt;/p&gt;
+
+&lt;h2 id=&quot;difference--1&quot;&gt;Difference # 1&lt;/h2&gt;
+&lt;p&gt;One constraint that a Combiner will have, unlike a Reducer, is that the input/output key and value types must match the output types of your Mapper.&lt;/p&gt;
+
+&lt;h2 id=&quot;difference-2&quot;&gt;Difference  #2&lt;/h2&gt;
+&lt;p&gt;Combiners can only be used on the functions that are commutative(a.b = b.a) and associative {a.(b.c) = (a.b).c} . This also means that combiners may operate only on a subset of your keys and values or may not execute at all, still you want the output of the program to remain same.&lt;/p&gt;
+
+&lt;h2 id=&quot;difference-3&quot;&gt;Difference  #3&lt;/h2&gt;
+&lt;p&gt;Reducers can get data from multiple Mappers as part of the partitioning process. Combiners can only get its input from one Mapper.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>4 Types of Data Scientist related Roles</title>
+   <link href="/4-types-of-data-scientist-related-roles"/>
+   <updated>2013-09-04T00:00:00-05:00</updated>
+   <id>/4-types-of-data-scientist-related-roles</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/img/Types-of-data-scientists.png&quot; alt=&quot;4 Types of Data Scientists&quot; title=&quot;Types of Data Scientists&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What is Binning?</title>
+   <link href="/what-is-binning"/>
+   <updated>2013-09-03T00:00:00-05:00</updated>
+   <id>/what-is-binning</id>
+   <content type="html">&lt;p&gt;Binning is a way to group a number of more or less continuous values into a smaller number of “bins”. For example, if you have data about a group of people, you might want to arrange their ages into a smaller number of age intervals. 
+In the example below, we have data about temperature in a region ordered based on the date of the month. It is hard to visualize what the range of temperature was for that region was.
+ccc&lt;/p&gt;
+
+&lt;p&gt;Binning helps in visualizing these values. The first step is to find the occurences of the temperature. The table below shows occurences of a temperature range.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/binning-example-for-statistics-bargraphs.png&quot; alt=&quot;Binning example of statistics in bargraphs&quot; title=&quot;Binning example&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What is an ElasticSearch Facet ?</title>
+   <link href="/what-is-an-elasticsearch-facet"/>
+   <updated>2013-09-03T00:00:00-05:00</updated>
+   <id>/what-is-an-elasticsearch-facet</id>
+   <content type="html">&lt;p&gt;LinkedIn uses facets to refine their search query.
+In ElasticSearch, Facets are additional data which you can attach to a query. This helps with returning aggregate statistics alongside regular query results. The aggregate statistics are a core part of elasticsearch, and are exposed through the Search API.
+An example would be to consider searching for your ex-colleagues who worked with you. The best example from the above screenshot is when you want to find colleagues whose “Past Company” was “ABC Company”.
+Facets are highly configurable. In addition to counting distinct field values, facets can count by more complex groupings, such as spans of time, nest filters, and even include full, nested, elasticsearch queries.
+Here is an example of a Geo Distance Facet which is included as part of an ElasticSearch Query.&lt;/p&gt;
+
+&lt;p&gt;Image courtesy of Karmi.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Machine Data and Big Data</title>
+   <link href="/machine-data-and-big-data"/>
+   <updated>2013-08-29T00:00:00-05:00</updated>
+   <id>/machine-data-and-big-data</id>
+   <content type="html">&lt;p&gt;Business applications, Sensors in Factories and Large equipment and their supporting systems are a rich source of data. Every technical component in a functioning system produces logging information.  Business application logs are detailed logs and can contain every transaction the customer or user has executed on that application. It doesn’t matter if the transaction was successful or whether it failed - there are insights you can get from Your Log files.
+System or maching logs have variety, a large number of data sources and formats which are unique based on the application / system which is generating that.
+Its fast moving, a typical enterprise creates log files for every second
+volume of data, data is recorded for events and for time periods.
+A business transaction will fan out and create 100’s of log and audit table entries. 
+To get a big picture of your operations environment, this rich and complex technical information needs to be analyzed. You need to be able to get data which is relevant to you and this in turn presents a challenge for the software performance engineer or the Operations team. The Operations team is managing a larger and large number of real and virtual environments and the business is asking for more frequent functionality packed releases into the product.
+Some typical log files which an enterprise deals with are :
+• Network packet flow information from routers and switches• Storage subsystem metrics• Database metrics• Application servers from Log4j messages• Microsoft WMI• Web Server information from Apache• Operating system information from AIX, Linux, and VMWare• End User experience.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What is Hive ?</title>
+   <link href="/what-is-hive"/>
+   <updated>2013-08-28T00:00:00-05:00</updated>
+   <id>/what-is-hive</id>
+   <content type="html">&lt;p&gt;It is a Data Warehouse system layer built on Hadoop.
+Allows you to define a structure for your unstructured Big data.
+Simplifies queries using a SQL syntax call HQL.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>SQL for Big Data - Key Initiatives</title>
+   <link href="/sql-for-big-data-key-initiatives"/>
+   <updated>2013-08-28T00:00:00-05:00</updated>
+   <id>/sql-for-big-data-key-initiatives</id>
+   <content type="html">&lt;p&gt;These are some SQL-for-Big Data initiatives which are getting some press:
+Facebook’s Presto, a real-time query engine that provides a direct SQL interface to Facebook’s Hadoop data warehouse. Facebook plans on releasing Presto as an open-source project this fall.
+Amazon Web Services’ RedShift. The service provides an SQL-based data warehouse service that can handle queries against databases of up to 1.6 petabytes.
+HortonWorks’ Stinger initiative, an effort to improve the SQL interface of Hive and make Hive 100 times faster.
+IBM’s BigSQL, an SQL query engine for Hadoop. BigSQL bypasses MapReduce and runs against the Hadoop Distributed File System for read-only queries and HBase (the Hadoop database engine) for transactional queries that perform reads and writes of data.
+EMC’s HAWQ, an SQL query engine for the company’s Pivotal HD version of Hadoop.
+Cloudera’s Impala, a real-time ad-hoc query interface to Hadoop introduced last October.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Key Hadoop Components </title>
+   <link href="/key-hadoop-components"/>
+   <updated>2013-08-28T00:00:00-05:00</updated>
+   <id>/key-hadoop-components</id>
+   <content type="html">&lt;p&gt;The three major categories of components in a Hadoop deployment are Client machines, Masters nodes, and Slave nodes.  
+The Master nodes oversees the two key functional pieces that make up Hadoop: storing lots of data (HDFS), and running parallel computations on all that data (Map Reduce).  
+The Name Node oversees and coordinates the data storage function (HDFS), while the Job Tracker oversees and coordinates the parallel processing of data using Map Reduce.  
+Slave Nodes make up the vast majority of machines and do all the dirty work of storing the data and running the computations.  Each slave runs both a Data Node and Task Tracker daemon that communicate with and receive instructions from their master nodes.  
+The Task Tracker daemon is a slave to the Job Tracker, the Data Node daemon a slave to the Name Node.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Scale 'out and not 'up'</title>
+   <link href="/scale-out-and-not-up"/>
+   <updated>2013-08-27T00:00:00-05:00</updated>
+   <id>/scale-out-and-not-up</id>
+   <content type="html">&lt;p&gt;Scale “out”, not “up”. For data-intensive workloads, a large number of commodity low-end servers (i.e., the scaling “out” approach) is preferred over a small number of high-end servers (i.e., the scaling “up” approach). 
+The latter approach of purchasing symmetric multi-processing (SMP) machines with a large number of processor sockets (dozens, even hundreds) and a large amount of shared memory (hundreds or even thousands of gigabytes) is not effective cost wise, since the costs of such machines do not scale linearly (i.e., a machine with twice as many processors is often significantly more than twice as expensive). On the other hand, the low-end server market overlaps with the high-volume desktop computing market, which has the effect of keeping prices low due to competition, interchangeable components, and economies of scale.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What is a Theta Join ?</title>
+   <link href="/what-is-a-theta-join"/>
+   <updated>2013-08-26T00:00:00-05:00</updated>
+   <id>/what-is-a-theta-join</id>
+   <content type="html">&lt;p&gt;The most general join operation is Theta Join (or q join). The Theta Join is defined as the result of performing a selection operation using comparison operator Theta (q), on the product. In other words, a join operation with a general join condition using Theta (q) operator is called a Theta Join.
+For example, if you want only those tuples of the product of two relations ‘Student1’ and ‘Student2’ whose value is ‘L’ in the attribute ‘City’, Theta joinoperation is written as:&lt;/p&gt;
+
+&lt;p&gt; 
+Student1 TIMES student2 WHERE City =’L’This is equivalent to: 
+Student1 TIMES student2 GIVING temp
+ SELECT temp WHERE City =’L’&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What is a Join Operation ?</title>
+   <link href="/what-is-a-join-operation"/>
+   <updated>2013-08-26T00:00:00-05:00</updated>
+   <id>/what-is-a-join-operation</id>
+   <content type="html">&lt;p&gt;The join operation is used to combine related tuples from two relations. This operation is very important in relational databases because it allows to process relationship among relations.
+The join operation is the combination of the product, selection and projection operations. The join operation on two relations is performed as follows:
+Product operation is performed on two relations.
+Selection (SELECT) operation is performed to eliminate duplicate tuples by the join criteria or condition.
+Projection (PROJECT) operation is performed to remove some attributes.
+The PROJECT operation is another unary operation. This operation returns a set of tuples containing a subset of the attributes in the original relation. Thus, as we state that the SELECT operation selects some rows and discards the others. The PROJECT operation, on the other hand, selects some columns of the relation and discards the other column. The PROJECT operation can be viewed as the vertical filter of the relation.
+Here is a wikipedia article on the Join Operation .&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Left Outer Join Example</title>
+   <link href="/left-outer-join-example"/>
+   <updated>2013-08-26T00:00:00-05:00</updated>
+   <id>/left-outer-join-example</id>
+   <content type="html">&lt;p&gt;So I have a products table :&lt;/p&gt;
+
+&lt;p&gt;And I have a Sales table:&lt;/p&gt;
+
+&lt;p&gt;If I want to find the sales for ALL products including the ones which are not present in the sales table, I can do this ( SQLITE syntax) :
+select p.productname, 
+case when sum(amount) is null then 0 else sum(s.amount) end as totalsales 
+from product p left outer join sale s on p.productcode = s.productcode 
+where s.productcode is null or s.productcode is not null group by p.productname &lt;/p&gt;
+
+&lt;p&gt;One of the best examples I have seen for Outer and Inner joins is at CodingHorror&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title></title>
+   <link href="/excel-analysis-using-play-d3-js-and-mongodb-a"/>
+   <updated>2013-07-17T00:00:00-05:00</updated>
+   <id>/excel-analysis-using-play-d3-js-and-mongodb-a</id>
+   <content type="html">&lt;p&gt;Excel analysis using Play, D3.js and MongoDB - A quick overview of filtering  multi-variate datasets. Multivariate or high-dimensional (HiD) systems are hard to visualize because we are wired for a 3D world. Many different systems have been suggested to help visualize HiD data. Most of them use some system of subspace selection to reduce the dimensionality to 2 or 3 (e.g. 1-4) or use some procedure to identify important axes (e.g. principal component analysis or projection pursuit).
+When doing multivariate analysis, the big picture is usually where you want to start, for meaningful observations, believe it or not, can be gleaned from the clutter. A display with this much data cannot be used to explore the details, but it can be used to search for predominant patterns and exceptions. &lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Arms Visualization From Google</title>
+   <link href="/arms-visualization-from-google"/>
+   <updated>2013-04-01T00:00:00-05:00</updated>
+   <id>/arms-visualization-from-google</id>
+   <content type="html">&lt;p&gt;test Arms Visualization from Google&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Arms Visualization from Google</title>
+   <link href="/arms-visualization-from-google"/>
+   <updated>2013-04-01T00:00:00-05:00</updated>
+   <id>/arms-visualization-from-google</id>
+   <content type="html">&lt;p&gt;test Arms Visualization from Google&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>U S State Visualization Example Long Commute</title>
+   <link href="/u-s-state-visualization-example-long-commute"/>
+   <updated>2013-03-24T00:00:00-05:00</updated>
+   <id>/u-s-state-visualization-example-long-commute</id>
+   <content type="html">&lt;p&gt;Here is another example of using D3 to generate stats driven visualization.  I wanted to read the data from Google spreadsheets but then the lazy me thought that it will be easier just to add the traffic ratio attribute within the “us-state-centroids.json” file. Here is how it looks now :&lt;/p&gt;
+
+&lt;p&gt;The large circles indicates large commutes. As you see most of the data is not even complete and since this just a work in progress, I wil make another revision to it hopefully shortly. The full html file to the U.S visualization can be found here.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>U.S State Visualization example - Long commute - Another D3 example</title>
+   <link href="/u-s-state-visualization-example-long-commute"/>
+   <updated>2013-03-24T00:00:00-05:00</updated>
+   <id>/u-s-state-visualization-example-long-commute</id>
+   <content type="html">&lt;p&gt;Here is another example of using D3 to generate stats driven visualization. 
+I wanted to read the data from Google spreadsheets but then the lazy me thought that it will be easier just to add the traffic ratio attribute within the “us-state-centroids.json” file.
+Here is how it looks now :&lt;/p&gt;
+
+&lt;p&gt;The large circles indicates large commutes.
+As you see most of the data is not even complete and since this just a work in progress, I wil make another revision to it hopefully shortly.
+The full html file to the U.S visualization can be found here.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Basics : What are the different Data Types</title>
+   <link href="/basics-what-are-the-different-data-types"/>
+   <updated>2013-03-18T00:00:00-05:00</updated>
+   <id>/basics-what-are-the-different-data-types</id>
+   <content type="html">&lt;p&gt;There are only two broad types of Data :
+Qualititative  and  Quantitative.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Qualitative data types can be further sub categorized into the following&lt;/em&gt; :&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Nominal&lt;/strong&gt; : They are unordered collections of symbolic names without units. For instance, the names of the orbiters, such as Hubble, Magellan, Mariner, Viking and Voyager form a nominal data set. The name ‘Nominal’ comes from the Latin nomen, meaning ‘name’ and nominal data are items which are differentiated by a simple naming system.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Ordinal&lt;/strong&gt; : Items on an ordinal scale are set into some kind of order by their position on the scale. This may indicate such as temporal position, superiority, etc.
+The order of items is often defined by assigning numbers to them to show their relative position. Letters or other sequential symbols may also be used as appropriate. For example, characters are ordinal because we can call ‘A’ the first character, ‘B’ the second, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Quantitative data types&lt;/em&gt;
+These are usually described as numbers and can be sub-categorized as: &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Discrete data&lt;/strong&gt;: Can take certain values ( like whole numbers). They have finite values, or buckets. You can count them. e.g. The number of questions taken in a survey would be discrete—there are a finite and countable number of questions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Continuous data&lt;/strong&gt;: Continuous data technically have an infinite number of steps, which form a continuum. e.g. Time to complete a task is continuous since it could take 178.8977687 seconds. &lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Matrix responses - Process of design</title>
+   <link href="/matrix-responses-process-of-design"/>
+   <updated>2013-03-17T00:00:00-05:00</updated>
+   <id>/matrix-responses-process-of-design</id>
+   <content type="html">&lt;p&gt;This post is help the readers get an idea of how we approach some of the visualization problems.
+For a matrix type question in a survey, like the one below, the visualization elements to understand the aggregated responses gets quite complicated.&lt;/p&gt;
+
+&lt;p&gt; 
+What are we trying to get here - What questions do we need answered to deal with responses from the matrix question above ?
+For example, we are looking at the following :
+1. How many people ‘Liked’  HBO for example ?
+2. How can I compare - How many people ‘Liked’ HBO vs How many ‘Liked’  Star Movies ?
+3. How can I compare - How many people ‘Liked’ HBO vs How many people ‘Disliked’ SONY PIX ?
+I am not going through an exhaustive list of questions based on different answer types (between 1 - Dislike and 5 - Like) and the movie channels ( SONY PIX, AXN etct) because you can substitute that within the question above.
+But I think we have covered the most important questions around matrix responses above.
+Let’s see if we can answer them by asking more questions :)
+What is our smallest dataset we can deal with when dealing with these questions ?
+The smallest one would be  the following : [Option , Scale , Response Count], for e.g. [“HBO”, Dislike, 5]. If we have had this dataset, then we could answer question 1 above.
+What is the best way to present that dataset ?
+Maybe we can use 3 axis’s, because there are three datapoints; 3D ?&lt;/p&gt;
+
+&lt;p&gt; 
+The blue dot above is the datapoint we are trying to visualize.  Doesn’t this look a teeny bit intimidating and we have only our smallest meaningful dataset for a survey response.
+3D is cool. But in the diagram above, without the lines connecting the blue dot to the axis’s this would be hard to understand.
+What if we removed an axis?  Since the Response count is very chartable because its a number, we are left with the other two axises. But the Dislike to Like is a scale, which means there is already a number assigned to it where 1 is Dislike and 5 is Like. So we are really left with the Option axis.
+What if we color coded these options - lets use Blue for HBO.&lt;/p&gt;
+
+&lt;p&gt;Doesn’t this look much more easier to read ? . What is missing here ? . A legend which says HBO = blue.
+Now let’s add couple more responses to this -  [“HBO”, Like, 4], [“Star Movies”, Like, 5],[“SONY PIX”, Dislike, 4]
+Before adding these responses, we need to come up with a color code, let’s say Star Movies is green and SONY PIX is Orange.  So this is what the visualization will look like :&lt;/p&gt;
+
+&lt;p&gt;So the color coding for the chart above is  - HBO=Blue, Star Movies=Green, SONY PIX=Orange. 
+Now, trying answering the questions we had at the beginning of the post, Easy to visualize and easy to answer right?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>I O U Questions For Visualization</title>
+   <link href="/i-o-u-questions-for-visualization"/>
+   <updated>2013-03-17T00:00:00-05:00</updated>
+   <id>/i-o-u-questions-for-visualization</id>
+   <content type="html">&lt;p&gt;I am a firm believer that the questions you ask will drive the right kind of visualization ( I just found out that the word is mainly spelt visualisation i.e with an s instead of z in almost all of Europe).  Other than the fact that the data has to be Relevant (duh?) to the question asked, here are three simple questions I ask to help with coming up with options for visualization.  I summarize it as the I.O.U principle. (I)nteresting What is really interesting about the data for the audience?. Is there a way to show this interesting piece of information? . Can I make this data more interesting?. Is there a way I can design the visualization elements to make it more interesting?.   Is the context for the data interesting?. (O)utside What context can I give from the outside that is relevant to the audience?  What are the big trends or happenings outside the data which is currently not visualized? What factors from the outside is influencing your decision and what have you introduced into this visualization ? Are there relevant processes or people outside this which we need to consider to complete this visualization ? (U) as in (U)ser What are your important key measurements ? Does the design make sense to you ? How can we make this simpler for you to use and to understand ? How do you like to present this ? How do you like to share this ?&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>I.O.U - questions for visualization</title>
+   <link href="/i-o-u-questions-for-visualization"/>
+   <updated>2013-03-17T00:00:00-05:00</updated>
+   <id>/i-o-u-questions-for-visualization</id>
+   <content type="html">&lt;p&gt;I am a firm believer that the questions you ask will drive the right kind of visualization ( I just found out that the word is mainly spelt visualisation i.e with an s instead of z in almost all of Europe). 
+Other than the fact that the data has to be Relevant (duh?) to the question asked, here are three simple questions I ask to help with coming up with options for visualization.  I summarize it as the I.O.U principle.
+(I)nteresting
+What is really interesting about the data for the audience?.
+Is there a way to show this interesting piece of information? .
+Can I make this data more interesting?.
+Is there a way I can design the visualization elements to make it more interesting?.  
+Is the context for the data interesting?.
+(O)utside
+What context can I give from the outside that is relevant to the audience? 
+What are the big trends or happenings outside the data which is currently not visualized?
+What factors from the outside is influencing your decision and what have you introduced into this visualization ?
+Are there relevant processes or people outside this which we need to consider to complete this visualization ?
+(U) as in (U)ser
+What are your important key measurements ?
+Does the design make sense to you ?
+How can we make this simpler for you to use and to understand ?
+How do you like to present this ?
+How do you like to share this ?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Agile is good, but focus on Zero Overhead</title>
+   <link href="/zero-overhead-principle"/>
+   <updated>2013-03-01T00:00:00-06:00</updated>
+   <id>/zero-overhead-principle</id>
+   <content type="html">&lt;p&gt;Introducing new forms of visualization is an iterative process.  We work in an agile manner and release features at a minimum on a monthly basis.  Some of our visualization changes are pretty radical and will have user’s playing for some time to get ‘it’.  It is quite challenging to introduce new ways of visualizations and also to ensure that  users get ‘it’ without too much of a hassle.
+DJ Patil’s and Josh Elman’s latest post on Techcrunch has kind of called this the ‘Zero Overhead’ Principle. &lt;/p&gt;
+
+&lt;p&gt;“The real challenge for analysts is that they are already overloaded and tend to ignore additional tools that require training (remember these guys have real time pressure).  So we had to adopt a different mindset. Our products had to work naturally with the analysts’ work styles. Period.  That’s the Zero Overhead Principle. Put another way, our products had to teach the user as they went along. In essence, we were really just building enterprise products with a consumer mindset.”&lt;/p&gt;
+
+&lt;p&gt;This also has a great video on how they used data driven science to improve user engagement at Twitter.
+The key lessons from him are :&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Focus on building a “glide path.”&lt;/li&gt;
+  &lt;li&gt;Use data to find friction&lt;/li&gt;
+  &lt;li&gt;Prioritize the design experience&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Fundamental Challenges In Mobile Data Visualization</title>
+   <link href="/fundamental-challenges-in-mobile-data-visualization"/>
+   <updated>2012-10-12T00:00:00-05:00</updated>
+   <id>/fundamental-challenges-in-mobile-data-visualization</id>
+   <content type="html">&lt;h2 id='1_location_location_location'&gt;1. Location. Location. Location.&lt;/h2&gt;
+
+&lt;p&gt;We are not talking about ordinary real estate here. Mobile realestate is scarce. Finding the right medium on minimal real estate and designing visual components to tell the story is essentially the hardest part of this endeavour.&lt;/p&gt;
+
+&lt;h2 id='2_aligning_the_message'&gt;2. Aligning the message&lt;/h2&gt;
+
+&lt;p&gt;Data is fine. Essentially Data visualization is 70% Data and 30% Visualization.  So you would think that if we have the data you would have probably solved 70% of the problem.  In some cases its true and I would agree. I have worked for medium to large enterprises and I see that the larger the enterprise gets, proportionally it gets more challenging to get quality data.  But what is most important is the messaging which goes along with the visualization needs to be aligned.&lt;/p&gt;
+
+&lt;p&gt;The picture above is a little fuzzy (but thanks to Stephen Few), the concept is clear - the message on the top is not really aligned with the graph below.  Now this could be because some additional information was missed or there was not enough space to explain this in a presentation (kind of goes back to point #1). But you would ask how is this problem really related to Mobile Data Visualization ?  The answer is - drawing on mobile devices ( iPads, iPhones, Androids and Blackberry OS’s) is challenging from a technical standpoint and what almost all vendors do is to start with the basic chart types which might not help in getting the message across.&lt;/p&gt;
+
+&lt;h2 id='3_just_enough_data'&gt;3. Just enough data&lt;/h2&gt;
+
+&lt;p&gt;Going mobile presents a challenge for visualaization in terms of securing data at all stages of the analytic process, primarily for data transmission and device access. For this reason many vendors are opting for a mobile product that provides functionality via server-side architecture with the use of a Web infrastructure like HTML5. Information then can be stored, managed, and provided using a mobile BI server, where the risk of exposing sensitive data is lower than storing it on a mobile device that could be stolen.  The other aspect of this is performance of the visualization tool itself.  If there are datapoints which are not relevant to the visualization medium then there is no point sending that data to the device itself. &lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Fundamental Challenges in Mobile Data Visualization</title>
+   <link href="/fundamental-challenges-in-mobile-data-visualization"/>
+   <updated>2012-10-12T00:00:00-05:00</updated>
+   <id>/fundamental-challenges-in-mobile-data-visualization</id>
+   <content type="html">&lt;h2 id=&quot;location-location-location&quot;&gt;1. Location. Location. Location.&lt;/h2&gt;
+&lt;p&gt;We are not talking about ordinary real estate here. Mobile realestate is scarce. Finding the right medium on minimal real estate and designing visual components to tell the story is essentially the hardest part of this endeavour.&lt;/p&gt;
+
+&lt;h2 id=&quot;aligning-the-message&quot;&gt;2. Aligning the message&lt;/h2&gt;
+&lt;p&gt;Data is fine. Essentially Data visualization is 70% Data and 30% Visualization.  So you would think that if we have the data you would have probably solved 70% of the problem.  In some cases its true and I would agree. I have worked for medium to large enterprises and I see that the larger the enterprise gets, proportionally it gets more challenging to get quality data.  But what is most important is the messaging which goes along with the visualization needs to be aligned.&lt;/p&gt;
+
+&lt;p&gt;The picture above is a little fuzzy (but thanks to Stephen Few), the concept is clear - the message on the top is not really aligned with the graph below.  Now this could be because some additional information was missed or there was not enough space to explain this in a presentation (kind of goes back to point #1). But you would ask how is this problem really related to Mobile Data Visualization ?  The answer is - drawing on mobile devices ( iPads, iPhones, Androids and Blackberry OS’s) is challenging from a technical standpoint and what almost all vendors do is to start with the basic chart types which might not help in getting the message across.&lt;/p&gt;
+
+&lt;h2 id=&quot;just-enough-data&quot;&gt;3. Just enough data&lt;/h2&gt;
+&lt;p&gt;Going mobile presents a challenge for visualaization in terms of securing data at all stages of the analytic process, primarily for data transmission and device access. For this reason many vendors are opting for a mobile product that provides functionality via server-side architecture with the use of a Web infrastructure like HTML5. Information then can be stored, managed, and provided using a mobile BI server, where the risk of exposing sensitive data is lower than storing it on a mobile device that could be stolen. 
+The other aspect of this is performance of the visualization tool itself.  If there are datapoints which are not relevant to the visualization medium then there is no point sending that data to the device itself. &lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>

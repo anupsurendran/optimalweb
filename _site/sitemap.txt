@@ -9,6 +9,7 @@
 /sitemap.txt
 /tags.html
 
+/Optimizing-Marginal-Metrics-for-your-business
 /How-to-measure-lead-quality-using-google-spreadsheets-cohort-analysis
 /Choosing-the-Right-Fonts
 /5-Steps-for-Customer-Focus

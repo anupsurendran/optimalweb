@@ -8,10 +8,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>4 Typical inductive learning problems</title>
+	<title>How to measure Lead Quality using Google Spreadsheet and Cohort Analysis.</title>
 	<meta name="author" content="Anup Surendran">
 	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
-	<link href="http://feeds.feedburner.com/" rel="alternate" title="4 Typical inductive learning problems" type="application/atom+xml">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="How to measure Lead Quality using Google Spreadsheet and Cohort Analysis." type="application/atom+xml">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
 </head>
 <body>
@@ -45,29 +45,75 @@
 			<header>
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
-						<h1 class="h2 entry-title">4 Typical inductive learning problems</h1>
+						<h1 class="h2 entry-title">How to measure Lead Quality using Google Spreadsheet and Cohort Analysis.</h1>
 					</div><!-- unit-inner -->
 				</div><!-- unit-head -->
 			</header>
 
 			<div class="bd">
 				<div class="entry-content">
-					<ol>
-  <li><strong>Regression</strong> : trying to predict a real value. For instance, predict the value of a stock tomorrow given its past performance. Or predictyour score on the data science ﬁnal exam based on your homework scores.</li>
-  <li><strong>Binary Classiﬁcation</strong> : trying to predict a simple yes/no response.For instance, predict whether you will enjoy this material or not.Or predict whether a user review of the newest Google product is positive or negative about the product.</li>
-  <li><strong>Multiclass Classiﬁcation</strong> : trying to put an example into one of a number of classes. For instance, predict whether a news story is about entertainment, sports, politics, religion, etc. Or predict whether a CS course is Systems, Theory, AI or Other.</li>
-  <li><strong>Ranking</strong> : trying to put a set of objects in order of relevance. For instance, predicting what order to put web pages in, in response to a user query. Or predict Alice’s ranked preferences over courses she hasn’t taken.</li>
-</ol>
+					<p><em>What is the number one complaint which comes from the Sales team ?</em></p>
 
-<p>More learning @ <a href="http://www.optimal.io">Optimal.io</a></p>
+<p>In my brief experience managing a Sales team, the key complaint which typically comes up is - “Leads are not good as they were before”. Week after week this used to come up and it still comes up. Now quantifying that was not easy unless I ran a <a href="https://en.wikipedia.org/wiki/Cohort_analysis">cohort analysis</a>.  </p>
+
+<p>Here is the output of the cohort analysis I ran using Google Spreadsheets.</p>
+
+<p><img src="/assets/img/cohort-analysis-googlespreadsheet.png" alt="Cohort Analysis using Google Spreadsheets" title="Cohort analysis graph with google spreadsheet and no R" /></p>
+
+<p>There are 5 broad steps to measuring lead quality using cohort analysis :</p>
+
+<p>1.<strong>Get the data around when the user signed up and registered</strong> </p>
+
+<p>This should include all users who registered / signed up using your “Free Trial” or “30 Day Trial”. This ideally would contain the unique identifier for the user and the timestamp when they signed up on.</p>
+
+<p>Here is a link to the <a href="https://docs.google.com/spreadsheets/d/19l6tNgXZuasCkOUvsyIqwqaAJuxM7pfO5xw7GTDiprc/edit?usp=sharing">sample google spreadsheet for user registration</a>. The second sheet (User Signup Data) contains the user information. The key information to start off is in column A, D and E.</p>
+
+<p>2.<strong>Add additional data around when the user converted to a customer</strong></p>
+
+<p><img src="/assets/img/user-data-googlespreadsheet.png" alt="User data when they converted to customers" title="User conversion data in google spreadsheet" /></p>
+
+<p>This is the timestamp around when the user converted into a customer (a paid user). This is essentially column D (ts) in the same sheet    </p>
+
+<p>3.<strong>The real cohort</strong></p>
+
+<p>The third sheet will contain the months for which you need to do the analysis both in the column and the row. We also will convert the date into the UNIX timestamp format.</p>
+
+<p><img src="/assets/img/cohort-date-format-googlespreadsheet.png" alt="Column Timestamp Format" title="UNIX Timestamp format for months" /></p>
+
+<p>This same thing is also applied across for the months at the top.</p>
+
+<p>After you get this basic matrix, then the real magic is using the “SUMIF” within each of the cells to get the answer to “Get me the count of users who signed up this month and also became a customer”.  The formula looks like this in the google spreadhseet.</p>
+
+<p><code>=SUMIFS('Users Signup Data'!$H$2:$H$118,'Users Signup Data'!$F$2:$F$118,"&gt;"&amp;$A$3, </code>
+<code>'Users Signup Data'!$F$2:$F$118,"&lt;"&amp;$A$4,'Users Signup Data'!$G$2:$G$118,"&gt;"&amp;C1, </code>
+<code>'Users Signup Data'!$G$2:$G$118,"&lt;"&amp;D1)</code></p>
+
+<p>You can look at the individual columns for each of the month the google spreadsheet.</p>
+
+<p>We also found out the total new revenue we got based on the conversion which is towards the end of the spreadsheet.</p>
+
+<p><code>=SUMIFS('Users Signup Data'!$C$2:$C$118,</code>
+<code>'Users Signup Data'!$F$2:$F$118,"&gt;"&amp;A3,'Users Signup Data'!$F$2:$F$118,"&lt;"&amp;A4)</code></p>
+
+<h2 id="what-are-the-key-things-we-learned-">What are the key things we learned ?</h2>
+<hr />
+
+<p>These are the lessons learned :</p>
+
+<ul>
+  <li>That we could find out lead quality by revenue generated over a period of time. </li>
+  <li>In the sample sheet lead quality has actually decreased.</li>
+  <li>You don’t need complicated models to measure lead quality (as you see a simple Google spreadsheet and formulas will help you get the results you need)</li>
+</ul>
+
 
 					<div class="meta">
 						<p class="date-publish">
 							Published: 
-							<date class="date-pub" title="2013-09-16T00:00:00-05:00" datetime="2013-09-16T00:00:00-05:00" pubdate>
-							<span class="month"><abbr>September</abbr></span>
-							<span class="day">16</span>
-							<span class="year">2013</span>
+							<date class="date-pub" title="2015-06-23T00:00:00-05:00" datetime="2015-06-23T00:00:00-05:00" pubdate>
+							<span class="month"><abbr>June</abbr></span>
+							<span class="day">23</span>
+							<span class="year">2015</span>
 							</date>
 						</p>
 						<ul class="list-category list-linear">
@@ -92,13 +138,11 @@
 
   
      
-    	<li><a href="/tags.html#machine learning-ref">machine learning <span>3</span></a></li>
+    	<li><a href="/tags.html#Cohort Analysis-ref">Cohort Analysis <span>1</span></a></li>
      
-    	<li><a href="/tags.html#basics-ref">basics <span>1</span></a></li>
+    	<li><a href="/tags.html#Lead Quality-ref">Lead Quality <span>1</span></a></li>
      
-    	<li><a href="/tags.html#datascientist-ref">datascientist <span>2</span></a></li>
-     
-    	<li><a href="/tags.html#data-ref">data <span>11</span></a></li>
+    	<li><a href="/tags.html#Google Spreadsheet-ref">Google Spreadsheet <span>1</span></a></li>
     
   
 
@@ -124,13 +168,13 @@
 					<nav class="pagination">
 						<ul>
 							
-							<li class="prev"><a class="internal" rel="prev"  href="/sharding-in-mongodb" title="View Sharding in MongoDB">&laquo; Sharding in MongoDB</a></li>
+							<li class="prev"><a class="internal" rel="prev"  href="/Choosing-the-Right-Fonts" title="View Font Design for your Product">&laquo; Font Design for your Product</a></li>
 							
 							
 							<li class="pipe"> | </li>
 							
 							
-							<li class="next"><a class="internal" rel="next"  href="/introduction-to-decision-trees" title="View Introduction to Decision Trees">Introduction to Decision Trees &raquo;</a></li>
+							<li class="next"><a class="internal" rel="next"  href="/Optimizing-Marginal-Metrics-for-your-business" title="View Optimize Marginal thinking.">Optimize Marginal thinking. &raquo;</a></li>
 							
 					   <li>	
 	                                  <p class="gotop">
@@ -185,7 +229,7 @@
 		};
 	load('//platform.twitter.com/widgets.js', 'tweetjs');
 	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
-	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/4-typical-inductive-learning-problems" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/How-to-measure-lead-quality-using-google-spreadsheets-cohort-analysis" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
 	}(document, 'script'));
 </script>
 <script>

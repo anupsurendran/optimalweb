@@ -9,7 +9,7 @@ tags:
 
 *What is the number one complaint which comes from the Sales team ?*
 
-In my brief experience managing a Sales team, the key complaint which typically comes up is - "Leads are not good as they were before". Week after week this came up. Now quantifying that was not easy unless I ran a [cohort analysis](https://en.wikipedia.org/wiki/Cohort_analysis).  
+In my brief experience managing a Sales team, the key complaint which typically comes up is - "Leads are not good as they were before". Week after week this used to come up and it still comes up. Now quantifying that was not easy unless I ran a [cohort analysis](https://en.wikipedia.org/wiki/Cohort_analysis).  
 
 Here is the output of the cohort analysis I ran using Google Spreadsheets.
 
@@ -56,6 +56,6 @@ We also found out the total new revenue we got based on the conversion which is 
 These are the lessons learned :
 
 * That we could find out lead quality by revenue generated over a period of time. 
-* In the samplesheet lead quality has actually decreased.
+* In the sample sheet lead quality has actually decreased.
 * You don't need complicated models to measure lead quality (as you see a simple Google spreadsheet and formulas will help you get the results you need)
 

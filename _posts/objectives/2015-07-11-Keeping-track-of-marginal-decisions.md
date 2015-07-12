@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Marginal Thinking and Long term effects for your business.
+title: Marginal Thinking and Long term effects on your business.
 tags:
 - Marginal Thinking
 - Accumulated Costs

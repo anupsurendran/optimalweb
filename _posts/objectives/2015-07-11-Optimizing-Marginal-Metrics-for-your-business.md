@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Optimize Marginal thinking.
+title: Optimize Marginal thinking in your business.
 tags:
 - Marginal Thinking
 - Accumulated Costs
@@ -35,6 +35,6 @@ Once you have the areas where these "just this once" decisions are made, you can
 
 3.**Assess and make changes**
 
-Assess the damage caused if any. See if you or your team can fix it. Use a go forward approach and communicate the reason why these marginal decisions do not help the business long term and support the process or business unit owners to make changes which reduces overall debt. Decide what you stand for. And then stand for it all the time.
+Assess the damage caused if any. Typically you work on cleaning up areas which has impact to your revenue or customers. See if you or your team can fix it. In some cases you might need a crew from the outside. Use a go forward approach and communicate the reason why these marginal decisions do not help the business long term and support the process or business unit owners to make changes which reduces overall debt. Quoting Clayton again -"Decide what you stand for. And then stand for it all the time."
 
 

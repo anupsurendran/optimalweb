@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Optimize Marginal thinking in your business.
+title: Marginal Thinking and Long term effects for your business.
 tags:
 - Marginal Thinking
 - Accumulated Costs

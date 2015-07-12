@@ -23,19 +23,24 @@ The marginal cost of doing something "just this once" always seems to be negligi
 
 There are 3 things to ensure that Marginal thinking does not accumulate to large scale debt which hurts your business (or for that matter your personal life) :
 
-1.**Keep track of these "just this once" decisions** 
+1. **Keep track of these "just this once" decisions** 
 
 Use a Google spreadsheet or Evernote or your personal notebook for decisions you make which you consider to be a "just this once" type decision. Assign the area which it has affected. For example - not responding to a customer complaint on time because you thought somebody else would pick it up. The area that affects is "Customers".
 A font which is not correct on a page on your website affects "Marketing". 
 
 
-2.**See if there are repeated occurences of these decisions**
+2. **See if there are repeated occurences of these decisions**
 
 Once you have the areas where these "just this once" decisions are made, you can see which areas these decisions affect the most. You can look at the impact this area has on your business by looking at how it affects revenues or how it affects customer's perception of your services or products. I use a simple formulae which looks like this. 
->>Impact ($) * Occurences * Likelihood of reoccuring. 
+
+---------------------------------------------------
+*Impact ($) * Occurences * Likelihood of reoccuring*
+
+---------------------------------------------------
+
 The Impact ($) could be substituted for Impact (Negative Perception) depending on the type of decision which was made.
 
-3.**Assess and make changes**
+3. **Assess and make changes**
 
 Assess the damage caused if there was any. Typically you work on cleaning up areas which has impact to your revenue or customers. See if you or your team can fix it. In some cases you might need a crew from the outside. Use a go forward approach and communicate the reason why these marginal decisions do not help the business long term and support the process or business unit owners to make changes which reduces overall debt. Quoting Clayton again -"Decide what you stand for. And then stand for it all the time."
 

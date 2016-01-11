@@ -1,14 +1,17 @@
 
-/about/index.html
-/areas.html
+/areas
 /atom.xml
-/index.html
-/pages.html
-/posts.html
+/about/
+/
+/pages
+/posts
 /rss.xml
 /sitemap.txt
-/tags.html
+/tags
 
+/how-to-remove-google-inspect-element
+/10-reasons-why-website-performance-matters
+/How-to-create-simple-BI-dashboards-with-google-spreadsheets-and-python
 /Keeping-track-of-marginal-decisions
 /How-to-measure-lead-quality-using-google-spreadsheets-cohort-analysis
 /Choosing-the-Right-Fonts
@@ -40,14 +43,9 @@
 /what-is-a-join-operation
 /left-outer-join-example
 /excel-analysis-using-play-d3-js-and-mongodb-a
-/arms-visualization-from-google
-/arms-visualization-from-google
-/u-s-state-visualization-example-long-commute
 /u-s-state-visualization-example-long-commute
 /basics-what-are-the-different-data-types
+/i-o-u-questions-for-visualization
 /matrix-responses-process-of-design
-/i-o-u-questions-for-visualization
-/i-o-u-questions-for-visualization
 /zero-overhead-principle
-/fundamental-challenges-in-mobile-data-visualization
 /fundamental-challenges-in-mobile-data-visualization

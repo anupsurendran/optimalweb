@@ -2,13 +2,115 @@
 <rss version="2.0">
 <channel>
         <title>Optimal.io</title>
-        <description>Optimal.io - Anup Surendran</description>
+        <description>Optimal.io - Smitha K</description>
         <link></link>
         <link></link>
-        <lastBuildDate>2015-07-12T16:37:41-05:00</lastBuildDate>
-        <pubDate>2015-07-12T16:37:41-05:00</pubDate>
+        <lastBuildDate>2016-01-10T18:39:40-08:00</lastBuildDate>
+        <pubDate>2016-01-10T18:39:40-08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>How to disable inspect element in Chrome</title>
+                <description>&lt;p&gt;Here are the key shortcuts for accessing DevTools on both Max OS and Windows.&lt;/p&gt;
+
+&lt;p&gt;Source : &lt;a href=&quot;https://developers.google.com/web/tools/chrome-devtools/iterate/inspect-styles/shortcuts#accessing-devtools&quot;&gt;Google Dev Tools&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/chrome-inspect-keyboard-shortcuts.png&quot; alt=&quot;How to disable inspect element in Chrome - Keyboard shortcuts&quot; title=&quot;How to enable and disable inspect element&quot; /&gt;&lt;/p&gt;
+</description>
+                <link>/how-to-remove-google-inspect-element</link>
+                <guid>/how-to-remove-google-inspect-element</guid>
+                <pubDate>2016-01-04T00:00:00-08:00</pubDate>
+        </item>
+
+        <item>
+                <title>10 reasons why website performance matters</title>
+                <description>&lt;h3 id=&quot;section&quot;&gt;1&lt;/h3&gt;
+&lt;p&gt;The average online shopper expects your pages to load in two seconds or less, down from four seconds in 2006.
+Source : &lt;a href=&quot;http://www.gomez.com&quot;&gt;Gomez&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;2&lt;/h3&gt;
+&lt;p&gt;After three seconds, up to 40% of your shoppers will abandon your site.
+Source : &lt;a href=&quot;http://insights.wired.com/profiles/blogs/47-of-consumers-expect-a-web-page-to-load-in-2-seconds-or-less&quot;&gt;Wired&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;3&lt;/h3&gt;
+&lt;p&gt;Google includes &lt;a href=&quot;https://googlewebmastercentral.blogspot.com/2010/04/using-site-speed-in-web-search-ranking.html&quot;&gt;site speed&lt;/a&gt; in its search result ranking algorithm.&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;4&lt;/h3&gt;
+&lt;p&gt;A new standard has emerged for website page performance called the “performance poverty line”. If you have a page load time of more than 6 secs then you are below the “performance poverty line”&lt;/p&gt;
+
+&lt;h3 id=&quot;section-4&quot;&gt;5&lt;/h3&gt;
+&lt;p&gt;A one second improvement can have an impact to about 2% conversion based on data collected by large online retailers like Walmart.com and Amazon.com&lt;/p&gt;
+
+&lt;h3 id=&quot;section-5&quot;&gt;6&lt;/h3&gt;
+&lt;p&gt;3 billion dollars is lost annually because of cart abandonment due solely to slow website pages.
+Source : &lt;a href=&quot;http://www.fastcompany.com/1825005/how-one-second-could-cost-amazon-16-billion-sales&quot;&gt;FastCompany&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-6&quot;&gt;7&lt;/h3&gt;
+&lt;p&gt;Ad revenue for slow websites are 37% less than revenue for faster sites. Bing found out that a 4.3% decrease in the advertising revenues for 2 extra seconds in the displaying of search results&lt;/p&gt;
+
+&lt;h3 id=&quot;section-7&quot;&gt;8&lt;/h3&gt;
+&lt;p&gt;The fastest growing countries e.g. India have more than 40% of their users who are mobile only users.And they are very conscious of fast loading pages.&lt;/p&gt;
+
+&lt;h3 id=&quot;section-8&quot;&gt;9&lt;/h3&gt;
+&lt;p&gt;The first landing page beautification every site does has a 80% of chance of being slower than the previous versions&lt;/p&gt;
+
+&lt;h3 id=&quot;section-9&quot;&gt;10&lt;/h3&gt;
+&lt;p&gt;Image and Video optimization can possibly solve 20% of the worlds most popular websites page load times. Netflix saw a 43% drop in outbound traffic after enabling compression.
+Source : &lt;a href=&quot;http://conferences.oreilly.com/velocity/velocity2008/public/schedule/detail/3632&quot;&gt;O’Reilly&lt;/a&gt;&lt;/p&gt;
+
+</description>
+                <link>/10-reasons-why-website-performance-matters</link>
+                <guid>/10-reasons-why-website-performance-matters</guid>
+                <pubDate>2016-01-03T00:00:00-08:00</pubDate>
+        </item>
+
+        <item>
+                <title>How to create simple aggregated dashboards using google spreadsheets and python</title>
+                <description>&lt;p&gt;&lt;em&gt;Why pay for BI tools when the data you need is readily available in a spreadsheet ?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This post will essentially give you an idea on how I provide data to some of our key stakeholders using two pieces of technology - python and google spreadsheets.&lt;/p&gt;
+
+&lt;p&gt;The assumption here is that you have data in a database somewhere on which you want to do aggregations on.&lt;/p&gt;
+
+&lt;p&gt;My business dashboard example is primarily to give the Account management team an idea of which users are assigned to which licenses and whether they are still attached to some legacy licenses (old licenses). The team needs to periodically check this dashboard to ensure that there are no users who havent been upgraded to the latest licenses.&lt;/p&gt;
+
+&lt;p&gt;1.&lt;strong&gt;Use Python to connect to the database(s)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I use the &lt;a href=&quot;https://github.com/PyMySQL/PyMySQL&quot;&gt;pymysql library&lt;/a&gt;. This keeps the code really simple and you don’t have to worry about the versions of the python to use. On my Macbook pro, I use python 3.&lt;/p&gt;
+
+&lt;p&gt;In my example, I have to connect to two different databases because they represent two different segregated datasets.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/pymysql-connections.png&quot; alt=&quot;Connecting to two databases with pymysql&quot; title=&quot;Pymysql connections to different databases&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After that I import the necessary libraries and run the sql query in python.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/run-sql-query-python-mysqlconnector.png&quot; alt=&quot;Importing the spreadsheet and pymysql libraries&quot; title=&quot;Running mysql queries in python&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The mySQLConnector I have used here is a python class I have used to hide the connection details (which is shown in the previous image). The idea here is to show you how you can execute queries in python and explain the concept to you.&lt;/p&gt;
+
+&lt;p&gt;2.&lt;strong&gt;Use Google Spreadsheets to write the aggregated data&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;So we have already imported a class for Google Spreadsheet above.
+The class contains the following :&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/import-gspread-python.png&quot; alt=&quot;Importing the Google spreadsheet libraries&quot; title=&quot;Importing the google spreadsheet libraries&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As you see we have used the &lt;a href=&quot;https://github.com/burnash/gspread&quot;&gt;gspread libraries&lt;/a&gt; to help with writing to Google spreadsheets.The key thing when you use these libraries are that there is documentation about how to give access permissions to your python code so that it can write to google spreadsheets. I use &lt;a href=&quot;http://gspread.readthedocs.org/en/latest/oauth2.html&quot;&gt;OAuth2&lt;/a&gt; for access permissions.&lt;/p&gt;
+
+&lt;p&gt;3.&lt;strong&gt;Start writing the data to the Google Spreadsheet&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/sample-code-write-google-spreadsheet.png&quot; alt=&quot;Writing aggregated data to google spreadsheets&quot; title=&quot;Data from Database in Google Spreadsheet&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sample Aggregated Sheet&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/sample-aggregated-dashboard-googlespreadsheet.png&quot; alt=&quot;Business Dashboard in Spreadsheet&quot; title=&quot;Sample aggregated dashboard&quot; /&gt;&lt;/p&gt;
+
+</description>
+                <link>/How-to-create-simple-BI-dashboards-with-google-spreadsheets-and-python</link>
+                <guid>/How-to-create-simple-BI-dashboards-with-google-spreadsheets-and-python</guid>
+                <pubDate>2015-07-26T00:00:00-07:00</pubDate>
+        </item>
 
         <item>
                 <title>Marginal Thinking and Long term effects on your business.</title>
@@ -20,7 +122,7 @@
 
 &lt;p&gt;&lt;em&gt;Flip side of the coin&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;That is very good advice from one of the Founding Fathers of the United States. What he didn’t realize is how many entreprenuers took this advice to the extreme and have accumulated debt which in many cases should have been dealt with upfront. &lt;/p&gt;
+&lt;p&gt;That is very good advice from one of the Founding Fathers of the United States. What he didn’t realize is how many entreprenuers took this advice to the extreme and have accumulated debt which in many cases should have been dealt with upfront.&lt;/p&gt;
 
 &lt;p&gt;Quoting from &lt;a href=&quot;http://hbswk.hbs.edu/item/7007.html&quot;&gt;Clayton Christensen’s article on Harvard Business School’s website&lt;/a&gt;.&lt;/p&gt;
 
@@ -28,14 +130,14 @@
 
 &lt;p&gt;There are 3 things to ensure that Marginal thinking does not accumulate to large scale debt which hurts your business (or for that matter your personal life) :&lt;/p&gt;
 
-&lt;p&gt;1.&lt;strong&gt;Keep track of these “just this once” decisions&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;1.&lt;strong&gt;Keep track of these “just this once” decisions&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Use a Google spreadsheet or Evernote or your personal notebook for decisions you make which you consider to be a “just this once” type decision. Assign the area which it has affected. For example - not responding to a customer complaint on time because you thought somebody else would pick it up. The area that affects is “Customers”.
-A font which is not correct on a page on your website affects “Marketing”. &lt;/p&gt;
+A font which is not correct on a page on your website affects “Marketing”.&lt;/p&gt;
 
 &lt;p&gt;2.&lt;strong&gt;See if there are repeated occurences of these decisions&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Once you have the areas where these “just this once” decisions are made, you can see which areas these decisions affect the most. You can look at the impact this area has on your business by looking at how it affects revenues or how it affects customer’s perception of your services or products. I use a simple formulae which looks like this. &lt;/p&gt;
+&lt;p&gt;Once you have the areas where these “just this once” decisions are made, you can see which areas these decisions affect the most. You can look at the impact this area has on your business by looking at how it affects revenues or how it affects customer’s perception of your services or products. I use a simple formulae which looks like this.&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;&lt;em&gt;Impact ($) * Occurences * Likelihood of reoccuring&lt;/em&gt;&lt;/p&gt;
@@ -51,14 +153,14 @@ A font which is not correct on a page on your website affects “Marketing”. &
 </description>
                 <link>/Keeping-track-of-marginal-decisions</link>
                 <guid>/Keeping-track-of-marginal-decisions</guid>
-                <pubDate>2015-07-11T00:00:00-05:00</pubDate>
+                <pubDate>2015-07-11T00:00:00-07:00</pubDate>
         </item>
 
         <item>
                 <title>How to measure Lead Quality using Google Spreadsheet and Cohort Analysis.</title>
                 <description>&lt;p&gt;&lt;em&gt;What is the number one complaint which comes from the Sales team ?&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;In my brief experience managing a Sales team, the key complaint which typically comes up is - “Leads are not good as they were before”. Week after week this used to come up and it still comes up. Now quantifying that was not easy unless I ran a &lt;a href=&quot;https://en.wikipedia.org/wiki/Cohort_analysis&quot;&gt;cohort analysis&lt;/a&gt;.  &lt;/p&gt;
+&lt;p&gt;In my brief experience managing a Sales team, the key complaint which typically comes up is - “Leads are not good as they were before”. Week after week this used to come up and it still comes up. Now quantifying that was not easy unless I ran a &lt;a href=&quot;https://en.wikipedia.org/wiki/Cohort_analysis&quot;&gt;cohort analysis&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Here is the output of the cohort analysis I ran using Google Spreadsheets.&lt;/p&gt;
 
@@ -66,7 +168,7 @@ A font which is not correct on a page on your website affects “Marketing”. &
 
 &lt;p&gt;There are 5 broad steps to measuring lead quality using cohort analysis :&lt;/p&gt;
 
-&lt;p&gt;1.&lt;strong&gt;Get the data around when the user signed up and registered&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;1.&lt;strong&gt;Get the data around when the user signed up and registered&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;This should include all users who registered / signed up using your “Free Trial” or “30 Day Trial”. This ideally would contain the unique identifier for the user and the timestamp when they signed up on.&lt;/p&gt;
 
@@ -76,7 +178,7 @@ A font which is not correct on a page on your website affects “Marketing”. &
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/user-data-googlespreadsheet.png&quot; alt=&quot;User data when they converted to customers&quot; title=&quot;User conversion data in google spreadsheet&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;This is the timestamp around when the user converted into a customer (a paid user). This is essentially column D (ts) in the same sheet    &lt;/p&gt;
+&lt;p&gt;This is the timestamp around when the user converted into a customer (a paid user). This is essentially column D (ts) in the same sheet&lt;/p&gt;
 
 &lt;p&gt;3.&lt;strong&gt;The real cohort&lt;/strong&gt;&lt;/p&gt;
 
@@ -88,16 +190,16 @@ A font which is not correct on a page on your website affects “Marketing”. &
 
 &lt;p&gt;After you get this basic matrix, then the real magic is using the “SUMIF” within each of the cells to get the answer to “Get me the count of users who signed up this month and also became a customer”.  The formula looks like this in the google spreadhseet.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;=SUMIFS('Users Signup Data'!$H$2:$H$118,'Users Signup Data'!$F$2:$F$118,&quot;&amp;gt;&quot;&amp;amp;$A$3, &lt;/code&gt;
-&lt;code&gt;'Users Signup Data'!$F$2:$F$118,&quot;&amp;lt;&quot;&amp;amp;$A$4,'Users Signup Data'!$G$2:$G$118,&quot;&amp;gt;&quot;&amp;amp;C1, &lt;/code&gt;
-&lt;code&gt;'Users Signup Data'!$G$2:$G$118,&quot;&amp;lt;&quot;&amp;amp;D1)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=SUMIFS(&#39;Users Signup Data&#39;!$H$2:$H$118,&#39;Users Signup Data&#39;!$F$2:$F$118,&quot;&amp;gt;&quot;&amp;amp;$A$3, &lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&#39;Users Signup Data&#39;!$F$2:$F$118,&quot;&amp;lt;&quot;&amp;amp;$A$4,&#39;Users Signup Data&#39;!$G$2:$G$118,&quot;&amp;gt;&quot;&amp;amp;C1, &lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&#39;Users Signup Data&#39;!$G$2:$G$118,&quot;&amp;lt;&quot;&amp;amp;D1)&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;You can look at the individual columns for each of the month the google spreadsheet.&lt;/p&gt;
 
 &lt;p&gt;We also found out the total new revenue we got based on the conversion which is towards the end of the spreadsheet.&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;=SUMIFS('Users Signup Data'!$C$2:$C$118,&lt;/code&gt;
-&lt;code&gt;'Users Signup Data'!$F$2:$F$118,&quot;&amp;gt;&quot;&amp;amp;A3,'Users Signup Data'!$F$2:$F$118,&quot;&amp;lt;&quot;&amp;amp;A4)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=SUMIFS(&#39;Users Signup Data&#39;!$C$2:$C$118,&lt;/code&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;&#39;Users Signup Data&#39;!$F$2:$F$118,&quot;&amp;gt;&quot;&amp;amp;A3,&#39;Users Signup Data&#39;!$F$2:$F$118,&quot;&amp;lt;&quot;&amp;amp;A4)&lt;/code&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;what-are-the-key-things-we-learned-&quot;&gt;What are the key things we learned ?&lt;/h2&gt;
 &lt;hr /&gt;
@@ -105,7 +207,7 @@ A font which is not correct on a page on your website affects “Marketing”. &
 &lt;p&gt;These are the lessons learned :&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;That we could find out lead quality by revenue generated over a period of time. &lt;/li&gt;
+  &lt;li&gt;That we could find out lead quality by revenue generated over a period of time.&lt;/li&gt;
   &lt;li&gt;In the sample sheet lead quality has actually decreased.&lt;/li&gt;
   &lt;li&gt;You don’t need complicated models to measure lead quality (as you see a simple Google spreadsheet and formulas will help you get the results you need)&lt;/li&gt;
 &lt;/ul&gt;
@@ -113,7 +215,7 @@ A font which is not correct on a page on your website affects “Marketing”. &
 </description>
                 <link>/How-to-measure-lead-quality-using-google-spreadsheets-cohort-analysis</link>
                 <guid>/How-to-measure-lead-quality-using-google-spreadsheets-cohort-analysis</guid>
-                <pubDate>2015-06-23T00:00:00-05:00</pubDate>
+                <pubDate>2015-06-23T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -136,7 +238,7 @@ A font which is not correct on a page on your website affects “Marketing”. &
   &lt;li&gt;&lt;strong&gt;Purpose driven fonts&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The messages here is that you need find what purpose each font has withing your product / content. Quoting &lt;a href=&quot;http://www.sitepoint.com/author/jgeorge/&quot;&gt;Jame George&lt;/a&gt; - Some fonts have predefined purposes - for example “Stencil” . Stenciling is meant to be bold. Because of its rugged constructivist nature, it is usually used on something that has to do with buildings or structures. &lt;/p&gt;
+&lt;p&gt;The messages here is that you need find what purpose each font has withing your product / content. Quoting &lt;a href=&quot;http://www.sitepoint.com/author/jgeorge/&quot;&gt;Jame George&lt;/a&gt; - Some fonts have predefined purposes - for example “Stencil” . Stenciling is meant to be bold. Because of its rugged constructivist nature, it is usually used on something that has to do with buildings or structures.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/font-design-guideline-stencil.jpg&quot; alt=&quot;Purpose driven Fonts&quot; title=&quot;Stencil Font Purpose&quot; /&gt;&lt;/p&gt;
 
@@ -157,7 +259,7 @@ A font which is not correct on a page on your website affects “Marketing”. &
 </description>
                 <link>/Choosing-the-Right-Fonts</link>
                 <guid>/Choosing-the-Right-Fonts</guid>
-                <pubDate>2014-08-10T00:00:00-05:00</pubDate>
+                <pubDate>2014-08-10T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -170,7 +272,7 @@ A font which is not correct on a page on your website affects “Marketing”. &
 
 &lt;p&gt;Step 2.	&lt;strong&gt;Talk to at least 3 customers / potentials a week&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;It is really important to you be in touch with your customers almost on a daily basis. That might not be possible but aiming to talk to you at least three customers in a Vieck is feasible. You should aim for at least three customers / prospects per product line you manage or you’re responsible for. Get in front of prospects on a sales call. Get on to support calls saw you know what kind of issues your customers face and get frustrated with. &lt;/p&gt;
+&lt;p&gt;It is really important to you be in touch with your customers almost on a daily basis. That might not be possible but aiming to talk to you at least three customers in a Vieck is feasible. You should aim for at least three customers / prospects per product line you manage or you’re responsible for. Get in front of prospects on a sales call. Get on to support calls saw you know what kind of issues your customers face and get frustrated with.&lt;/p&gt;
 
 &lt;p&gt;Step 3. &lt;strong&gt;Let them come up with ideas&lt;/strong&gt;&lt;/p&gt;
 
@@ -182,27 +284,27 @@ A font which is not correct on a page on your website affects “Marketing”. &
 
 &lt;p&gt;Step 5. &lt;strong&gt;Manage expectations and communicate often&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;This is where most product companies or for that matter service companies fail. So you promised them that they get their new fancy report by let’s say X date. Then that never happens because you are trying to fight fires within the company. The simplest thing to do is send them an email and explain that there is a delay and that you looking into revised timelines. You can also communicate through your product. You can have a feature announcement section in an easily accessible place so people know that things have changed which are relevant to them. You could also give them sneak previews of your new features or even your next months roadmap. &lt;/p&gt;
+&lt;p&gt;This is where most product companies or for that matter service companies fail. So you promised them that they get their new fancy report by let’s say X date. Then that never happens because you are trying to fight fires within the company. The simplest thing to do is send them an email and explain that there is a delay and that you looking into revised timelines. You can also communicate through your product. You can have a feature announcement section in an easily accessible place so people know that things have changed which are relevant to them. You could also give them sneak previews of your new features or even your next months roadmap.&lt;/p&gt;
 
 </description>
                 <link>/5-Steps-for-Customer-Focus</link>
                 <guid>/5-Steps-for-Customer-Focus</guid>
-                <pubDate>2014-08-06T00:00:00-05:00</pubDate>
+                <pubDate>2014-08-06T00:00:00-07:00</pubDate>
         </item>
 
         <item>
                 <title>How we are building Alexa for the mobile industry.</title>
                 <description>&lt;p&gt;&lt;em&gt;Where is the test  Univeral Mobile Statistics Site ?&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;It’s a mobile world - everybody knows that. It’s been like this for almost a decade now. The funniest thing is that we still don’t have an &lt;a href=&quot;http://www.Alexa.com&quot;&gt;Alexa&lt;/a&gt; for the mobile industry. There is no publicly available source currently which I can take a look at to see where my / my company’s mobile application ranks amongst other apps of the sametype. There are challenges to get statistics from mobile applications - distribute processing, offline/online support, hybrid applications all lead to &lt;/p&gt;
+&lt;p&gt;It’s a mobile world - everybody knows that. It’s been like this for almost a decade now. The funniest thing is that we still don’t have an &lt;a href=&quot;http://www.Alexa.com&quot;&gt;Alexa&lt;/a&gt; for the mobile industry. There is no publicly available source currently which I can take a look at to see where my / my company’s mobile application ranks amongst other apps of the sametype. There are challenges to get statistics from mobile applications - distribute processing, offline/online support, hybrid applications all lead to&lt;/p&gt;
 
-&lt;p&gt;In my opinion there are three ways to do this.  &lt;/p&gt;
+&lt;p&gt;In my opinion there are three ways to do this.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Google could ask their Google Analytics mobile users to publish their mobile statistics publicly.&lt;/strong&gt; &lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;Google could ask their Google Analytics mobile users to publish their mobile statistics publicly.&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;I know that this is a completely different model which will conflict with their existing service model where the end customers will not agree to because its their ‘private’ metrics. &lt;/p&gt;
+    &lt;p&gt;I know that this is a completely different model which will conflict with their existing service model where the end customers will not agree to because its their ‘private’ metrics.&lt;/p&gt;
 
     &lt;p&gt;Even if Google goes down with this model, there is a challenge of proving that the metrics is correct. What I mean by that is that the Analytics code ( UA-*** ) could have been used in one of the company’s existing mobile application which was already popular and therefore prevents an easy verifiable method to prove the identity of the mobile application.&lt;/p&gt;
   &lt;/li&gt;
@@ -214,7 +316,7 @@ A font which is not correct on a page on your website affects “Marketing”. &
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;A 3rd Party runs device level statistics and collects it centrally.&lt;/strong&gt;&lt;/p&gt;
 
-    &lt;p&gt;A mobile phone is a personal device.  Running a process there to collect information requires permissions from users and has an intrinsic resistance built up. But if you think through this problem, and if use inferential statistics, you could identify a sample which represents your population you want to get data from. You could incentivize them to get the data you need (ie. sending only app related data back to your servers).   &lt;/p&gt;
+    &lt;p&gt;A mobile phone is a personal device.  Running a process there to collect information requires permissions from users and has an intrinsic resistance built up. But if you think through this problem, and if use inferential statistics, you could identify a sample which represents your population you want to get data from. You could incentivize them to get the data you need (ie. sending only app related data back to your servers).&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -229,13 +331,14 @@ A font which is not correct on a page on your website affects “Marketing”. &
 
 &lt;p&gt;Here are some of the key statistics of the panel we used to collect mobile app usage metrics :&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;- 990 people participated 
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- 990 people participated 
 - Incentives like Amazon Gift cards were given for participation 
 - Females : 57%
 - 56% had an undergraduate degree
 - 14% had an income over $150K
 - Data collected over 3 months
 &lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
 &lt;p&gt;We collected ‘passively’ the data around the top mobile apps running on this panel. Here is the chart produced for the most frequently running apps.&lt;/p&gt;
 
@@ -243,16 +346,16 @@ A font which is not correct on a page on your website affects “Marketing”. &
 
 &lt;h3 id=&quot;top-moble-apps-running-in-our-panel&quot;&gt;Top Moble Apps running in our panel&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/TopRunningMobileApps-Alexa.png&quot; alt=&quot;Top Mobile Apps Running in the Panel&quot; title=&quot;Like Alexa's statistics : Top Mobile Apps Running&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/TopRunningMobileApps-Alexa.png&quot; alt=&quot;Top Mobile Apps Running in the Panel&quot; title=&quot;Like Alexa&#39;s statistics : Top Mobile Apps Running&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;frequency-counts-of-the-mobile-applications-screenshot-from-r-console&quot;&gt;Frequency counts of the mobile applications (screenshot from R console)&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/top-running-mobile-apps-r-results.png&quot; alt=&quot;Frequency count of Moble Apps running &quot; title=&quot;Like Alexa's statistics : Count of Mobile Apps Running&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/top-running-mobile-apps-r-results.png&quot; alt=&quot;Frequency count of Moble Apps running &quot; title=&quot;Like Alexa&#39;s statistics : Count of Mobile Apps Running&quot; /&gt;&lt;/p&gt;
 
 </description>
                 <link>/Building-Alexa-For-Mobile-Statistics</link>
                 <guid>/Building-Alexa-For-Mobile-Statistics</guid>
-                <pubDate>2014-06-22T00:00:00-05:00</pubDate>
+                <pubDate>2014-06-22T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -294,11 +397,12 @@ Causal question are usually asked to find out what happens to one variable when 
     &lt;p&gt;&lt;strong&gt;Mechanistic&lt;/strong&gt;
 Mechanistic type of modelling requires the most amount of effort. It requires you to understand the exact changes in variables that lead to changes in other variables for individual objects.&lt;/p&gt;
 
-    &lt;pre&gt;&lt;code&gt; &quot;All other things being equal, mechanistic models are more powerful since they tell you 
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &quot;All other things being equal, mechanistic models are more powerful since they tell you 
  about the underlying processes driving patterns. They are more likely to work 
  correctly when extrapolating beyond the observed conditions.&quot;
  -Bolker (2008) Ecological models and Data in R, p7.
 &lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
 
     &lt;ul&gt;
       &lt;li&gt;Incredibly hard to infer, except in simple situations&lt;/li&gt;
@@ -313,7 +417,7 @@ Mechanistic type of modelling requires the most amount of effort. It requires yo
 </description>
                 <link>/Different-type-of-questions-in-data-science</link>
                 <guid>/Different-type-of-questions-in-data-science</guid>
-                <pubDate>2014-05-18T00:00:00-05:00</pubDate>
+                <pubDate>2014-05-18T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -322,36 +426,35 @@ Mechanistic type of modelling requires the most amount of effort. It requires yo
 
 &lt;p&gt;In D3, you have the option of importing XML. SVG is and XML based vector image format.&lt;/p&gt;
 
-&lt;table class=&quot;highlighttable&quot;&gt;&lt;tr&gt;&lt;td class=&quot;linenos&quot;&gt;&lt;div class=&quot;linenodiv&quot;&gt;&lt;pre&gt;&lt;code class=&quot;javascript&quot;&gt; 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
 10
-11&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/assets/infographics/&amp;quot;&lt;/span&gt; 
+11&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nx&quot;&gt;d3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/assets/infographics/&quot;&lt;/span&gt; 
        &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;svgSource&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-&lt;span class=&quot;s2&quot;&gt;&amp;quot;image/svg+xml&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+&lt;span class=&quot;s2&quot;&gt;&quot;image/svg+xml&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
 &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;			
  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;importedNode&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;importNode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;documentElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 	
-	&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;#svg-image&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;g#&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;documentElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
-			&lt;span class=&quot;nx&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;x&amp;quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;200px&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-			&lt;span class=&quot;nx&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;y&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;200px&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
- &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+	&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;#svg-image&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;g#&#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;documentElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;clone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
+			&lt;span class=&quot;nx&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;x&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;200px&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+			&lt;span class=&quot;nx&quot;&gt;container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;attr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;y&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;200px&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+ &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;If you are interested in generating dynamic Infographics automatically - try Secondprism’s 
 &lt;a href=&quot;http://app.secondprism.com/assets/product/infographic_for_dashboard.html&quot;&gt;Infographic generator here&lt;/a&gt;.&lt;/p&gt;
 </description>
                 <link>/how-to-add-a-svg-image-in-d3</link>
                 <guid>/how-to-add-a-svg-image-in-d3</guid>
-                <pubDate>2014-01-02T00:00:00-06:00</pubDate>
+                <pubDate>2014-01-02T00:00:00-08:00</pubDate>
         </item>
 
         <item>
@@ -386,11 +489,11 @@ Mechanistic type of modelling requires the most amount of effort. It requires yo
 
 &lt;p&gt;And once you have this setup you can generate the report which looks like this for my example:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/crosstab-report-generated-from-spss.png&quot; alt=&quot;SPSS Crosstab report&quot; title=&quot;SPSS Crosstab report&quot; /&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/crosstab-report-generated-from-spss.png&quot; alt=&quot;SPSS Crosstab report&quot; title=&quot;SPSS Crosstab report&quot; /&gt;&lt;/p&gt;
 </description>
                 <link>/how-to-create-crosstabs-in-spss-in-3-simple-steps</link>
                 <guid>/how-to-create-crosstabs-in-spss-in-3-simple-steps</guid>
-                <pubDate>2013-10-09T00:00:00-05:00</pubDate>
+                <pubDate>2013-10-09T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -402,7 +505,7 @@ Dichotomous variables are the simplest and intuitively clear type of random vari
 </description>
                 <link>/What-is-a-dichotomous-variable</link>
                 <guid>/What-is-a-dichotomous-variable</guid>
-                <pubDate>2013-10-09T00:00:00-05:00</pubDate>
+                <pubDate>2013-10-09T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -423,7 +526,7 @@ The prior distribution and likelihood can be easily combined to form the posteri
 </description>
                 <link>/introduction-to-bayesian-analysis</link>
                 <guid>/introduction-to-bayesian-analysis</guid>
-                <pubDate>2013-09-21T00:00:00-05:00</pubDate>
+                <pubDate>2013-09-21T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -435,14 +538,13 @@ In order to make a guess, your’re allowed to ask binary questions about the pa
 
 &lt;p&gt;For example:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;ruby&quot;&gt;&lt;span class=&quot;ss&quot;&gt;Machine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Are&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;going&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vacation?&lt;/span&gt;
-&lt;span class=&quot;ss&quot;&gt;You&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Yes&lt;/span&gt;
-&lt;span class=&quot;ss&quot;&gt;Machine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flight&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;early&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;morning?&lt;/span&gt;
-&lt;span class=&quot;ss&quot;&gt;You&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Yes&lt;/span&gt;
-&lt;span class=&quot;ss&quot;&gt;Machine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flight&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;more&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;than&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hours?&lt;/span&gt;
-&lt;span class=&quot;ss&quot;&gt;You&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Yes&lt;/span&gt;
-&lt;span class=&quot;ss&quot;&gt;Machine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;passenger&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;will&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;enjoy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Machine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Are&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;going&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vacation?&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;You&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Yes&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Machine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flight&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;early&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;morning?&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;You&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Yes&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Machine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flight&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;more&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;than&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hours?&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;You&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Yes&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Machine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;passenger&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;will&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;enjoy&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flight&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;The goal in learning is to ﬁgure out what questions to ask, in whatorder to ask them, and what answer to predict once you have askedenough questions.
 The decision tree is so-called because we can write our set of questions and guesses in a tree format. Usually the answers would decide how to navigate the tree.
@@ -452,7 +554,7 @@ Diagramatically, the questions are usually written in the internal nodes (rectan
 </description>
                 <link>/introduction-to-decision-trees</link>
                 <guid>/introduction-to-decision-trees</guid>
-                <pubDate>2013-09-18T00:00:00-05:00</pubDate>
+                <pubDate>2013-09-18T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -468,7 +570,7 @@ Diagramatically, the questions are usually written in the internal nodes (rectan
 </description>
                 <link>/4-typical-inductive-learning-problems</link>
                 <guid>/4-typical-inductive-learning-problems</guid>
-                <pubDate>2013-09-16T00:00:00-05:00</pubDate>
+                <pubDate>2013-09-16T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -486,7 +588,7 @@ When you do sharding, you would need to know which shard to get the data from. �
 </description>
                 <link>/sharding-in-mongodb</link>
                 <guid>/sharding-in-mongodb</guid>
-                <pubDate>2013-09-13T00:00:00-05:00</pubDate>
+                <pubDate>2013-09-13T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -504,38 +606,36 @@ Schemas
 </description>
                 <link>/nosql-vs-sql-comparison-summary</link>
                 <guid>/nosql-vs-sql-comparison-summary</guid>
-                <pubDate>2013-09-09T00:00:00-05:00</pubDate>
+                <pubDate>2013-09-09T00:00:00-07:00</pubDate>
         </item>
 
         <item>
                 <title>How to find the schema of a collection in MongoDB</title>
                 <description>&lt;p&gt;The last two commands are equivalent to the SQL command below&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;Describe&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;Table&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;k&quot;&gt;Describe&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;Table&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Open a mongo shell and run the following commands :&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;MongoDB shell version: 2.4.5
-&amp;gt; show dbs
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;MongoDB shell version: 2.4.5
+&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;show dbs
 &lt;span class=&quot;nb&quot;&gt;local &lt;/span&gt;0.078125GB
 todo 0.453125GB
-&amp;gt; use todo
+&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;use todo
 switched to db todo
-&amp;gt; show collections
+&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;show collections
 system.indexes
 tasks
-&amp;gt; var &lt;span class=&quot;nv&quot;&gt;schematodo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; db.tasks.findOne&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;;
-&amp;gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;var key in schematodo&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; print &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;key&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; ; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;var schematodo &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; db.tasks.findOne&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;;
+&lt;span class=&quot;gp&quot;&gt;&amp;gt; &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;var key &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;schematodo&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt; print &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;key&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; ; &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 _id
 label
-content
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+content&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
                 <link>/how-to-find-the-schema-of-a-collection-in-mongodb</link>
                 <guid>/how-to-find-the-schema-of-a-collection-in-mongodb</guid>
-                <pubDate>2013-09-09T00:00:00-05:00</pubDate>
+                <pubDate>2013-09-09T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -552,7 +652,7 @@ content
 </description>
                 <link>/4-use-cases-of-using-mongodb-and-hadoop-together</link>
                 <guid>/4-use-cases-of-using-mongodb-and-hadoop-together</guid>
-                <pubDate>2013-09-08T00:00:00-05:00</pubDate>
+                <pubDate>2013-09-08T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -563,7 +663,7 @@ content
 </description>
                 <link>/big-data-applications-2013</link>
                 <guid>/big-data-applications-2013</guid>
-                <pubDate>2013-09-07T00:00:00-05:00</pubDate>
+                <pubDate>2013-09-07T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -578,7 +678,7 @@ content
 </description>
                 <link>/hadoop-data-types</link>
                 <guid>/hadoop-data-types</guid>
-                <pubDate>2013-09-06T00:00:00-05:00</pubDate>
+                <pubDate>2013-09-06T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -598,7 +698,7 @@ content
 </description>
                 <link>/3-differences-between-a-mapreduce-combiner-and-reducer</link>
                 <guid>/3-differences-between-a-mapreduce-combiner-and-reducer</guid>
-                <pubDate>2013-09-05T00:00:00-05:00</pubDate>
+                <pubDate>2013-09-05T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -607,7 +707,7 @@ content
 </description>
                 <link>/4-types-of-data-scientist-related-roles</link>
                 <guid>/4-types-of-data-scientist-related-roles</guid>
-                <pubDate>2013-09-04T00:00:00-05:00</pubDate>
+                <pubDate>2013-09-04T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -622,7 +722,7 @@ ccc&lt;/p&gt;
 </description>
                 <link>/what-is-binning</link>
                 <guid>/what-is-binning</guid>
-                <pubDate>2013-09-03T00:00:00-05:00</pubDate>
+                <pubDate>2013-09-03T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -637,7 +737,7 @@ Here is an example of a Geo Distance Facet which is included as part of an Elast
 </description>
                 <link>/what-is-an-elasticsearch-facet</link>
                 <guid>/what-is-an-elasticsearch-facet</guid>
-                <pubDate>2013-09-03T00:00:00-05:00</pubDate>
+                <pubDate>2013-09-03T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -653,7 +753,7 @@ Some typical log files which an enterprise deals with are :
 </description>
                 <link>/machine-data-and-big-data</link>
                 <guid>/machine-data-and-big-data</guid>
-                <pubDate>2013-08-29T00:00:00-05:00</pubDate>
+                <pubDate>2013-08-29T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -664,7 +764,7 @@ Simplifies queries using a SQL syntax call HQL.&lt;/p&gt;
 </description>
                 <link>/what-is-hive</link>
                 <guid>/what-is-hive</guid>
-                <pubDate>2013-08-28T00:00:00-05:00</pubDate>
+                <pubDate>2013-08-28T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -679,7 +779,7 @@ Cloudera’s Impala, a real-time ad-hoc query interface to Hadoop introduced la
 </description>
                 <link>/sql-for-big-data-key-initiatives</link>
                 <guid>/sql-for-big-data-key-initiatives</guid>
-                <pubDate>2013-08-28T00:00:00-05:00</pubDate>
+                <pubDate>2013-08-28T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -692,7 +792,7 @@ The Task Tracker daemon is a slave to the Job Tracker, the Data Node daemon a sl
 </description>
                 <link>/key-hadoop-components</link>
                 <guid>/key-hadoop-components</guid>
-                <pubDate>2013-08-28T00:00:00-05:00</pubDate>
+                <pubDate>2013-08-28T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -702,7 +802,7 @@ The latter approach of purchasing symmetric multi-processing (SMP) machines with
 </description>
                 <link>/scale-out-and-not-up</link>
                 <guid>/scale-out-and-not-up</guid>
-                <pubDate>2013-08-27T00:00:00-05:00</pubDate>
+                <pubDate>2013-08-27T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -717,7 +817,7 @@ Student1 TIMES student2 GIVING temp
 </description>
                 <link>/what-is-a-theta-join</link>
                 <guid>/what-is-a-theta-join</guid>
-                <pubDate>2013-08-26T00:00:00-05:00</pubDate>
+                <pubDate>2013-08-26T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -732,7 +832,7 @@ Here is a wikipedia article on the Join Operation .&lt;/p&gt;
 </description>
                 <link>/what-is-a-join-operation</link>
                 <guid>/what-is-a-join-operation</guid>
-                <pubDate>2013-08-26T00:00:00-05:00</pubDate>
+                <pubDate>2013-08-26T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -745,13 +845,13 @@ Here is a wikipedia article on the Join Operation .&lt;/p&gt;
 select p.productname, 
 case when sum(amount) is null then 0 else sum(s.amount) end as totalsales 
 from product p left outer join sale s on p.productcode = s.productcode 
-where s.productcode is null or s.productcode is not null group by p.productname &lt;/p&gt;
+where s.productcode is null or s.productcode is not null group by p.productname&lt;/p&gt;
 
 &lt;p&gt;One of the best examples I have seen for Outer and Inner joins is at CodingHorror&lt;/p&gt;
 </description>
                 <link>/left-outer-join-example</link>
                 <guid>/left-outer-join-example</guid>
-                <pubDate>2013-08-26T00:00:00-05:00</pubDate>
+                <pubDate>2013-08-26T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -761,34 +861,7 @@ When doing multivariate analysis, the big picture is usually where you want to s
 </description>
                 <link>/excel-analysis-using-play-d3-js-and-mongodb-a</link>
                 <guid>/excel-analysis-using-play-d3-js-and-mongodb-a</guid>
-                <pubDate>2013-07-17T00:00:00-05:00</pubDate>
-        </item>
-
-        <item>
-                <title>Arms Visualization from Google</title>
-                <description>&lt;p&gt;test Arms Visualization from Google&lt;/p&gt;
-</description>
-                <link>/arms-visualization-from-google</link>
-                <guid>/arms-visualization-from-google</guid>
-                <pubDate>2013-04-01T00:00:00-05:00</pubDate>
-        </item>
-
-        <item>
-                <title>Arms Visualization From Google</title>
-                <description>&lt;p&gt;test Arms Visualization from Google&lt;/p&gt;</description>
-                <link>/arms-visualization-from-google</link>
-                <guid>/arms-visualization-from-google</guid>
-                <pubDate>2013-04-01T00:00:00-05:00</pubDate>
-        </item>
-
-        <item>
-                <title>U S State Visualization Example Long Commute</title>
-                <description>&lt;p&gt;Here is another example of using D3 to generate stats driven visualization.  I wanted to read the data from Google spreadsheets but then the lazy me thought that it will be easier just to add the traffic ratio attribute within the “us-state-centroids.json” file. Here is how it looks now :&lt;/p&gt;
-
-&lt;p&gt;The large circles indicates large commutes. As you see most of the data is not even complete and since this just a work in progress, I wil make another revision to it hopefully shortly. The full html file to the U.S visualization can be found here.&lt;/p&gt;</description>
-                <link>/u-s-state-visualization-example-long-commute</link>
-                <guid>/u-s-state-visualization-example-long-commute</guid>
-                <pubDate>2013-03-24T00:00:00-05:00</pubDate>
+                <pubDate>2013-07-17T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -803,7 +876,7 @@ The full html file to the U.S visualization can be found here.&lt;/p&gt;
 </description>
                 <link>/u-s-state-visualization-example-long-commute</link>
                 <guid>/u-s-state-visualization-example-long-commute</guid>
-                <pubDate>2013-03-24T00:00:00-05:00</pubDate>
+                <pubDate>2013-03-24T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -827,7 +900,34 @@ These are usually described as numbers and can be sub-categorized as: &lt;/p&gt
 </description>
                 <link>/basics-what-are-the-different-data-types</link>
                 <guid>/basics-what-are-the-different-data-types</guid>
-                <pubDate>2013-03-18T00:00:00-05:00</pubDate>
+                <pubDate>2013-03-18T00:00:00-07:00</pubDate>
+        </item>
+
+        <item>
+                <title>I.O.U - questions for visualization</title>
+                <description>&lt;p&gt;I am a firm believer that the questions you ask will drive the right kind of visualization ( I just found out that the word is mainly spelt visualisation i.e with an s instead of z in almost all of Europe). 
+Other than the fact that the data has to be Relevant (duh?) to the question asked, here are three simple questions I ask to help with coming up with options for visualization.  I summarize it as the I.O.U principle.
+(I)nteresting
+What is really interesting about the data for the audience?.
+Is there a way to show this interesting piece of information? .
+Can I make this data more interesting?.
+Is there a way I can design the visualization elements to make it more interesting?.  
+Is the context for the data interesting?.
+(O)utside
+What context can I give from the outside that is relevant to the audience? 
+What are the big trends or happenings outside the data which is currently not visualized?
+What factors from the outside is influencing your decision and what have you introduced into this visualization ?
+Are there relevant processes or people outside this which we need to consider to complete this visualization ?
+(U) as in (U)ser
+What are your important key measurements ?
+Does the design make sense to you ?
+How can we make this simpler for you to use and to understand ?
+How do you like to present this ?
+How do you like to share this ?&lt;/p&gt;
+</description>
+                <link>/i-o-u-questions-for-visualization</link>
+                <guid>/i-o-u-questions-for-visualization</guid>
+                <pubDate>2013-03-17T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -864,42 +964,7 @@ Now, trying answering the questions we had at the beginning of the post, Easy to
 </description>
                 <link>/matrix-responses-process-of-design</link>
                 <guid>/matrix-responses-process-of-design</guid>
-                <pubDate>2013-03-17T00:00:00-05:00</pubDate>
-        </item>
-
-        <item>
-                <title>I O U Questions For Visualization</title>
-                <description>&lt;p&gt;I am a firm believer that the questions you ask will drive the right kind of visualization ( I just found out that the word is mainly spelt visualisation i.e with an s instead of z in almost all of Europe).  Other than the fact that the data has to be Relevant (duh?) to the question asked, here are three simple questions I ask to help with coming up with options for visualization.  I summarize it as the I.O.U principle. (I)nteresting What is really interesting about the data for the audience?. Is there a way to show this interesting piece of information? . Can I make this data more interesting?. Is there a way I can design the visualization elements to make it more interesting?.   Is the context for the data interesting?. (O)utside What context can I give from the outside that is relevant to the audience?  What are the big trends or happenings outside the data which is currently not visualized? What factors from the outside is influencing your decision and what have you introduced into this visualization ? Are there relevant processes or people outside this which we need to consider to complete this visualization ? (U) as in (U)ser What are your important key measurements ? Does the design make sense to you ? How can we make this simpler for you to use and to understand ? How do you like to present this ? How do you like to share this ?&lt;/p&gt;</description>
-                <link>/i-o-u-questions-for-visualization</link>
-                <guid>/i-o-u-questions-for-visualization</guid>
-                <pubDate>2013-03-17T00:00:00-05:00</pubDate>
-        </item>
-
-        <item>
-                <title>I.O.U - questions for visualization</title>
-                <description>&lt;p&gt;I am a firm believer that the questions you ask will drive the right kind of visualization ( I just found out that the word is mainly spelt visualisation i.e with an s instead of z in almost all of Europe). 
-Other than the fact that the data has to be Relevant (duh?) to the question asked, here are three simple questions I ask to help with coming up with options for visualization.  I summarize it as the I.O.U principle.
-(I)nteresting
-What is really interesting about the data for the audience?.
-Is there a way to show this interesting piece of information? .
-Can I make this data more interesting?.
-Is there a way I can design the visualization elements to make it more interesting?.  
-Is the context for the data interesting?.
-(O)utside
-What context can I give from the outside that is relevant to the audience? 
-What are the big trends or happenings outside the data which is currently not visualized?
-What factors from the outside is influencing your decision and what have you introduced into this visualization ?
-Are there relevant processes or people outside this which we need to consider to complete this visualization ?
-(U) as in (U)ser
-What are your important key measurements ?
-Does the design make sense to you ?
-How can we make this simpler for you to use and to understand ?
-How do you like to present this ?
-How do you like to share this ?&lt;/p&gt;
-</description>
-                <link>/i-o-u-questions-for-visualization</link>
-                <guid>/i-o-u-questions-for-visualization</guid>
-                <pubDate>2013-03-17T00:00:00-05:00</pubDate>
+                <pubDate>2013-03-17T00:00:00-07:00</pubDate>
         </item>
 
         <item>
@@ -920,27 +985,7 @@ The key lessons from him are :&lt;/p&gt;
 </description>
                 <link>/zero-overhead-principle</link>
                 <guid>/zero-overhead-principle</guid>
-                <pubDate>2013-03-01T00:00:00-06:00</pubDate>
-        </item>
-
-        <item>
-                <title>Fundamental Challenges In Mobile Data Visualization</title>
-                <description>&lt;h2 id='1_location_location_location'&gt;1. Location. Location. Location.&lt;/h2&gt;
-
-&lt;p&gt;We are not talking about ordinary real estate here. Mobile realestate is scarce. Finding the right medium on minimal real estate and designing visual components to tell the story is essentially the hardest part of this endeavour.&lt;/p&gt;
-
-&lt;h2 id='2_aligning_the_message'&gt;2. Aligning the message&lt;/h2&gt;
-
-&lt;p&gt;Data is fine. Essentially Data visualization is 70% Data and 30% Visualization.  So you would think that if we have the data you would have probably solved 70% of the problem.  In some cases its true and I would agree. I have worked for medium to large enterprises and I see that the larger the enterprise gets, proportionally it gets more challenging to get quality data.  But what is most important is the messaging which goes along with the visualization needs to be aligned.&lt;/p&gt;
-
-&lt;p&gt;The picture above is a little fuzzy (but thanks to Stephen Few), the concept is clear - the message on the top is not really aligned with the graph below.  Now this could be because some additional information was missed or there was not enough space to explain this in a presentation (kind of goes back to point #1). But you would ask how is this problem really related to Mobile Data Visualization ?  The answer is - drawing on mobile devices ( iPads, iPhones, Androids and Blackberry OS’s) is challenging from a technical standpoint and what almost all vendors do is to start with the basic chart types which might not help in getting the message across.&lt;/p&gt;
-
-&lt;h2 id='3_just_enough_data'&gt;3. Just enough data&lt;/h2&gt;
-
-&lt;p&gt;Going mobile presents a challenge for visualaization in terms of securing data at all stages of the analytic process, primarily for data transmission and device access. For this reason many vendors are opting for a mobile product that provides functionality via server-side architecture with the use of a Web infrastructure like HTML5. Information then can be stored, managed, and provided using a mobile BI server, where the risk of exposing sensitive data is lower than storing it on a mobile device that could be stolen.  The other aspect of this is performance of the visualization tool itself.  If there are datapoints which are not relevant to the visualization medium then there is no point sending that data to the device itself. &lt;/p&gt;</description>
-                <link>/fundamental-challenges-in-mobile-data-visualization</link>
-                <guid>/fundamental-challenges-in-mobile-data-visualization</guid>
-                <pubDate>2012-10-12T00:00:00-05:00</pubDate>
+                <pubDate>2013-03-01T00:00:00-08:00</pubDate>
         </item>
 
         <item>
@@ -959,7 +1004,7 @@ The other aspect of this is performance of the visualization tool itself.  If t
 </description>
                 <link>/fundamental-challenges-in-mobile-data-visualization</link>
                 <guid>/fundamental-challenges-in-mobile-data-visualization</guid>
-                <pubDate>2012-10-12T00:00:00-05:00</pubDate>
+                <pubDate>2012-10-12T00:00:00-07:00</pubDate>
         </item>
 
 

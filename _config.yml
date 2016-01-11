@@ -9,11 +9,10 @@ highlighter: rouge
 # so be sure to set them if your theme uses them.
 #
 title : Optimal.io
-tagline: a quest for the optimal experience
+tagline: a quest for the optimal web experience
 author :
-  name : Anup Surendran
-  github : anup.surendran@gmail.com
-  twitter : anupsurendran
+  name : Smitha K
+  twitter : sitereport
 
 
 # The production_url is only used when full-domain names are needed

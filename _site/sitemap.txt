@@ -9,6 +9,7 @@
 /sitemap.txt
 /tags
 
+/How-to-use-a-web-performance-budget
 /how-to-remove-google-inspect-element
 /10-reasons-why-website-performance-matters
 /How-to-create-simple-BI-dashboards-with-google-spreadsheets-and-python

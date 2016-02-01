@@ -31,3 +31,5 @@ _id
 label
 content
 {% endhighlight %}
+
+Also, on a side note, It is interesting to also note that we at [optimal.io](http://www.optimal.io/ "web performance benchmark") did a [web performance test for NOSQL vendors](http://optimal.io/benchmarks/saas/nosql-web-peformance-report-Q1-2016.html "web performance for NOSQL vendors") and MongoDB's site came #7. 

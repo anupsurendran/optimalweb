@@ -4,7 +4,7 @@
  <title>Optimal.io</title>
  <link href="/" rel="self"/>
  <link href=""/>
- <updated>2016-01-21T08:35:39-08:00</updated>
+ <updated>2016-01-31T16:30:03-08:00</updated>
  <id></id>
  <author>
    <name>Smitha K</name>
@@ -671,6 +671,7 @@ _id
 label
 content&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;p&gt;Also, on a side note, It is interesting to also note that we at &lt;a href=&quot;http://www.optimal.io/&quot; title=&quot;web performance benchmark&quot;&gt;optimal.io&lt;/a&gt; did a &lt;a href=&quot;http://optimal.io/benchmarks/saas/nosql-web-peformance-report-Q1-2016.html&quot; title=&quot;web performance for NOSQL vendors&quot;&gt;web performance test for NOSQL vendors&lt;/a&gt; and MongoDB’s site came #7.&lt;/p&gt;
 </content>
  </entry>
  

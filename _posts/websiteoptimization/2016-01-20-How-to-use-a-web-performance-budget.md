@@ -30,4 +30,6 @@ These are typically easy to explain (unlike the Speed Index). Good examples of t
 
 The Milestone Timings (unlike the Speed Index) will not give a full picture of the user experience. For example, a page might load under 3 seconds,  but might not display anything until the 2.8 second mark. The fact that the page loaded fast doesnot improve the user experience, because it still took 2.8 seconds for the user to see something in the browser.
 
+## Great tool to visualize a web performance budget
 
+Brad Frost has come up with an interesting visual way of looking at a [performance budget](http://bradfrost.com/blog/post/performance-budget-builder/ "visual web performance budget manager")

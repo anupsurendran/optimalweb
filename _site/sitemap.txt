@@ -9,6 +9,7 @@
 /sitemap.txt
 /tags
 
+/Tips-to-help-with-google-font-loading-speed
 /How-to-use-a-web-performance-budget
 /how-to-remove-google-inspect-element
 /10-reasons-why-website-performance-matters

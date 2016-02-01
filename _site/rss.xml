@@ -5,10 +5,62 @@
         <description>Optimal.io - Smitha K</description>
         <link></link>
         <link></link>
-        <lastBuildDate>2016-01-31T16:30:03-08:00</lastBuildDate>
-        <pubDate>2016-01-31T16:30:03-08:00</pubDate>
+        <lastBuildDate>2016-01-31T18:09:49-08:00</lastBuildDate>
+        <pubDate>2016-01-31T18:09:49-08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Tips to help with google font load times</title>
+                <description>&lt;p&gt;&lt;a href=&quot;http://techdissected.com/web-and-computing/design/top-5-google-font-combinations/&quot; title=&quot;Web font optimizations&quot;&gt;Web font combinations&lt;/a&gt; help making websites better to read and the trick is to minimize the number of fonts to help with readability and performance.&lt;/p&gt;
+
+&lt;h3 id=&quot;describe-the-text&quot;&gt;1. Describe the TEXT&lt;/h3&gt;
+&lt;p&gt;As part of the design process, you might know in advance which particular web font you might use. This often occurs when you’re using afont as part of a logo or heading in your landing page or key blog post. The good news is that Google Fonts allows you to specify the TEXT by passing that as an argument that in the request URL for that font.&lt;/p&gt;
+
+&lt;p&gt;For example :&lt;/p&gt;
+
+&lt;p&gt;http://fonts.googleapis.com/css?family=Tangerine&amp;amp;text=WONDERFUL&lt;/p&gt;
+
+&lt;p&gt;By specifying the exact text you require, Google Fonts will provide you with a font file that could potentially be 90% smaller thatn the original full font file.&lt;/p&gt;
+
+&lt;h3 id=&quot;selecting-a-subset&quot;&gt;2. Selecting a SUBSET&lt;/h3&gt;
+&lt;p&gt;You typically do not need the entire unicode character set of a font file and most importantly you only need the right language subset.
+Just like the previous example, you simply need to use the subset=value in your font request URL.&lt;/p&gt;
+
+&lt;p&gt;http://fonts.googleapis.com/css?family=Tangerine&amp;amp;subset=latin&amp;amp;text=WONDERFUL&lt;/p&gt;
+
+&lt;h3 id=&quot;request-multiple-fonts&quot;&gt;3. Request MULTIPLE FONTS&lt;/h3&gt;
+&lt;p&gt;Instead of making a separate request for each font file, rather consider chaining the request together. To request multiple font families, separate the names with a pipe character (|).&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;http://fonts.googleapis.com/css?family=Tangerine&lt;/td&gt;
+      &lt;td&gt;Roboto+Condensed&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;As you will see below, if you request this url you will see two font-families which are returned with the woff2 format.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&#39;Roboto Condensed&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&#39;Roboto Condensed&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&#39;RobotoCondensed-Regular&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(http://fonts.gstatic.com/l/font?kit=Zd2E9abXLFGSr9G3YK2MsCINO4zn7r0lJQg85Qda7tf3rGVtsTkPsbDajuO5ueQw&amp;amp;skey=9986ecffddb755ab)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&#39;woff2&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;@font-face&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&#39;Tangerine&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;400&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;local&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&#39;Tangerine&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;sx&quot;&gt;url(http://fonts.gstatic.com/l/font?kit=v56dPl2Fzoxg16-bomU6ahif_Qw83hClh7SwGJ4318s&amp;amp;skey=7b78e1b6f929768b)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&#39;woff2&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+                <link>/Tips-to-help-with-google-font-loading-speed</link>
+                <guid>/Tips-to-help-with-google-font-loading-speed</guid>
+                <pubDate>2016-01-31T00:00:00-08:00</pubDate>
+        </item>
 
         <item>
                 <title>How to use a web performance budget</title>
@@ -38,6 +90,9 @@
 
 &lt;p&gt;The Milestone Timings (unlike the Speed Index) will not give a full picture of the user experience. For example, a page might load under 3 seconds,  but might not display anything until the 2.8 second mark. The fact that the page loaded fast doesnot improve the user experience, because it still took 2.8 seconds for the user to see something in the browser.&lt;/p&gt;
 
+&lt;h2 id=&quot;great-tool-to-visualize-a-web-performance-budget&quot;&gt;Great tool to visualize a web performance budget&lt;/h2&gt;
+
+&lt;p&gt;Brad Frost has come up with an interesting visual way of looking at a &lt;a href=&quot;http://bradfrost.com/blog/post/performance-budget-builder/&quot; title=&quot;visual web performance budget manager&quot;&gt;performance budget&lt;/a&gt;&lt;/p&gt;
 </description>
                 <link>/How-to-use-a-web-performance-budget</link>
                 <guid>/How-to-use-a-web-performance-budget</guid>

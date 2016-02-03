@@ -9,6 +9,7 @@
 /sitemap.txt
 /tags
 
+/How-to-get-smooth-scrolling-applications
 /Tips-to-help-with-google-font-loading-speed
 /How-to-use-a-web-performance-budget
 /how-to-remove-google-inspect-element

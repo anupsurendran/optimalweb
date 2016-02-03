@@ -4,13 +4,53 @@
  <title>Optimal.io</title>
  <link href="/" rel="self"/>
  <link href=""/>
- <updated>2016-01-31T18:09:49-08:00</updated>
+ <updated>2016-02-02T16:44:16-08:00</updated>
  <id></id>
  <author>
    <name>Smitha K</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>How to create a smooth scrolling experience for your web application</title>
+   <link href="/How-to-get-smooth-scrolling-applications"/>
+   <updated>2016-02-02T00:00:00-08:00</updated>
+   <id>/How-to-get-smooth-scrolling-applications</id>
+   <content type="html">&lt;h3 id=&quot;smooth-scrolling-affects-user-experience&quot;&gt;Smooth Scrolling affects User Experience&lt;/h3&gt;
+
+&lt;p&gt;The browser needs to draw your website on the screen when a user starts scrolling. This affects the user’s perception about how fast the website loads. A jerky scroll gives a clunky experience which we need to minimize.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-happens-when-you-scroll-&quot;&gt;What happens when you scroll ?&lt;/h3&gt;
+
+&lt;p&gt;Everything the browser does starts with the DOM Tree. The DOM tree contains all the elements of the page. The browser looks at the DOM with the styles and it gorups together elements and take a picture of them. These groupings are called layers. Each layer needs to be painted and rasterized. All this is finally composited together to the image that you then finally see jigsaw puzzled together on the screen. The good news is that the layers help the browser focus in on painting specific texture when something in that layer gets changed.&lt;/p&gt;
+
+&lt;h3 id=&quot;take-advantage-of-the-gpu-for-animation&quot;&gt;Take advantage of the GPU for animation&lt;/h3&gt;
+&lt;p&gt;If you have animations, Canvas benefits from the immediate mode. It allows drawing commands to be sent directly to the GPU. There is a great article from flipboard around mobile web &lt;a href=&quot;&amp;quot;http://engineering.flipboard.com/2015/02/mobile-web/&amp;quot; mobile web 60fps rendering&quot;&gt;performance optimization with the Canvas tag&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;avoid-expensive-selectors-and-styles&quot;&gt;Avoid Expensive Selectors and Styles&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_selectors&quot;&gt;descendant selector is very expensive&lt;/a&gt;, as there needs to be a check for a match with every descendant element. On a page which is decently complex, this can result in triggering a lot of descendant selector searches. The key thing to understand here is that the relationship is not really a parent and child relationship for these CSS elements.&lt;/p&gt;
+
+&lt;p&gt;Universal selectors like *, [disabled], [type=“text”], etc. are very expensive for the browser to match, as every element in the DOM must be checked.&lt;/p&gt;
+
+&lt;p&gt;CSS properties which should ideally be used sparingly :&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nt&quot;&gt;border-radius&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;box-shadow&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;transform&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;filter&lt;/span&gt;
+&lt;span class=&quot;nd&quot;&gt;:nth-child&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;fixed&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;debouncing-events-related-to-scroll&quot;&gt;Debouncing events related to Scroll&lt;/h3&gt;
+
+&lt;p&gt;It is important to decouple Scroll events and other events on your site. Whether this is animation, or other business functions. There is a great article on how to &lt;a href=&quot;http://www.html5rocks.com/en/tutorials/speed/animations/&quot;&gt;debounce scroll events&lt;/a&gt; from Paul Lewis.&lt;/p&gt;
+
+&lt;p&gt;Typically, as you see in the article, the solution is that you store the last scroll valiue in a variable whenever you receive a scroll event. You then read this value when you make updates in the requestAnimationFrame method.&lt;/p&gt;
+
+&lt;p&gt;The key things to make sure are to keep the Paint times below the 16ms threshold and to limit repaints and reflows. This is specifically important when you do animations.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Tips to help with google font load times</title>

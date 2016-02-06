@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>How to create a smooth scrolling experience for your web application</title>
+	<meta name="author" content="Smitha K">
+	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="How to create a smooth scrolling experience for your web application" type="application/atom+xml">
+	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-body-inner">
+				<p class="logo"><a href="http://www.optimal.io"><img src="/assets/img/optimal.logo.png"></a></p>
+				<nav class="nav-global">
+					<ul>
+						
+						<li class="category"><a href="http://www.optimal.io">Home</a></li>
+						<li class="archive"><a href="/posts.html">posts</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+						
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">How to create a smooth scrolling experience for your web application</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<h3 id="smooth-scrolling-affects-user-experience">Smooth Scrolling affects User Experience</h3>
+
+<p>The browser needs to draw your website on the screen when a user starts scrolling. This affects the user’s perception about how fast the website loads. A jerky scroll gives a clunky experience which we need to minimize.</p>
+
+<h3 id="what-happens-when-you-scroll-">What happens when you scroll ?</h3>
+
+<p>Everything the browser does starts with the DOM Tree. The DOM tree contains all the elements of the page. The browser looks at the DOM with the styles and it gorups together elements and take a picture of them. These groupings are called layers. Each layer needs to be painted and rasterized. All this is finally composited together to the image that you then finally see jigsaw puzzled together on the screen. The good news is that the layers help the browser focus in on painting specific texture when something in that layer gets changed.</p>
+
+<h3 id="take-advantage-of-the-gpu-for-animation">Take advantage of the GPU for animation</h3>
+<p>If you have animations, Canvas benefits from the immediate mode. It allows drawing commands to be sent directly to the GPU. There is a great article from flipboard around mobile web <a href="&quot;http://engineering.flipboard.com/2015/02/mobile-web/&quot; mobile web 60fps rendering">performance optimization with the Canvas tag</a></p>
+
+<h3 id="avoid-expensive-selectors-and-styles">Avoid Expensive Selectors and Styles</h3>
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_selectors">descendant selector is very expensive</a>, as there needs to be a check for a match with every descendant element. On a page which is decently complex, this can result in triggering a lot of descendant selector searches. The key thing to understand here is that the relationship is not really a parent and child relationship for these CSS elements.</p>
+
+<p>Universal selectors like *, [disabled], [type=“text”], etc. are very expensive for the browser to match, as every element in the DOM must be checked.</p>
+
+<p>CSS properties which should ideally be used sparingly :</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">border-radius</span>
+<span class="nt">box-shadow</span>
+<span class="nt">transform</span>
+<span class="nt">filter</span>
+<span class="nd">:nth-child</span>
+<span class="nt">position</span><span class="o">:</span> <span class="nt">fixed</span><span class="o">;</span></code></pre></figure>
+
+<h3 id="debouncing-events-related-to-scroll">Debouncing events related to Scroll</h3>
+
+<p>It is important to decouple Scroll events and other events on your site. Whether this is animation, or other business functions. There is a great article on how to <a href="http://www.html5rocks.com/en/tutorials/speed/animations/">debounce scroll events</a> from Paul Lewis.</p>
+
+<p>Typically, as you see in the article, the solution is that you store the last scroll valiue in a variable whenever you receive a scroll event. You then read this value when you make updates in the requestAnimationFrame method.</p>
+
+<p>The key things to make sure are to keep the Paint times below the 16ms threshold and to limit repaints and reflows. This is specifically important when you do animations.</p>
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2016-02-02T00:00:00-08:00" datetime="2016-02-02T00:00:00-08:00" pubdate>
+							<span class="month"><abbr>February</abbr></span>
+							<span class="day">02</span>
+							<span class="year">2016</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">Category : &nbsp;&nbsp;</li>
+						
+							
+							
+
+
+  
+    
+  
+
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">Tags : &nbsp;&nbsp; </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#website-ref">website <span>4</span></a></li>
+     
+    	<li><a href="/tags.html#performance-ref">performance <span>4</span></a></li>
+     
+    	<li><a href="/tags.html#smooth scrolling-ref">smooth scrolling <span>1</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="sitereport" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/sitereport" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					
+					
+				</div><!-- misc-content -->
+				
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/Tips-to-help-with-google-font-loading-speed/" title="View Tips to help with google font load times">&laquo; Tips to help with google font load times</a></li>
+							
+							
+							
+					   <li>	
+	                                  <p class="gotop">
+                                                <a href="#page">Back to Top</a>
+                                        </p>
+                                           </li>
+                                               </ul>			
+   	                             </nav>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+						A site about <a href="http://www.optimal.io">optimizing the web for speed, seo and security</a> to help online businesses.
+
+					<!--	
+						<li class="contact"><address><span class="author fn n">Smitha K</span> - <span class="fn email"></span></address></li>
+						<li class="github"><a href="http://github.com//" rel="me">github.com/</a></li>
+						<li class="twitter"><a href="http://twitter.com/sitereport/" rel="me">twitter.com/sitereport</a></li>
+					
+						<li class="rss"><a href="http://feeds.feedburner.com/">Subscribe to RSS Feed</a></li>
+					</ul>
+					-->
+				</div><!-- misc -->
+				<p class="licence">
+					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/How-to-get-smooth-scrolling-applications/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+  
+</body>
+</html>
+

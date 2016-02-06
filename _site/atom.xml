@@ -4,7 +4,7 @@
  <title>Optimal.io</title>
  <link href="/" rel="self"/>
  <link href=""/>
- <updated>2016-02-06T10:28:36-08:00</updated>
+ <updated>2016-02-06T10:37:10-08:00</updated>
  <id></id>
  <author>
    <name>Smitha K</name>
@@ -14,7 +14,7 @@
  
  <entry>
    <title>How to create a smooth scrolling experience for your web application</title>
-   <link href="/How-to-get-smooth-scrolling-applications"/>
+   <link href="/How-to-get-smooth-scrolling-applications/"/>
    <updated>2016-02-02T00:00:00-08:00</updated>
    <id>/How-to-get-smooth-scrolling-applications</id>
    <content type="html">&lt;h3 id=&quot;smooth-scrolling-affects-user-experience&quot;&gt;Smooth Scrolling affects User Experience&lt;/h3&gt;
@@ -54,7 +54,7 @@
  
  <entry>
    <title>Tips to help with google font load times</title>
-   <link href="/Tips-to-help-with-google-font-loading-speed"/>
+   <link href="/Tips-to-help-with-google-font-loading-speed/"/>
    <updated>2016-01-31T00:00:00-08:00</updated>
    <id>/Tips-to-help-with-google-font-loading-speed</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://techdissected.com/web-and-computing/design/top-5-google-font-combinations/&quot; title=&quot;Web font optimizations&quot;&gt;Web font combinations&lt;/a&gt; help making websites better to read and the trick is to minimize the number of fonts to help with readability and performance.&lt;/p&gt;
@@ -106,7 +106,7 @@ Just like the previous example, you simply need to use the subset=value in your 
  
  <entry>
    <title>How to use a web performance budget</title>
-   <link href="/How-to-use-a-web-performance-budget"/>
+   <link href="/How-to-use-a-web-performance-budget/"/>
    <updated>2016-01-20T00:00:00-08:00</updated>
    <id>/How-to-use-a-web-performance-budget</id>
    <content type="html">&lt;p&gt;Before starting on how to use a performance budget, let’s try to understand what it is and the  purpose of a budget.&lt;/p&gt;
@@ -143,7 +143,7 @@ Just like the previous example, you simply need to use the subset=value in your 
  
  <entry>
    <title>How to disable inspect element in Chrome</title>
-   <link href="/how-to-remove-google-inspect-element"/>
+   <link href="/how-to-remove-google-inspect-element/"/>
    <updated>2016-01-04T00:00:00-08:00</updated>
    <id>/how-to-remove-google-inspect-element</id>
    <content type="html">&lt;p&gt;Here are the key shortcuts for accessing DevTools on both Max OS and Windows.&lt;/p&gt;
@@ -156,7 +156,7 @@ Just like the previous example, you simply need to use the subset=value in your 
  
  <entry>
    <title>10 reasons why website performance matters</title>
-   <link href="/10-reasons-why-website-performance-matters"/>
+   <link href="/10-reasons-why-website-performance-matters/"/>
    <updated>2016-01-03T00:00:00-08:00</updated>
    <id>/10-reasons-why-website-performance-matters</id>
    <content type="html">&lt;h3 id=&quot;section&quot;&gt;1&lt;/h3&gt;
@@ -198,7 +198,7 @@ Source : &lt;a href=&quot;http://conferences.oreilly.com/velocity/velocity2008/p
  
  <entry>
    <title>How to create simple aggregated dashboards using google spreadsheets and python</title>
-   <link href="/How-to-create-simple-BI-dashboards-with-google-spreadsheets-and-python"/>
+   <link href="/How-to-create-simple-BI-dashboards-with-google-spreadsheets-and-python/"/>
    <updated>2015-07-26T00:00:00-07:00</updated>
    <id>/How-to-create-simple-BI-dashboards-with-google-spreadsheets-and-python</id>
    <content type="html">&lt;p&gt;&lt;em&gt;Why pay for BI tools when the data you need is readily available in a spreadsheet ?&lt;/em&gt;&lt;/p&gt;
@@ -245,7 +245,7 @@ The class contains the following :&lt;/p&gt;
  
  <entry>
    <title>Marginal Thinking and Long term effects on your business.</title>
-   <link href="/Keeping-track-of-marginal-decisions"/>
+   <link href="/Keeping-track-of-marginal-decisions/"/>
    <updated>2015-07-11T00:00:00-07:00</updated>
    <id>/Keeping-track-of-marginal-decisions</id>
    <content type="html">&lt;p&gt;&lt;em&gt;What is Marginal Thinking ?&lt;/em&gt;&lt;/p&gt;
@@ -289,7 +289,7 @@ A font which is not correct on a page on your website affects “Marketing”.&l
  
  <entry>
    <title>How to measure Lead Quality using Google Spreadsheet and Cohort Analysis.</title>
-   <link href="/How-to-measure-lead-quality-using-google-spreadsheets-cohort-analysis"/>
+   <link href="/How-to-measure-lead-quality-using-google-spreadsheets-cohort-analysis/"/>
    <updated>2015-06-23T00:00:00-07:00</updated>
    <id>/How-to-measure-lead-quality-using-google-spreadsheets-cohort-analysis</id>
    <content type="html">&lt;p&gt;&lt;em&gt;What is the number one complaint which comes from the Sales team ?&lt;/em&gt;&lt;/p&gt;
@@ -351,7 +351,7 @@ A font which is not correct on a page on your website affects “Marketing”.&l
  
  <entry>
    <title>Font Design for your Product</title>
-   <link href="/Choosing-the-Right-Fonts"/>
+   <link href="/Choosing-the-Right-Fonts/"/>
    <updated>2014-08-10T00:00:00-07:00</updated>
    <id>/Choosing-the-Right-Fonts</id>
    <content type="html">&lt;p&gt;&lt;em&gt;Fonts bring attention to your message&lt;/em&gt;&lt;/p&gt;
@@ -395,7 +395,7 @@ A font which is not correct on a page on your website affects “Marketing”.&l
  
  <entry>
    <title>Customer Focus in 5 steps.</title>
-   <link href="/5-Steps-for-Customer-Focus"/>
+   <link href="/5-Steps-for-Customer-Focus/"/>
    <updated>2014-08-06T00:00:00-07:00</updated>
    <id>/5-Steps-for-Customer-Focus</id>
    <content type="html">&lt;p&gt;&lt;em&gt;A great experience happens when you understand your Customers at a very deep level&lt;/em&gt;&lt;/p&gt;
@@ -425,7 +425,7 @@ A font which is not correct on a page on your website affects “Marketing”.&l
  
  <entry>
    <title>How we are building Alexa for the mobile industry.</title>
-   <link href="/Building-Alexa-For-Mobile-Statistics"/>
+   <link href="/Building-Alexa-For-Mobile-Statistics/"/>
    <updated>2014-06-22T00:00:00-07:00</updated>
    <id>/Building-Alexa-For-Mobile-Statistics</id>
    <content type="html">&lt;p&gt;&lt;em&gt;Where is the test  Univeral Mobile Statistics Site ?&lt;/em&gt;&lt;/p&gt;
@@ -491,7 +491,7 @@ A font which is not correct on a page on your website affects “Marketing”.&l
  
  <entry>
    <title>What are the different type of questions a Data Scientist would ask ?</title>
-   <link href="/Different-type-of-questions-in-data-science"/>
+   <link href="/Different-type-of-questions-in-data-science/"/>
    <updated>2014-05-18T00:00:00-07:00</updated>
    <id>/Different-type-of-questions-in-data-science</id>
    <content type="html">&lt;p&gt;These are the different classifications of questions a Data Scientist can ask :&lt;/p&gt;
@@ -553,7 +553,7 @@ Mechanistic type of modelling requires the most amount of effort. It requires yo
  
  <entry>
    <title>How to add a SVG image in D3</title>
-   <link href="/how-to-add-a-svg-image-in-d3"/>
+   <link href="/how-to-add-a-svg-image-in-d3/"/>
    <updated>2014-01-02T00:00:00-08:00</updated>
    <id>/how-to-add-a-svg-image-in-d3</id>
    <content type="html">&lt;p&gt;First of all - Happy 2014 to all of you!.&lt;/p&gt;
@@ -590,7 +590,7 @@ Mechanistic type of modelling requires the most amount of effort. It requires yo
  
  <entry>
    <title>3 simple steps to create cross-tabs in SPSS ?</title>
-   <link href="/how-to-create-crosstabs-in-spss-in-3-simple-steps"/>
+   <link href="/how-to-create-crosstabs-in-spss-in-3-simple-steps/"/>
    <updated>2013-10-09T00:00:00-07:00</updated>
    <id>/how-to-create-crosstabs-in-spss-in-3-simple-steps</id>
    <content type="html">&lt;h3 id=&quot;step-1---get-the-spss-file-and-understand-which-variables-you-will-be-using-for-your-crosstabs&quot;&gt;Step 1 - Get the SPSS file and understand which variables you will be using for your crosstabs.&lt;/h3&gt;
@@ -629,7 +629,7 @@ Mechanistic type of modelling requires the most amount of effort. It requires yo
  
  <entry>
    <title>What is a Dichotomous Variable?</title>
-   <link href="/What-is-a-dichotomous-variable"/>
+   <link href="/What-is-a-dichotomous-variable/"/>
    <updated>2013-10-09T00:00:00-07:00</updated>
    <id>/What-is-a-dichotomous-variable</id>
    <content type="html">&lt;p&gt;A very complicated name for a very simple thing. It is also called Dichotomous outcome variable or just Dichotomous outcome. It  means “having only two possible values”, e.g. “yes/no”, “male/female”, “head/tail”, “age &amp;gt; 35 / age &amp;lt;= 35” etc. From a data capture standpoint, these are usually captured on surveys as radio buttons.&lt;/p&gt;
@@ -641,7 +641,7 @@ Dichotomous variables are the simplest and intuitively clear type of random vari
  
  <entry>
    <title>Introduction to Bayesian analysis</title>
-   <link href="/introduction-to-bayesian-analysis"/>
+   <link href="/introduction-to-bayesian-analysis/"/>
    <updated>2013-09-21T00:00:00-07:00</updated>
    <id>/introduction-to-bayesian-analysis</id>
    <content type="html">&lt;p&gt;The key ingredients to a Bayesian analysis are the likelihood function, which reﬂects information about the parameters contained in the data, and the prior distribution, which quantiﬁes what is known about the parameters before observing data.
@@ -662,7 +662,7 @@ The prior distribution and likelihood can be easily combined to form the posteri
  
  <entry>
    <title>Introduction to Decision Trees</title>
-   <link href="/introduction-to-decision-trees"/>
+   <link href="/introduction-to-decision-trees/"/>
    <updated>2013-09-18T00:00:00-07:00</updated>
    <id>/introduction-to-decision-trees</id>
    <content type="html">&lt;p&gt;A decision tree is a classic and natural model of learning. It can be applied to many machine learning problems. The best way to introduce this would be with an example using binary classiﬁcation.&lt;/p&gt;
@@ -690,7 +690,7 @@ Diagramatically, the questions are usually written in the internal nodes (rectan
  
  <entry>
    <title>4 Typical inductive learning problems</title>
-   <link href="/4-typical-inductive-learning-problems"/>
+   <link href="/4-typical-inductive-learning-problems/"/>
    <updated>2013-09-16T00:00:00-07:00</updated>
    <id>/4-typical-inductive-learning-problems</id>
    <content type="html">&lt;ol&gt;
@@ -706,7 +706,7 @@ Diagramatically, the questions are usually written in the internal nodes (rectan
  
  <entry>
    <title>Sharding in MongoDB</title>
-   <link href="/sharding-in-mongodb"/>
+   <link href="/sharding-in-mongodb/"/>
    <updated>2013-09-13T00:00:00-07:00</updated>
    <id>/sharding-in-mongodb</id>
    <content type="html">&lt;p&gt;Sharding, can also be called horizontal scaling. The scaling approach divides the data set and distributes the data over multiple servers. Each of this server can be called a shard. Each shard is an independent database, and collectively, the shards make up a single logical database. &lt;/p&gt;
@@ -724,7 +724,7 @@ When you do sharding, you would need to know which shard to get the data from. �
  
  <entry>
    <title>NoSQL vs SQL Comparison Summary</title>
-   <link href="/nosql-vs-sql-comparison-summary"/>
+   <link href="/nosql-vs-sql-comparison-summary/"/>
    <updated>2013-09-09T00:00:00-07:00</updated>
    <id>/nosql-vs-sql-comparison-summary</id>
    <content type="html">&lt;h2 id=&quot;types&quot;&gt;Types&lt;/h2&gt;
@@ -742,7 +742,7 @@ Schemas
  
  <entry>
    <title>How to find the schema of a collection in MongoDB</title>
-   <link href="/how-to-find-the-schema-of-a-collection-in-mongodb"/>
+   <link href="/how-to-find-the-schema-of-a-collection-in-mongodb/"/>
    <updated>2013-09-09T00:00:00-07:00</updated>
    <id>/how-to-find-the-schema-of-a-collection-in-mongodb</id>
    <content type="html">&lt;p&gt;The last two commands are equivalent to the SQL command below&lt;/p&gt;
@@ -772,7 +772,7 @@ content&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>4 use cases of using MongoDB and Hadoop together</title>
-   <link href="/4-use-cases-of-using-mongodb-and-hadoop-together"/>
+   <link href="/4-use-cases-of-using-mongodb-and-hadoop-together/"/>
    <updated>2013-09-08T00:00:00-07:00</updated>
    <id>/4-use-cases-of-using-mongodb-and-hadoop-together</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/img/hadoop-batch-aggregation.png&quot; alt=&quot;Hadoop Data Warehouse&quot; title=&quot;Hadoop Batch Aggregation&quot; /&gt;&lt;/p&gt;
@@ -789,7 +789,7 @@ content&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>Big Data Applications - 2013</title>
-   <link href="/big-data-applications-2013"/>
+   <link href="/big-data-applications-2013/"/>
    <updated>2013-09-07T00:00:00-07:00</updated>
    <id>/big-data-applications-2013</id>
    <content type="html">&lt;h2 id=&quot;here-are-the-companies-in-the-big-data-application-stack&quot;&gt;Here are the companies in the Big Data application stack&lt;/h2&gt;
@@ -800,7 +800,7 @@ content&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>Hadoop Data Types</title>
-   <link href="/hadoop-data-types"/>
+   <link href="/hadoop-data-types/"/>
    <updated>2013-09-06T00:00:00-07:00</updated>
    <id>/hadoop-data-types</id>
    <content type="html">&lt;p&gt;Here is a high level overview of Writable and InputFormat Data types which are used in Hadoop&lt;/p&gt;
@@ -815,7 +815,7 @@ content&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>3 Differences between a MapReduce Combiner and Reducer ?</title>
-   <link href="/3-differences-between-a-mapreduce-combiner-and-reducer"/>
+   <link href="/3-differences-between-a-mapreduce-combiner-and-reducer/"/>
    <updated>2013-09-05T00:00:00-07:00</updated>
    <id>/3-differences-between-a-mapreduce-combiner-and-reducer</id>
    <content type="html">&lt;p&gt;Think of a Combiner as a function of your map output. This you can primarily use for decreasing the amount of data needed to be processed by Reducers. In some cases, because of the nature of the algorithm you implement, this function can be the same as the Reducer. But in some other cases this function can of course be different.&lt;/p&gt;
@@ -835,7 +835,7 @@ content&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>4 Types of Data Scientist related Roles</title>
-   <link href="/4-types-of-data-scientist-related-roles"/>
+   <link href="/4-types-of-data-scientist-related-roles/"/>
    <updated>2013-09-04T00:00:00-07:00</updated>
    <id>/4-types-of-data-scientist-related-roles</id>
    <content type="html">&lt;p&gt;&lt;img src=&quot;/assets/img/Types-of-data-scientists.png&quot; alt=&quot;4 Types of Data Scientists&quot; title=&quot;Types of Data Scientists&quot; /&gt;&lt;/p&gt;
@@ -844,7 +844,7 @@ content&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
  
  <entry>
    <title>What is Binning?</title>
-   <link href="/what-is-binning"/>
+   <link href="/what-is-binning/"/>
    <updated>2013-09-03T00:00:00-07:00</updated>
    <id>/what-is-binning</id>
    <content type="html">&lt;p&gt;Binning is a way to group a number of more or less continuous values into a smaller number of “bins”. For example, if you have data about a group of people, you might want to arrange their ages into a smaller number of age intervals. 
@@ -859,7 +859,7 @@ ccc&lt;/p&gt;
  
  <entry>
    <title>What is an ElasticSearch Facet ?</title>
-   <link href="/what-is-an-elasticsearch-facet"/>
+   <link href="/what-is-an-elasticsearch-facet/"/>
    <updated>2013-09-03T00:00:00-07:00</updated>
    <id>/what-is-an-elasticsearch-facet</id>
    <content type="html">&lt;p&gt;LinkedIn uses facets to refine their search query.
@@ -874,7 +874,7 @@ Here is an example of a Geo Distance Facet which is included as part of an Elast
  
  <entry>
    <title>Machine Data and Big Data</title>
-   <link href="/machine-data-and-big-data"/>
+   <link href="/machine-data-and-big-data/"/>
    <updated>2013-08-29T00:00:00-07:00</updated>
    <id>/machine-data-and-big-data</id>
    <content type="html">&lt;p&gt;Business applications, Sensors in Factories and Large equipment and their supporting systems are a rich source of data. Every technical component in a functioning system produces logging information.  Business application logs are detailed logs and can contain every transaction the customer or user has executed on that application. It doesn’t matter if the transaction was successful or whether it failed - there are insights you can get from Your Log files.
@@ -890,7 +890,7 @@ Some typical log files which an enterprise deals with are :
  
  <entry>
    <title>What is Hive ?</title>
-   <link href="/what-is-hive"/>
+   <link href="/what-is-hive/"/>
    <updated>2013-08-28T00:00:00-07:00</updated>
    <id>/what-is-hive</id>
    <content type="html">&lt;p&gt;It is a Data Warehouse system layer built on Hadoop.
@@ -901,7 +901,7 @@ Simplifies queries using a SQL syntax call HQL.&lt;/p&gt;
  
  <entry>
    <title>SQL for Big Data - Key Initiatives</title>
-   <link href="/sql-for-big-data-key-initiatives"/>
+   <link href="/sql-for-big-data-key-initiatives/"/>
    <updated>2013-08-28T00:00:00-07:00</updated>
    <id>/sql-for-big-data-key-initiatives</id>
    <content type="html">&lt;p&gt;These are some SQL-for-Big Data initiatives which are getting some press:
@@ -916,7 +916,7 @@ Cloudera’s Impala, a real-time ad-hoc query interface to Hadoop introduced la
  
  <entry>
    <title>Key Hadoop Components </title>
-   <link href="/key-hadoop-components"/>
+   <link href="/key-hadoop-components/"/>
    <updated>2013-08-28T00:00:00-07:00</updated>
    <id>/key-hadoop-components</id>
    <content type="html">&lt;p&gt;The three major categories of components in a Hadoop deployment are Client machines, Masters nodes, and Slave nodes.  
@@ -929,7 +929,7 @@ The Task Tracker daemon is a slave to the Job Tracker, the Data Node daemon a sl
  
  <entry>
    <title>Scale 'out and not 'up'</title>
-   <link href="/scale-out-and-not-up"/>
+   <link href="/scale-out-and-not-up/"/>
    <updated>2013-08-27T00:00:00-07:00</updated>
    <id>/scale-out-and-not-up</id>
    <content type="html">&lt;p&gt;Scale “out”, not “up”. For data-intensive workloads, a large number of commodity low-end servers (i.e., the scaling “out” approach) is preferred over a small number of high-end servers (i.e., the scaling “up” approach). 
@@ -939,7 +939,7 @@ The latter approach of purchasing symmetric multi-processing (SMP) machines with
  
  <entry>
    <title>What is a Theta Join ?</title>
-   <link href="/what-is-a-theta-join"/>
+   <link href="/what-is-a-theta-join/"/>
    <updated>2013-08-26T00:00:00-07:00</updated>
    <id>/what-is-a-theta-join</id>
    <content type="html">&lt;p&gt;The most general join operation is Theta Join (or q join). The Theta Join is defined as the result of performing a selection operation using comparison operator Theta (q), on the product. In other words, a join operation with a general join condition using Theta (q) operator is called a Theta Join.
@@ -954,7 +954,7 @@ Student1 TIMES student2 GIVING temp
  
  <entry>
    <title>What is a Join Operation ?</title>
-   <link href="/what-is-a-join-operation"/>
+   <link href="/what-is-a-join-operation/"/>
    <updated>2013-08-26T00:00:00-07:00</updated>
    <id>/what-is-a-join-operation</id>
    <content type="html">&lt;p&gt;The join operation is used to combine related tuples from two relations. This operation is very important in relational databases because it allows to process relationship among relations.
@@ -969,7 +969,7 @@ Here is a wikipedia article on the Join Operation .&lt;/p&gt;
  
  <entry>
    <title>Left Outer Join Example</title>
-   <link href="/left-outer-join-example"/>
+   <link href="/left-outer-join-example/"/>
    <updated>2013-08-26T00:00:00-07:00</updated>
    <id>/left-outer-join-example</id>
    <content type="html">&lt;p&gt;So I have a products table :&lt;/p&gt;
@@ -988,7 +988,7 @@ where s.productcode is null or s.productcode is not null group by p.productname&
  
  <entry>
    <title></title>
-   <link href="/excel-analysis-using-play-d3-js-and-mongodb-a"/>
+   <link href="/excel-analysis-using-play-d3-js-and-mongodb-a/"/>
    <updated>2013-07-17T00:00:00-07:00</updated>
    <id>/excel-analysis-using-play-d3-js-and-mongodb-a</id>
    <content type="html">&lt;p&gt;Excel analysis using Play, D3.js and MongoDB - A quick overview of filtering  multi-variate datasets. Multivariate or high-dimensional (HiD) systems are hard to visualize because we are wired for a 3D world. Many different systems have been suggested to help visualize HiD data. Most of them use some system of subspace selection to reduce the dimensionality to 2 or 3 (e.g. 1-4) or use some procedure to identify important axes (e.g. principal component analysis or projection pursuit).
@@ -998,7 +998,7 @@ When doing multivariate analysis, the big picture is usually where you want to s
  
  <entry>
    <title>U.S State Visualization example - Long commute - Another D3 example</title>
-   <link href="/u-s-state-visualization-example-long-commute"/>
+   <link href="/u-s-state-visualization-example-long-commute/"/>
    <updated>2013-03-24T00:00:00-07:00</updated>
    <id>/u-s-state-visualization-example-long-commute</id>
    <content type="html">&lt;p&gt;Here is another example of using D3 to generate stats driven visualization. 
@@ -1013,7 +1013,7 @@ The full html file to the U.S visualization can be found here.&lt;/p&gt;
  
  <entry>
    <title>Basics : What are the different Data Types</title>
-   <link href="/basics-what-are-the-different-data-types"/>
+   <link href="/basics-what-are-the-different-data-types/"/>
    <updated>2013-03-18T00:00:00-07:00</updated>
    <id>/basics-what-are-the-different-data-types</id>
    <content type="html">&lt;p&gt;There are only two broad types of Data :
@@ -1037,7 +1037,7 @@ These are usually described as numbers and can be sub-categorized as: &lt;/p&gt
  
  <entry>
    <title>I.O.U - questions for visualization</title>
-   <link href="/i-o-u-questions-for-visualization"/>
+   <link href="/i-o-u-questions-for-visualization/"/>
    <updated>2013-03-17T00:00:00-07:00</updated>
    <id>/i-o-u-questions-for-visualization</id>
    <content type="html">&lt;p&gt;I am a firm believer that the questions you ask will drive the right kind of visualization ( I just found out that the word is mainly spelt visualisation i.e with an s instead of z in almost all of Europe). 
@@ -1064,7 +1064,7 @@ How do you like to share this ?&lt;/p&gt;
  
  <entry>
    <title>Matrix responses - Process of design</title>
-   <link href="/matrix-responses-process-of-design"/>
+   <link href="/matrix-responses-process-of-design/"/>
    <updated>2013-03-17T00:00:00-07:00</updated>
    <id>/matrix-responses-process-of-design</id>
    <content type="html">&lt;p&gt;This post is help the readers get an idea of how we approach some of the visualization problems.
@@ -1101,7 +1101,7 @@ Now, trying answering the questions we had at the beginning of the post, Easy to
  
  <entry>
    <title>Agile is good, but focus on Zero Overhead</title>
-   <link href="/zero-overhead-principle"/>
+   <link href="/zero-overhead-principle/"/>
    <updated>2013-03-01T00:00:00-08:00</updated>
    <id>/zero-overhead-principle</id>
    <content type="html">&lt;p&gt;Introducing new forms of visualization is an iterative process.  We work in an agile manner and release features at a minimum on a monthly basis.  Some of our visualization changes are pretty radical and will have user’s playing for some time to get ‘it’.  It is quite challenging to introduce new ways of visualizations and also to ensure that  users get ‘it’ without too much of a hassle.
@@ -1122,7 +1122,7 @@ The key lessons from him are :&lt;/p&gt;
  
  <entry>
    <title>Fundamental Challenges in Mobile Data Visualization</title>
-   <link href="/fundamental-challenges-in-mobile-data-visualization"/>
+   <link href="/fundamental-challenges-in-mobile-data-visualization/"/>
    <updated>2012-10-12T00:00:00-07:00</updated>
    <id>/fundamental-challenges-in-mobile-data-visualization</id>
    <content type="html">&lt;h2 id=&quot;location-location-location&quot;&gt;1. Location. Location. Location.&lt;/h2&gt;

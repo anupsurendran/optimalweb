@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7 ie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8 ie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9 ie" lang="en"> <![endif]-->
+
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>How we are building Alexa for the mobile industry.</title>
+	<meta name="author" content="Smitha K">
+	<link href='/assets/themes/the-minimum/css/style.css' rel="stylesheet" media="all">
+	<link href="http://feeds.feedburner.com/" rel="alternate" title="How we are building Alexa for the mobile industry." type="application/atom+xml">
+	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js"></script>
+</head>
+<body>
+
+<div id="page" class="hentry">
+	<header class="the-header">
+		<div class="unit-head">
+			<div class="unit-inner unit-body-inner">
+				<p class="logo"><a href="http://www.optimal.io"><img src="/assets/img/optimal.logo.png"></a></p>
+				<nav class="nav-global">
+					<ul>
+						
+						<li class="category"><a href="http://www.optimal.io">Home</a></li>
+						<li class="archive"><a href="/posts.html">posts</a></li>
+						<li class="tag"><a href="/tags.html">tags</a></li>
+						
+					</ul>
+				</nav>
+			</div><!-- unit-inner -->
+		</div><!-- unit-head -->
+	</header>
+	<div class="body" role="main">
+		<div class="unit-body">
+			<div class="unit-inner unit-body-inner">
+				<div class="entry-content">
+					
+<article class="unit-article layout-post">
+	<div class="unit-inner unit-article-inner">
+		<div class="content">
+			<header>
+				<div class="unit-head">
+					<div class="unit-inner unit-head-inner">
+						<h1 class="h2 entry-title">How we are building Alexa for the mobile industry.</h1>
+					</div><!-- unit-inner -->
+				</div><!-- unit-head -->
+			</header>
+
+			<div class="bd">
+				<div class="entry-content">
+					<p><em>Where is the test  Univeral Mobile Statistics Site ?</em></p>
+
+<p>It’s a mobile world - everybody knows that. It’s been like this for almost a decade now. The funniest thing is that we still don’t have an <a href="http://www.Alexa.com">Alexa</a> for the mobile industry. There is no publicly available source currently which I can take a look at to see where my / my company’s mobile application ranks amongst other apps of the sametype. There are challenges to get statistics from mobile applications - distribute processing, offline/online support, hybrid applications all lead to</p>
+
+<p>In my opinion there are three ways to do this.</p>
+
+<ol>
+  <li>
+    <p><strong>Google could ask their Google Analytics mobile users to publish their mobile statistics publicly.</strong></p>
+
+    <p>I know that this is a completely different model which will conflict with their existing service model where the end customers will not agree to because its their ‘private’ metrics.</p>
+
+    <p>Even if Google goes down with this model, there is a challenge of proving that the metrics is correct. What I mean by that is that the Analytics code ( UA-*** ) could have been used in one of the company’s existing mobile application which was already popular and therefore prevents an easy verifiable method to prove the identity of the mobile application.</p>
+  </li>
+  <li>
+    <p><strong>Users call an api to publish their user statistics.</strong></p>
+
+    <p>Again this proves to be a non-verifiable way of ensuring the statistics is accurate.</p>
+  </li>
+  <li>
+    <p><strong>A 3rd Party runs device level statistics and collects it centrally.</strong></p>
+
+    <p>A mobile phone is a personal device.  Running a process there to collect information requires permissions from users and has an intrinsic resistance built up. But if you think through this problem, and if use inferential statistics, you could identify a sample which represents your population you want to get data from. You could incentivize them to get the data you need (ie. sending only app related data back to your servers).</p>
+  </li>
+</ol>
+
+<h2 id="which-option-did-we-choose">Which option did we choose?</h2>
+<hr />
+<p>We, at <a href="http://www.SurveyAnalytics.com">Survey Analytics</a> have chosen going down the path of #3 above. As a company it was an easy path for us because we already had a Panel management software. Just to help you understand -  a Panel management software typically supports survey panels which allows you to create a list of respondents that you can invite to participate in surveys over and over again. These respondents are referred to as panelists, where each panelist subscribes to a survey panel and provides demographic information about himself/herself. The incentives for the respondents vary depending on how motivated they are to provide feedback.</p>
+
+<p>What we did was tweak this infrastructure to ask permission to collect ‘passive’ data.  So essentially from a panelist’s standpoint they first download a mobile application (called SurveySwipe) and as soon as they login for the first time they get prompted with the Terms and Conditions (T&amp;C) to collect non personal data from their mobile applications. The most important thing in terms of design is that the collection of the data is based on ‘triggers’ so that we don’t collect data always but based it on days of the week and time of the day or an external trigger like filling out a survey.</p>
+
+<h2 id="results-of-running-on-a-panel-of-users-for-3-months">Results of running on a Panel of users for 3 months</h2>
+<hr />
+
+<p>Here are some of the key statistics of the panel we used to collect mobile app usage metrics :</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>- 990 people participated 
+- Incentives like Amazon Gift cards were given for participation 
+- Females : 57%
+- 56% had an undergraduate degree
+- 14% had an income over $150K
+- Data collected over 3 months
+</code></pre>
+</div>
+
+<p>We collected ‘passively’ the data around the top mobile apps running on this panel. Here is the chart produced for the most frequently running apps.</p>
+
+<p>After we got the data on the servers, we used R to ensure we have complete samples and this is what we got :</p>
+
+<h3 id="top-moble-apps-running-in-our-panel">Top Moble Apps running in our panel</h3>
+
+<p><img src="/assets/img/TopRunningMobileApps-Alexa.png" alt="Top Mobile Apps Running in the Panel" title="Like Alexa's statistics : Top Mobile Apps Running" /></p>
+
+<h3 id="frequency-counts-of-the-mobile-applications-screenshot-from-r-console">Frequency counts of the mobile applications (screenshot from R console)</h3>
+
+<p><img src="/assets/img/top-running-mobile-apps-r-results.png" alt="Frequency count of Moble Apps running " title="Like Alexa's statistics : Count of Mobile Apps Running" /></p>
+
+
+					<div class="meta">
+						<p class="date-publish">
+							Published: 
+							<date class="date-pub" title="2014-06-22T00:00:00-07:00" datetime="2014-06-22T00:00:00-07:00" pubdate>
+							<span class="month"><abbr>June</abbr></span>
+							<span class="day">22</span>
+							<span class="year">2014</span>
+							</date>
+						</p>
+						<ul class="list-category list-linear">
+							<li class="list-head">Category : &nbsp;&nbsp;</li>
+						
+							
+							
+
+
+  
+    
+  
+
+
+
+						</ul>
+						<ul class="list-tag list-linear">
+							<li class="list-head">Tags : &nbsp;&nbsp; </li>
+							
+							
+
+
+  
+     
+    	<li><a href="/tags.html#alexa-ref">alexa <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#mobile statistics-ref">mobile statistics <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#alexa for mobile-ref">alexa for mobile <span>1</span></a></li>
+     
+    	<li><a href="/tags.html#find top apps running on mobile-ref">find top apps running on mobile <span>1</span></a></li>
+    
+  
+
+
+
+						</ul>
+					</div><!-- meta -->
+				</div><!-- entry-content -->
+				<div class="misc-content">
+					<div class="social">
+						<ul class="list-linear">
+							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="sitereport" data-lang="en">Tweet</a></div></li>
+							<li><div class="twitter-follow"><a href="https://twitter.com/sitereport" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
+						</ul>
+					</div>
+					
+					
+				</div><!-- misc-content -->
+				
+			</div><!-- bd -->
+			<footer class="unit-foot">
+				<div class="unit-inner unit-foot-inner">
+					<nav class="pagination">
+						<ul>
+							
+							<li class="prev"><a class="internal" rel="prev"  href="/Different-type-of-questions-in-data-science/" title="View What are the different type of questions a Data Scientist would ask ?">&laquo; What are the different type of questions a Data Scientist would ask ?</a></li>
+							
+							
+							<li class="pipe"> | </li>
+							
+							
+							<li class="next"><a class="internal" rel="next"  href="/5-Steps-for-Customer-Focus/" title="View Customer Focus in 5 steps.">Customer Focus in 5 steps. &raquo;</a></li>
+							
+					   <li>	
+	                                  <p class="gotop">
+                                                <a href="#page">Back to Top</a>
+                                        </p>
+                                           </li>
+                                               </ul>			
+   	                             </nav>
+				</div>
+			</footer>
+
+		</div><!-- content -->
+	</div><!-- unit-inner -->
+</article>
+
+
+				</div>
+			</div><!-- unit-inner -->
+		</div><!-- unit-body -->
+	</div><!-- body -->
+	<footer class="the-footer">
+		<div class="unit-foot">
+			<div class="unit-inner unit-foot-inner">
+				<div class="misc vcard">
+					<h4>about</h4>
+					<ul>
+						A site about <a href="http://www.optimal.io">optimizing the web for speed, seo and security</a> to help online businesses.
+
+					<!--	
+						<li class="contact"><address><span class="author fn n">Smitha K</span> - <span class="fn email"></span></address></li>
+						<li class="github"><a href="http://github.com//" rel="me">github.com/</a></li>
+						<li class="twitter"><a href="http://twitter.com/sitereport/" rel="me">twitter.com/sitereport</a></li>
+					
+						<li class="rss"><a href="http://feeds.feedburner.com/">Subscribe to RSS Feed</a></li>
+					</ul>
+					-->
+				</div><!-- misc -->
+				<p class="licence">
+					Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
+				</p>
+			</div><!-- unit-foot-inner -->
+		</div><!-- unit-foot -->
+	</footer>
+</div><!-- page -->
+<script>
+	(function(d, s) {
+		var js, fjs = d.getElementsByTagName(s)[0], load = function(url, id) {
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.src = url; js.id = id;
+		fjs.parentNode.insertBefore(js, fjs);
+		};
+	load('//platform.twitter.com/widgets.js', 'tweetjs');
+	// load('https://apis.google.com/js/plusone.js', 'gplus1js'); // Checkout http://j.mp/ApDgMr for usage html for this is <div class="g-plusone" data-size="medium"></div>
+	// load('//connect.facebook.net/en_US/all.js#xfbml=1', 'fbjssdk'); // Checkout http://j.mp/wZw2xR for using open graph protorol html for this is <div class="fb-like" data-href="/Building-Alexa-For-Mobile-Statistics/" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="verdana"></div>
+	}(document, 'script'));
+</script>
+<script>
+/*! A fix for the iOS orientationchange zoom bug.Script by @scottjehl, rebound by @wilto. MIT License.*/
+(function(j){var i=j.document;if(!i.querySelectorAll){return}var l=i.querySelectorAll("meta[name=viewport]")[0],a=l&&l.getAttribute("content"),h=a+", maximum-scale=1.0",d=a+", maximum-scale=10.0",g=true,c=j.orientation,k=0;if(!l){return}function f(){l.setAttribute("content",d);g=true}function b(){l.setAttribute("content",h);g=false}function e(m){c=Math.abs(j.orientation);k=Math.abs(m.gamma);if(k>8&&c===0){if(g){b()}}else{if(!g){f()}}}j.addEventListener("orientationchange",f,false);j.addEventListener("deviceorientation",e,false)})(this);
+</script>
+
+  
+</body>
+</html>
+

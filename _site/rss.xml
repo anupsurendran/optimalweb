@@ -5,8 +5,8 @@
         <description>Optimal.io - Smitha K</description>
         <link></link>
         <link></link>
-        <lastBuildDate>2016-02-06T10:28:36-08:00</lastBuildDate>
-        <pubDate>2016-02-06T10:28:36-08:00</pubDate>
+        <lastBuildDate>2016-02-06T10:37:10-08:00</lastBuildDate>
+        <pubDate>2016-02-06T10:37:10-08:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -45,7 +45,7 @@
 
 &lt;p&gt;The key things to make sure are to keep the Paint times below the 16ms threshold and to limit repaints and reflows. This is specifically important when you do animations.&lt;/p&gt;
 </description>
-                <link>/How-to-get-smooth-scrolling-applications</link>
+                <link>/How-to-get-smooth-scrolling-applications/</link>
                 <guid>/How-to-get-smooth-scrolling-applications</guid>
                 <pubDate>2016-02-02T00:00:00-08:00</pubDate>
         </item>
@@ -97,7 +97,7 @@ Just like the previous example, you simply need to use the subset=value in your 
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 </description>
-                <link>/Tips-to-help-with-google-font-loading-speed</link>
+                <link>/Tips-to-help-with-google-font-loading-speed/</link>
                 <guid>/Tips-to-help-with-google-font-loading-speed</guid>
                 <pubDate>2016-01-31T00:00:00-08:00</pubDate>
         </item>
@@ -134,7 +134,7 @@ Just like the previous example, you simply need to use the subset=value in your 
 
 &lt;p&gt;Brad Frost has come up with an interesting visual way of looking at a &lt;a href=&quot;http://bradfrost.com/blog/post/performance-budget-builder/&quot; title=&quot;visual web performance budget manager&quot;&gt;performance budget&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>/How-to-use-a-web-performance-budget</link>
+                <link>/How-to-use-a-web-performance-budget/</link>
                 <guid>/How-to-use-a-web-performance-budget</guid>
                 <pubDate>2016-01-20T00:00:00-08:00</pubDate>
         </item>
@@ -147,7 +147,7 @@ Just like the previous example, you simply need to use the subset=value in your 
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/chrome-inspect-keyboard-shortcuts.png&quot; alt=&quot;How to disable inspect element in Chrome - Keyboard shortcuts&quot; title=&quot;How to enable and disable inspect element&quot; /&gt;&lt;/p&gt;
 </description>
-                <link>/how-to-remove-google-inspect-element</link>
+                <link>/how-to-remove-google-inspect-element/</link>
                 <guid>/how-to-remove-google-inspect-element</guid>
                 <pubDate>2016-01-04T00:00:00-08:00</pubDate>
         </item>
@@ -189,7 +189,7 @@ Source : &lt;a href=&quot;http://www.fastcompany.com/1825005/how-one-second-coul
 Source : &lt;a href=&quot;http://conferences.oreilly.com/velocity/velocity2008/public/schedule/detail/3632&quot;&gt;O’Reilly&lt;/a&gt;&lt;/p&gt;
 
 </description>
-                <link>/10-reasons-why-website-performance-matters</link>
+                <link>/10-reasons-why-website-performance-matters/</link>
                 <guid>/10-reasons-why-website-performance-matters</guid>
                 <pubDate>2016-01-03T00:00:00-08:00</pubDate>
         </item>
@@ -236,7 +236,7 @@ The class contains the following :&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/assets/img/sample-aggregated-dashboard-googlespreadsheet.png&quot; alt=&quot;Business Dashboard in Spreadsheet&quot; title=&quot;Sample aggregated dashboard&quot; /&gt;&lt;/p&gt;
 
 </description>
-                <link>/How-to-create-simple-BI-dashboards-with-google-spreadsheets-and-python</link>
+                <link>/How-to-create-simple-BI-dashboards-with-google-spreadsheets-and-python/</link>
                 <guid>/How-to-create-simple-BI-dashboards-with-google-spreadsheets-and-python</guid>
                 <pubDate>2015-07-26T00:00:00-07:00</pubDate>
         </item>
@@ -280,7 +280,7 @@ A font which is not correct on a page on your website affects “Marketing”.&l
 &lt;p&gt;Assess the damage caused if there was any. Typically you work on cleaning up areas which has impact to your revenue or customers. See if you or your team can fix it. In some cases you might need a crew from the outside. Use a go forward approach and communicate the reason why these marginal decisions do not help the business long term and support the process or business unit owners to make changes which reduces overall debt. Quoting Clayton again -“Decide what you stand for. And then stand for it all the time.”&lt;/p&gt;
 
 </description>
-                <link>/Keeping-track-of-marginal-decisions</link>
+                <link>/Keeping-track-of-marginal-decisions/</link>
                 <guid>/Keeping-track-of-marginal-decisions</guid>
                 <pubDate>2015-07-11T00:00:00-07:00</pubDate>
         </item>
@@ -342,7 +342,7 @@ A font which is not correct on a page on your website affects “Marketing”.&l
 &lt;/ul&gt;
 
 </description>
-                <link>/How-to-measure-lead-quality-using-google-spreadsheets-cohort-analysis</link>
+                <link>/How-to-measure-lead-quality-using-google-spreadsheets-cohort-analysis/</link>
                 <guid>/How-to-measure-lead-quality-using-google-spreadsheets-cohort-analysis</guid>
                 <pubDate>2015-06-23T00:00:00-07:00</pubDate>
         </item>
@@ -386,7 +386,7 @@ A font which is not correct on a page on your website affects “Marketing”.&l
 &lt;p&gt;Ensure that the Fonts for your key messages are readable. Keep it simple, easy-to-read, enough spacing between the letters. A good rule of thumb is that typically no running Fonts are used within product screens. There are cases when some products do need running Fonts and it’s usually when they want to show a personable message or when they want to send out a more engaging invitation to a user. In cases like this the Font size makes a big difference.&lt;/p&gt;
 
 </description>
-                <link>/Choosing-the-Right-Fonts</link>
+                <link>/Choosing-the-Right-Fonts/</link>
                 <guid>/Choosing-the-Right-Fonts</guid>
                 <pubDate>2014-08-10T00:00:00-07:00</pubDate>
         </item>
@@ -416,7 +416,7 @@ A font which is not correct on a page on your website affects “Marketing”.&l
 &lt;p&gt;This is where most product companies or for that matter service companies fail. So you promised them that they get their new fancy report by let’s say X date. Then that never happens because you are trying to fight fires within the company. The simplest thing to do is send them an email and explain that there is a delay and that you looking into revised timelines. You can also communicate through your product. You can have a feature announcement section in an easily accessible place so people know that things have changed which are relevant to them. You could also give them sneak previews of your new features or even your next months roadmap.&lt;/p&gt;
 
 </description>
-                <link>/5-Steps-for-Customer-Focus</link>
+                <link>/5-Steps-for-Customer-Focus/</link>
                 <guid>/5-Steps-for-Customer-Focus</guid>
                 <pubDate>2014-08-06T00:00:00-07:00</pubDate>
         </item>
@@ -482,7 +482,7 @@ A font which is not correct on a page on your website affects “Marketing”.&l
 &lt;p&gt;&lt;img src=&quot;/assets/img/top-running-mobile-apps-r-results.png&quot; alt=&quot;Frequency count of Moble Apps running &quot; title=&quot;Like Alexa&#39;s statistics : Count of Mobile Apps Running&quot; /&gt;&lt;/p&gt;
 
 </description>
-                <link>/Building-Alexa-For-Mobile-Statistics</link>
+                <link>/Building-Alexa-For-Mobile-Statistics/</link>
                 <guid>/Building-Alexa-For-Mobile-Statistics</guid>
                 <pubDate>2014-06-22T00:00:00-07:00</pubDate>
         </item>
@@ -544,7 +544,7 @@ Mechanistic type of modelling requires the most amount of effort. It requires yo
 &lt;/ol&gt;
 
 </description>
-                <link>/Different-type-of-questions-in-data-science</link>
+                <link>/Different-type-of-questions-in-data-science/</link>
                 <guid>/Different-type-of-questions-in-data-science</guid>
                 <pubDate>2014-05-18T00:00:00-07:00</pubDate>
         </item>
@@ -581,7 +581,7 @@ Mechanistic type of modelling requires the most amount of effort. It requires yo
 &lt;p&gt;If you are interested in generating dynamic Infographics automatically - try Secondprism’s 
 &lt;a href=&quot;http://app.secondprism.com/assets/product/infographic_for_dashboard.html&quot;&gt;Infographic generator here&lt;/a&gt;.&lt;/p&gt;
 </description>
-                <link>/how-to-add-a-svg-image-in-d3</link>
+                <link>/how-to-add-a-svg-image-in-d3/</link>
                 <guid>/how-to-add-a-svg-image-in-d3</guid>
                 <pubDate>2014-01-02T00:00:00-08:00</pubDate>
         </item>
@@ -620,7 +620,7 @@ Mechanistic type of modelling requires the most amount of effort. It requires yo
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/crosstab-report-generated-from-spss.png&quot; alt=&quot;SPSS Crosstab report&quot; title=&quot;SPSS Crosstab report&quot; /&gt;&lt;/p&gt;
 </description>
-                <link>/how-to-create-crosstabs-in-spss-in-3-simple-steps</link>
+                <link>/how-to-create-crosstabs-in-spss-in-3-simple-steps/</link>
                 <guid>/how-to-create-crosstabs-in-spss-in-3-simple-steps</guid>
                 <pubDate>2013-10-09T00:00:00-07:00</pubDate>
         </item>
@@ -632,7 +632,7 @@ Mechanistic type of modelling requires the most amount of effort. It requires yo
 &lt;p&gt;The outcome of an experiment with coin tossing is dichotomous (“head” or “tail”); the variable “biological sex” in a social study is dichotomous (“male” or “female”).
 Dichotomous variables are the simplest and intuitively clear type of random variable s. For this reason mental (and real) coin-tossing experiments are often used in introductory courses in statistics and probability. Nevertheless, statistical methods developed for analysis of dichotomous variables are often more complex, both conceptually and mathematically, than parallel methods for continuous variables.&lt;/p&gt;
 </description>
-                <link>/What-is-a-dichotomous-variable</link>
+                <link>/What-is-a-dichotomous-variable/</link>
                 <guid>/What-is-a-dichotomous-variable</guid>
                 <pubDate>2013-10-09T00:00:00-07:00</pubDate>
         </item>
@@ -653,7 +653,7 @@ The prior distribution and likelihood can be easily combined to form the posteri
   &lt;li&gt;Summarize important features of the posterior distribution, or calculate quantities of interest based on the posterior distribution. These quantities constitute statistical outputs, such as point estimates and intervals.&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-                <link>/introduction-to-bayesian-analysis</link>
+                <link>/introduction-to-bayesian-analysis/</link>
                 <guid>/introduction-to-bayesian-analysis</guid>
                 <pubDate>2013-09-21T00:00:00-07:00</pubDate>
         </item>
@@ -681,7 +681,7 @@ Diagramatically, the questions are usually written in the internal nodes (rectan
 
 &lt;p&gt;More learning at  &lt;a href=&quot;http://www.optimal.io&quot;&gt;Optimal.io&lt;/a&gt; &lt;/p&gt;
 </description>
-                <link>/introduction-to-decision-trees</link>
+                <link>/introduction-to-decision-trees/</link>
                 <guid>/introduction-to-decision-trees</guid>
                 <pubDate>2013-09-18T00:00:00-07:00</pubDate>
         </item>
@@ -697,7 +697,7 @@ Diagramatically, the questions are usually written in the internal nodes (rectan
 
 &lt;p&gt;More learning @ &lt;a href=&quot;http://www.optimal.io&quot;&gt;Optimal.io&lt;/a&gt;&lt;/p&gt;
 </description>
-                <link>/4-typical-inductive-learning-problems</link>
+                <link>/4-typical-inductive-learning-problems/</link>
                 <guid>/4-typical-inductive-learning-problems</guid>
                 <pubDate>2013-09-16T00:00:00-07:00</pubDate>
         </item>
@@ -715,7 +715,7 @@ When you do sharding, you would need to know which shard to get the data from. �
 &lt;h3 id=&quot;how-does-the-query-router-know-which-shard-to-get-the-data-from&quot;&gt;How does the query router know which shard to get the data from ?&lt;/h3&gt;
 &lt;p&gt;This information is stored in Config servers. They store the cluster’s metadata. This data contains a mapping of the cluster’s data set to the shards. The query router uses this data to route requests to the right shards.&lt;/p&gt;
 </description>
-                <link>/sharding-in-mongodb</link>
+                <link>/sharding-in-mongodb/</link>
                 <guid>/sharding-in-mongodb</guid>
                 <pubDate>2013-09-13T00:00:00-07:00</pubDate>
         </item>
@@ -733,7 +733,7 @@ Schemas
 
 &lt;p&gt;&lt;strong&gt;NOSQL&lt;/strong&gt;: Typically dynamic. Records can add new information on the fly, and unlike SQL table rows, dissimilar data can be stored together as necessary. For some databases (e.g., wide-column stores), it is somewhat more challenging to add new fields dynamically.&lt;/p&gt;
 </description>
-                <link>/nosql-vs-sql-comparison-summary</link>
+                <link>/nosql-vs-sql-comparison-summary/</link>
                 <guid>/nosql-vs-sql-comparison-summary</guid>
                 <pubDate>2013-09-09T00:00:00-07:00</pubDate>
         </item>
@@ -763,7 +763,7 @@ content&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;Also, on a side note, It is interesting to also note that we at &lt;a href=&quot;http://www.optimal.io/&quot; title=&quot;web performance benchmark&quot;&gt;optimal.io&lt;/a&gt; did a &lt;a href=&quot;http://optimal.io/benchmarks/saas/nosql-web-peformance-report-Q1-2016.html&quot; title=&quot;web performance for NOSQL vendors&quot;&gt;web performance test for NOSQL vendors&lt;/a&gt; and MongoDB’s site came #7.&lt;/p&gt;
 </description>
-                <link>/how-to-find-the-schema-of-a-collection-in-mongodb</link>
+                <link>/how-to-find-the-schema-of-a-collection-in-mongodb/</link>
                 <guid>/how-to-find-the-schema-of-a-collection-in-mongodb</guid>
                 <pubDate>2013-09-09T00:00:00-07:00</pubDate>
         </item>
@@ -780,7 +780,7 @@ content&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;You can read about the use cases here at MongoDB.&lt;/p&gt;
 </description>
-                <link>/4-use-cases-of-using-mongodb-and-hadoop-together</link>
+                <link>/4-use-cases-of-using-mongodb-and-hadoop-together/</link>
                 <guid>/4-use-cases-of-using-mongodb-and-hadoop-together</guid>
                 <pubDate>2013-09-08T00:00:00-07:00</pubDate>
         </item>
@@ -791,7 +791,7 @@ content&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/big-data-applications.png&quot; alt=&quot;Big Data Applications&quot; title=&quot;These are applications who are playing in the Big data space&quot; /&gt;&lt;/p&gt;
 </description>
-                <link>/big-data-applications-2013</link>
+                <link>/big-data-applications-2013/</link>
                 <guid>/big-data-applications-2013</guid>
                 <pubDate>2013-09-07T00:00:00-07:00</pubDate>
         </item>
@@ -806,7 +806,7 @@ content&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;img src=&quot;/assets/img/hadoop-data-type-writable-interface.png&quot; alt=&quot;Hadoop Writable Interface&quot; title=&quot;Hadoop Writable Interface&quot; /&gt;&lt;/p&gt;
 
 </description>
-                <link>/hadoop-data-types</link>
+                <link>/hadoop-data-types/</link>
                 <guid>/hadoop-data-types</guid>
                 <pubDate>2013-09-06T00:00:00-07:00</pubDate>
         </item>
@@ -826,7 +826,7 @@ content&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 &lt;h2 id=&quot;difference-3&quot;&gt;Difference  #3&lt;/h2&gt;
 &lt;p&gt;Reducers can get data from multiple Mappers as part of the partitioning process. Combiners can only get its input from one Mapper.&lt;/p&gt;
 </description>
-                <link>/3-differences-between-a-mapreduce-combiner-and-reducer</link>
+                <link>/3-differences-between-a-mapreduce-combiner-and-reducer/</link>
                 <guid>/3-differences-between-a-mapreduce-combiner-and-reducer</guid>
                 <pubDate>2013-09-05T00:00:00-07:00</pubDate>
         </item>
@@ -835,7 +835,7 @@ content&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
                 <title>4 Types of Data Scientist related Roles</title>
                 <description>&lt;p&gt;&lt;img src=&quot;/assets/img/Types-of-data-scientists.png&quot; alt=&quot;4 Types of Data Scientists&quot; title=&quot;Types of Data Scientists&quot; /&gt;&lt;/p&gt;
 </description>
-                <link>/4-types-of-data-scientist-related-roles</link>
+                <link>/4-types-of-data-scientist-related-roles/</link>
                 <guid>/4-types-of-data-scientist-related-roles</guid>
                 <pubDate>2013-09-04T00:00:00-07:00</pubDate>
         </item>
@@ -850,7 +850,7 @@ ccc&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/img/binning-example-for-statistics-bargraphs.png&quot; alt=&quot;Binning example of statistics in bargraphs&quot; title=&quot;Binning example&quot; /&gt;&lt;/p&gt;
 </description>
-                <link>/what-is-binning</link>
+                <link>/what-is-binning/</link>
                 <guid>/what-is-binning</guid>
                 <pubDate>2013-09-03T00:00:00-07:00</pubDate>
         </item>
@@ -865,7 +865,7 @@ Here is an example of a Geo Distance Facet which is included as part of an Elast
 
 &lt;p&gt;Image courtesy of Karmi.&lt;/p&gt;
 </description>
-                <link>/what-is-an-elasticsearch-facet</link>
+                <link>/what-is-an-elasticsearch-facet/</link>
                 <guid>/what-is-an-elasticsearch-facet</guid>
                 <pubDate>2013-09-03T00:00:00-07:00</pubDate>
         </item>
@@ -881,7 +881,7 @@ To get a big picture of your operations environment, this rich and complex techn
 Some typical log files which an enterprise deals with are :
 • Network packet flow information from routers and switches• Storage subsystem metrics• Database metrics• Application servers from Log4j messages• Microsoft WMI• Web Server information from Apache• Operating system information from AIX, Linux, and VMWare• End User experience.&lt;/p&gt;
 </description>
-                <link>/machine-data-and-big-data</link>
+                <link>/machine-data-and-big-data/</link>
                 <guid>/machine-data-and-big-data</guid>
                 <pubDate>2013-08-29T00:00:00-07:00</pubDate>
         </item>
@@ -892,7 +892,7 @@ Some typical log files which an enterprise deals with are :
 Allows you to define a structure for your unstructured Big data.
 Simplifies queries using a SQL syntax call HQL.&lt;/p&gt;
 </description>
-                <link>/what-is-hive</link>
+                <link>/what-is-hive/</link>
                 <guid>/what-is-hive</guid>
                 <pubDate>2013-08-28T00:00:00-07:00</pubDate>
         </item>
@@ -907,7 +907,7 @@ IBM’s BigSQL, an SQL query engine for Hadoop. BigSQL bypasses MapReduce and r
 EMC’s HAWQ, an SQL query engine for the company’s Pivotal HD version of Hadoop.
 Cloudera’s Impala, a real-time ad-hoc query interface to Hadoop introduced last October.&lt;/p&gt;
 </description>
-                <link>/sql-for-big-data-key-initiatives</link>
+                <link>/sql-for-big-data-key-initiatives/</link>
                 <guid>/sql-for-big-data-key-initiatives</guid>
                 <pubDate>2013-08-28T00:00:00-07:00</pubDate>
         </item>
@@ -920,7 +920,7 @@ The Name Node oversees and coordinates the data storage function (HDFS), while t
 Slave Nodes make up the vast majority of machines and do all the dirty work of storing the data and running the computations.  Each slave runs both a Data Node and Task Tracker daemon that communicate with and receive instructions from their master nodes.  
 The Task Tracker daemon is a slave to the Job Tracker, the Data Node daemon a slave to the Name Node.&lt;/p&gt;
 </description>
-                <link>/key-hadoop-components</link>
+                <link>/key-hadoop-components/</link>
                 <guid>/key-hadoop-components</guid>
                 <pubDate>2013-08-28T00:00:00-07:00</pubDate>
         </item>
@@ -930,7 +930,7 @@ The Task Tracker daemon is a slave to the Job Tracker, the Data Node daemon a sl
                 <description>&lt;p&gt;Scale “out”, not “up”. For data-intensive workloads, a large number of commodity low-end servers (i.e., the scaling “out” approach) is preferred over a small number of high-end servers (i.e., the scaling “up” approach). 
 The latter approach of purchasing symmetric multi-processing (SMP) machines with a large number of processor sockets (dozens, even hundreds) and a large amount of shared memory (hundreds or even thousands of gigabytes) is not effective cost wise, since the costs of such machines do not scale linearly (i.e., a machine with twice as many processors is often significantly more than twice as expensive). On the other hand, the low-end server market overlaps with the high-volume desktop computing market, which has the effect of keeping prices low due to competition, interchangeable components, and economies of scale.&lt;/p&gt;
 </description>
-                <link>/scale-out-and-not-up</link>
+                <link>/scale-out-and-not-up/</link>
                 <guid>/scale-out-and-not-up</guid>
                 <pubDate>2013-08-27T00:00:00-07:00</pubDate>
         </item>
@@ -945,7 +945,7 @@ Student1 TIMES student2 WHERE City =’L’This is equivalent to: 
 Student1 TIMES student2 GIVING temp
  SELECT temp WHERE City =’L’&lt;/p&gt;
 </description>
-                <link>/what-is-a-theta-join</link>
+                <link>/what-is-a-theta-join/</link>
                 <guid>/what-is-a-theta-join</guid>
                 <pubDate>2013-08-26T00:00:00-07:00</pubDate>
         </item>
@@ -960,7 +960,7 @@ Projection (PROJECT) operation is performed to remove some attributes.
 The PROJECT operation is another unary operation. This operation returns a set of tuples containing a subset of the attributes in the original relation. Thus, as we state that the SELECT operation selects some rows and discards the others. The PROJECT operation, on the other hand, selects some columns of the relation and discards the other column. The PROJECT operation can be viewed as the vertical filter of the relation.
 Here is a wikipedia article on the Join Operation .&lt;/p&gt;
 </description>
-                <link>/what-is-a-join-operation</link>
+                <link>/what-is-a-join-operation/</link>
                 <guid>/what-is-a-join-operation</guid>
                 <pubDate>2013-08-26T00:00:00-07:00</pubDate>
         </item>
@@ -979,7 +979,7 @@ where s.productcode is null or s.productcode is not null group by p.productname&
 
 &lt;p&gt;One of the best examples I have seen for Outer and Inner joins is at CodingHorror&lt;/p&gt;
 </description>
-                <link>/left-outer-join-example</link>
+                <link>/left-outer-join-example/</link>
                 <guid>/left-outer-join-example</guid>
                 <pubDate>2013-08-26T00:00:00-07:00</pubDate>
         </item>
@@ -989,7 +989,7 @@ where s.productcode is null or s.productcode is not null group by p.productname&
                 <description>&lt;p&gt;Excel analysis using Play, D3.js and MongoDB - A quick overview of filtering  multi-variate datasets. Multivariate or high-dimensional (HiD) systems are hard to visualize because we are wired for a 3D world. Many different systems have been suggested to help visualize HiD data. Most of them use some system of subspace selection to reduce the dimensionality to 2 or 3 (e.g. 1-4) or use some procedure to identify important axes (e.g. principal component analysis or projection pursuit).
 When doing multivariate analysis, the big picture is usually where you want to start, for meaningful observations, believe it or not, can be gleaned from the clutter. A display with this much data cannot be used to explore the details, but it can be used to search for predominant patterns and exceptions. &lt;/p&gt;
 </description>
-                <link>/excel-analysis-using-play-d3-js-and-mongodb-a</link>
+                <link>/excel-analysis-using-play-d3-js-and-mongodb-a/</link>
                 <guid>/excel-analysis-using-play-d3-js-and-mongodb-a</guid>
                 <pubDate>2013-07-17T00:00:00-07:00</pubDate>
         </item>
@@ -1004,7 +1004,7 @@ Here is how it looks now :&lt;/p&gt;
 As you see most of the data is not even complete and since this just a work in progress, I wil make another revision to it hopefully shortly.
 The full html file to the U.S visualization can be found here.&lt;/p&gt;
 </description>
-                <link>/u-s-state-visualization-example-long-commute</link>
+                <link>/u-s-state-visualization-example-long-commute/</link>
                 <guid>/u-s-state-visualization-example-long-commute</guid>
                 <pubDate>2013-03-24T00:00:00-07:00</pubDate>
         </item>
@@ -1028,7 +1028,7 @@ These are usually described as numbers and can be sub-categorized as: &lt;/p&gt
 
 &lt;p&gt;&lt;strong&gt;Continuous data&lt;/strong&gt;: Continuous data technically have an infinite number of steps, which form a continuum. e.g. Time to complete a task is continuous since it could take 178.8977687 seconds. &lt;/p&gt;
 </description>
-                <link>/basics-what-are-the-different-data-types</link>
+                <link>/basics-what-are-the-different-data-types/</link>
                 <guid>/basics-what-are-the-different-data-types</guid>
                 <pubDate>2013-03-18T00:00:00-07:00</pubDate>
         </item>
@@ -1055,7 +1055,7 @@ How can we make this simpler for you to use and to understand ?
 How do you like to present this ?
 How do you like to share this ?&lt;/p&gt;
 </description>
-                <link>/i-o-u-questions-for-visualization</link>
+                <link>/i-o-u-questions-for-visualization/</link>
                 <guid>/i-o-u-questions-for-visualization</guid>
                 <pubDate>2013-03-17T00:00:00-07:00</pubDate>
         </item>
@@ -1092,7 +1092,7 @@ Before adding these responses, we need to come up with a color code, let’s say
 &lt;p&gt;So the color coding for the chart above is  - HBO=Blue, Star Movies=Green, SONY PIX=Orange. 
 Now, trying answering the questions we had at the beginning of the post, Easy to visualize and easy to answer right?&lt;/p&gt;
 </description>
-                <link>/matrix-responses-process-of-design</link>
+                <link>/matrix-responses-process-of-design/</link>
                 <guid>/matrix-responses-process-of-design</guid>
                 <pubDate>2013-03-17T00:00:00-07:00</pubDate>
         </item>
@@ -1113,7 +1113,7 @@ The key lessons from him are :&lt;/p&gt;
   &lt;li&gt;Prioritize the design experience&lt;/li&gt;
 &lt;/ol&gt;
 </description>
-                <link>/zero-overhead-principle</link>
+                <link>/zero-overhead-principle/</link>
                 <guid>/zero-overhead-principle</guid>
                 <pubDate>2013-03-01T00:00:00-08:00</pubDate>
         </item>
@@ -1132,7 +1132,7 @@ The key lessons from him are :&lt;/p&gt;
 &lt;p&gt;Going mobile presents a challenge for visualaization in terms of securing data at all stages of the analytic process, primarily for data transmission and device access. For this reason many vendors are opting for a mobile product that provides functionality via server-side architecture with the use of a Web infrastructure like HTML5. Information then can be stored, managed, and provided using a mobile BI server, where the risk of exposing sensitive data is lower than storing it on a mobile device that could be stolen. 
 The other aspect of this is performance of the visualization tool itself.  If there are datapoints which are not relevant to the visualization medium then there is no point sending that data to the device itself. &lt;/p&gt;
 </description>
-                <link>/fundamental-challenges-in-mobile-data-visualization</link>
+                <link>/fundamental-challenges-in-mobile-data-visualization/</link>
                 <guid>/fundamental-challenges-in-mobile-data-visualization</guid>
                 <pubDate>2012-10-12T00:00:00-07:00</pubDate>
         </item>

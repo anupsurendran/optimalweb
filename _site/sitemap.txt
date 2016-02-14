@@ -9,6 +9,7 @@
 /sitemap.txt
 /tags/
 
+/A-full-list-of-ways-to-speed-up-wordpress/
 /How-to-get-smooth-scrolling-applications/
 /Tips-to-help-with-google-font-loading-speed/
 /How-to-use-a-web-performance-budget/

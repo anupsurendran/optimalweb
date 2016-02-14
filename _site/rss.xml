@@ -5,10 +5,237 @@
         <description>Optimal.io - Smitha K</description>
         <link></link>
         <link></link>
-        <lastBuildDate>2016-02-06T10:42:49-08:00</lastBuildDate>
-        <pubDate>2016-02-06T10:42:49-08:00</pubDate>
+        <lastBuildDate>2016-02-14T10:33:10-08:00</lastBuildDate>
+        <pubDate>2016-02-14T10:33:10-08:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>Exhaustive list of Easy Ways to Speed up Wordpress</title>
+                <description>&lt;h3 id=&quot;remove-unnecessary-plugins&quot;&gt;1. Remove unnecessary Plugins&lt;/h3&gt;
+
+&lt;p&gt;At the time of writing this article there are 42,837 plugins on the &lt;a href=&quot;https://wordpress.org/plugins/&quot;&gt;Wordpress Plugin site&lt;/a&gt;. This gives an average of approximately 3300 plugins written every year for this popular blogging and content management system.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;3300 Wordpress Plugins written on average every year !&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This cannot happen unless there is a huge team of Wordpress Plugin creators who work on this on a consistent basis. What we know is that the quality of these plugins vary based on the quality of the plugin authors. The functional quality might be ok but the performance of these plugins might not be great.&lt;/p&gt;
+
+&lt;p&gt;As part of any speed optimization excercise it is important to start with a cleanup excercise of looking at your Plugin folder and finding out which Plugins are not used. The good news is that most WordPress Plugins have an option to completely uninstall themselves, though not all.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/wordpress-plugin-speed.png&quot; alt=&quot;alt Wordpress plugin deactivation and speed optimization&quot; title=&quot;Clean up Wordpress Plugins for Speed&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you wish to completely get rid of the  WordPress Plugin then you have to do the following :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Check the WordPress Plugin instructions in the detail &lt;em&gt;ReadMe&lt;/em&gt; file  on how to properly uninstall the Plugin.&lt;/li&gt;
+  &lt;li&gt;Sometimes the WordPress Plugin requires some  addition of code to your WordPress Theme. You will have to  manually edit the Theme files to remove it.&lt;/li&gt;
+  &lt;li&gt;You will have to Deactivate the Plugin and remove it manually through your FTP program. This means you will have to Login to the blog or website which runs Wordpress via your FTP Program. Go to the Plugin directory and find where the Plugin is installed.
+Delete the WordPress Plugin folder and  files from your hosting server provider.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To summarize, the sequence of the Wordpress Plugin cleanup excercise is to
+Deactivate, Delete and Permanently delete Plugins  using FTP&lt;/p&gt;
+
+&lt;h3 id=&quot;find-a-good-host-for-your-wordpress-site-or-blog&quot;&gt;2. Find a good Host for your Wordpress Site or Blog&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;http://optimal.io/benchmarks/paas/wordpress-hosting-web-performance-report-Q1-2016.html&quot; title=&quot;Wordpress Hosting speed benchmarks&quot;&gt;Wordpress Host Performance test&lt;/a&gt; results from Q1 2016&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There are some &lt;a href=&quot;http://www.wpsitecare.com/performance-of-7-top-wordpress-hosting-companies-compared/&quot; title=&quot;Wordpress hosting performance testing comparison&quot;&gt;recent wordpress performance tests&lt;/a&gt; which we did not have to duplicate. The performance winners for under 10 dollars therefore are :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.Siteground.com&quot;&gt;SiteGround&lt;/a&gt; @ $3.95/month&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.inmotionhosting.com&quot;&gt;Inmotion Hosting&lt;/a&gt; @ $4.89/month&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.site5.com&quot;&gt;Site5&lt;/a&gt; @ $8.95/month&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For enterprise type features along with performance, Like Staging – Great for testing out new themes and plugins without affecting your existing site, Transferable Installs, LargeFS and their own CDN (they have partnered with NetDNA), &lt;a href=&quot;/wordpress-speedup&quot; title=&quot;faster wordpress host&quot;&gt;WPEngine&lt;/a&gt; comes out in front.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;/wordpress-speedup&quot; title=&quot;CDN enabled Wordpress&quot;&gt;WPEngine is Enterprise grade with High Performance&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;use-the-best-wordpress-cache-plugin-to-speed-up-your-site&quot;&gt;3. Use the best Wordpress Cache Plugin to speed up your site&lt;/h3&gt;
+
+&lt;h4 id=&quot;what-is-a-cache-&quot;&gt;What is a Cache ?&lt;/h4&gt;
+
+&lt;p&gt;A cache is a place to store data to help with quick retreival. Most frequently used active data is often cached in order to reduce load times. All modern browsers use caching to speed up content retreival. When you return to a frequently accessed website, there is a very high probability  your browser will have a good portion of the site’s files stored within its cache. This means that the browser needs to receive less ‘fresh’ information from the site, resulting in a faster load time. The way Wordpress caching plugins work is by saving the dynamically generated HTML files and serving them from the Wordpress cache instead of regnerating the HTML files which avoids running PHP scripts or getting the data from the Wordpress Database.&lt;/p&gt;
+
+&lt;h4 id=&quot;what-is-the-key-functionality-you-should-look-in-a-wordpress-cache-plugin-&quot;&gt;What is the key functionality you should look in a Wordpress Cache Plugin ?&lt;/h4&gt;
+
+&lt;p&gt;The key metric which a Wordpress Cache should be measured against is Speed of your site’s page rendering. Some Wordpress Plugins come with extra performance features such as integration with content delivery networks, GZIP compression (file compression feature), and minification (removing all unnecessary characters from the front end code so that only absolutely necessary data is send to the browser). These all enable your site or blog to run even faster.&lt;/p&gt;
+
+&lt;h4 id=&quot;the-top-3-wordpress-cache-plugins-are-&quot;&gt;The top 3 Wordpress Cache plugins are :&lt;/h4&gt;
+
+&lt;h4 id=&quot;wp-super-cachehttpswordpressorgpluginswp-super-cache-top-wordpress-cache-plugin-for-helping-with-increasing-wordpress-speed&quot;&gt;&lt;a href=&quot;https://wordpress.org/plugins/wp-super-cache/&quot; title=&quot;Top Wordpress Cache Plugin for helping with Increasing Wordpress Speed&quot;&gt;WP Super Cache&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://wordpress.org/plugins/wp-super-cache/&quot; title=&quot;Wodpress Cache to increase speed of Wordpress Site&quot;&gt;WP Super Cache&lt;/a&gt; can deliver static pages with mod_rewrite (which is faster than the usual PHP generated HTML caching) or PHP, depending on your preference, meaning that each visitor doesn’t need to load all of the WordPress PHP files – they simply receive a static HTML page. However, there is the ‘legacy caching mode’, meaning that if you’re logged in, you won’t experience the supercached HTML files. WP Super Cache also enables you to change the order in which plugins load, so if you need certain plugins to load with lighting speed, you’re in luck.&lt;/p&gt;
+
+&lt;h4 id=&quot;w3-total-cachehttpswordpressorgpluginsw3-total-cache-secondmost-popular-wordpress-cache-for-website-performance&quot;&gt;&lt;a href=&quot;https://wordpress.org/plugins/w3-total-cache/&quot; title=&quot;Secondmost popular Wordpress Cache for website performance&quot;&gt;W3 Total Cache&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://wordpress.org/plugins/w3-total-cache/&quot; title=&quot;improve speed of wordpress site using w3 total cache&quot;&gt;W3 Total Cache&lt;/a&gt; claims that it can help sites powered by Wordpress to go 10x faster. It helps with optimized progressive render so that pages start rendering quickly.&lt;/p&gt;
+
+&lt;p&gt;To improve loading time, W3 Total Cache utilizes file minification and GZIP compression. Like WP Super Cache, W3 Total Cache also supports Content Delivery Networks and allows you to export your settings for future use.&lt;/p&gt;
+
+&lt;h4 id=&quot;wp-rockethttpwp-rocketme-paid-plugin-for-improving-wordpress-peformance&quot;&gt;&lt;a href=&quot;http://wp-rocket.me/&quot; title=&quot;Paid plugin for improving wordpress peformance&quot;&gt;WP Rocket&lt;/a&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;http://wp-rocket.me/&quot; title=&quot;Wordpress performance cache paid plugin&quot;&gt;WP Rocket&lt;/a&gt; is a great Cache Plugin if you are ready to pay for it. It has &lt;a href=&quot;http://blog.optimal.io/Tips-to-help-with-google-font-loading-speed/&quot; title=&quot;Increase speed of google fonts&quot;&gt;in built google font optimization&lt;/a&gt;, DNS Prefetching, supports better deferring of Javascript loading and is more eCommerce friendly.&lt;/p&gt;
+
+&lt;h3 id=&quot;optimize-your-database&quot;&gt;4. Optimize your database&lt;/h3&gt;
+
+&lt;p&gt;Most of Wordpress’s data is stored in 11 MySQL tables. 
+* wp_commentmeta – Stores meta information about comments
+* wp_comments – Stores your comments
+* wp_links – Stores blogroll links (blogroll feature is deprecated, but can be added using Link Manager)
+* wp_options – Stores the options defined in the admin settings area
+* wp_postmeta – Stores post meta information
+* wp_posts – Stores data for posts, pages, and other custom post types
+* wp_terms – Stores post tags and categories for posts and links
+* wp_term_relationships – Stores the association between posts and categories and tags and the association between links and link categories
+* wp_term_taxonomy – Stores a description about the taxonomy (category, link, or tag) used in the wp_terms table
+* wp_usermeta – Stores meta information about users
+* wp_users – Stores your users&lt;/p&gt;
+
+&lt;p&gt;The Wordpress site &lt;a href=&quot;&amp;quot;http://codex.wordpress.org/Database_Description&amp;quot;&quot;&gt;Wordpress Database Description&lt;/a&gt; available for the diagramatic representation of these tables.&lt;/p&gt;
+
+&lt;p&gt;phpMyAdmin is the most common way to manage a WordPress database. If you do not have access to phpMyAdmin, do not be too concerned about this as most database management tools have a similar interface and work in the same way.&lt;/p&gt;
+
+&lt;p&gt;As shown in the screenshot below, with phpMyAdmin, it allows you to optimize tables from the main drop down menu. All you need to do to optimize your database is click on the “Check All” box, select “Optimize table” from the dropdown menu, and then click on the “Go” button.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/increase-speed-wordpress-mysql.png&quot; alt=&quot;alt Wordpress MySQL phpMyAdmin speed optimization&quot; title=&quot;Wordpress MySQL Optimization for Speed&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can optimize tables that are affected by overhead by using the SQL command OPTIMIZE TABLE. For example, you could optimize the wp_posts table by executing this SQL query in the MySQL command line or the phpMyAdmin sql command window :&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span class=&quot;n&quot;&gt;OPTIMIZE&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&#39;wp_posts&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Based on point #1 in this article about cleaning up Plugins, even if you have decided to stop using a plugin, there is a chance that the Plugin data still remains in the database. A small number of WordPress plugins include an option on their settings page to remove all data, though the majority of plugins do not have this option. Over time, this can add bloat to the Wordpress Database.
+WordPress themes also store settings in the database and will remain in your database when you switch themes.&lt;/p&gt;
+
+&lt;p&gt;A useful plugin to help you with this is &lt;a href=&quot;https://wordpress.org/plugins/wpdbspringclean/&quot; title=&quot;Cleaning Wordpress Plugin Data for Speed&quot;&gt;WPDBSpringClean&lt;/a&gt;. This plugin will identify unoptimized tables and will allow you to optimize them by deleting the allocated unused space within a particular table. The plugin also optionally allows you to specify search criteria such as the minimum amount of overhead per table and minimum unused space for a table.&lt;/p&gt;
+
+&lt;h3 id=&quot;limit-the-number-of-revisions&quot;&gt;5. Limit the number of Revisions&lt;/h3&gt;
+
+&lt;p&gt;WordPress places no limitation on the number of revisions that are saved. This was a feature which was introduced because of popular demand in Wordpress veresion 2.6. However, If you are working on a long article, you typicall make intermediate saves and this could result in hundreds of revisions being saved. Every revision save could potentially correspond to  a couple or a dozen rows in your database.&lt;/p&gt;
+
+&lt;p&gt;There is no point having unlimited number of revisions for each blog post. Think about it - How often have you gone to the first version of your blog post and retreived it. The good new is that WordPress allows you to reduce the number of revisions that are stored which means that you can define n - X, where n is the last revision and X the revisions before.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The general rule of thumb is to not go more than 5 revisions for any blog post. 
+ You can make this change in the wp-config.php file&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;define( &#39;WP_POST_REVISIONS&#39;, 5 );&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;just-show-enough-information-on-your-wordpress-home-page&quot;&gt;6. Just show enough information on your Wordpress Home Page&lt;/h3&gt;
+
+&lt;p&gt;Reducing content is an art. Try to show just the right sized excerpt to maximize the marketing pull instead of full posts. Reduce the number of posts on the page by either limiting the count of posts or by showing the main category your blog is popular for.
+If there are widgets which are not providing any value then remove them.  Navigating through your site should be absolutely effortless for the end user. They should be presented with just enough navigational elements that makes it easy to find what they are looking for. The best pattern to navigate to olders posts is by by showing the &lt;strong&gt;Most Popular&lt;/strong&gt; post section.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Be extremely careful and choosy about advertisements you put on your home page. 
+The most efficient way of promoting a product or services is to link directly to the page using an image that has been optimized for the web. You can take this one step further and link using text links instead.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;dont-let-others-suck-away-your-good-assets-ie-prevent-hotlinking&quot;&gt;7. Don’t let others suck away your good Assets (ie. prevent hotlinking)&lt;/h3&gt;
+
+&lt;p&gt;Hotlinking is a way by which other sites (including other non-wordpress sites) link to your great assets (ie. images, hosted videos etc) and render them on their sites.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is bad primarily because it increases your bandwidth consumption and also because the leech site probably gets credits for your great content.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The smartest way to prevent image hotlinking is by editing the .htaccess file. The modification of .htacccess file allows you to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Block individual websites or allow other wordpress sites which you own&lt;/li&gt;
+  &lt;li&gt;Allow or deny blank referrers&lt;/li&gt;
+  &lt;li&gt;Display custom images detecting image hotlinking&lt;/li&gt;
+  &lt;li&gt;Protect files and directories&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;editing-the-htaccess-file&quot;&gt;EDITING The .htaccess file&lt;/h5&gt;
+
+&lt;p&gt;Don’t attempt to edit the file this time. Just paste the following code if you don’t have any RewriteEngine rules :&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-unix&quot; data-lang=&quot;unix&quot;&gt;RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?your-site.com [NC]
+RewriteCond %{HTTP_REFERER} !^http(s)?://(www\.)?your-other-wordpress-domain.com [NC]
+RewriteRule \.(jpg|jpeg|png|gif)$ http://i.imgur.com/g7ptdBB.png [NC,R,L]&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Explanation:&lt;/p&gt;
+
+&lt;p&gt;Line 1 turns on the rewrite engine used for enabling the redirection process.&lt;/p&gt;
+
+&lt;p&gt;Line 2 allows blank referrers to view the image. Some folks who use firewall usually surf without any referrers. Now, you don’t want to block your images from them. Hence, you allow blank referrers.&lt;/p&gt;
+
+&lt;p&gt;Line 3 allows ‘your-site.com’ to view the images. Replace ‘your-site.com’ with your actual domain name – don’t use the www.Similarly if you want to allow other sites to use your images, you can replace ‘your-other-wordpress-domain.com’ with the proper domain name.&lt;/p&gt;
+
+&lt;p&gt;Line 5 replaces all unauthorized images to be replaced by the this image. You can also create a custom image and upload it to any directory other than the root directory. If you place it in the root directory, your server might fall in an infinite loop. Thus, its best to place the image in a folder say “images” and use that link. In which case the URL would be: “http://my-site.com/images/preventhotlink.png”&lt;/p&gt;
+
+&lt;h3 id=&quot;image-and-other-asset-optimization-on-wordpress&quot;&gt;8. Image and other asset optimization on Wordpress&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The biggest problem we see with many blogs is that they upload massive non-optimized emails for their blogs.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If you do a proper job, you could potentially increase your single post rendering time by a huge margin. We have seen long time Wordpress bloggers focused on optimizing their most popular blog posts speed by just doing image optimization. High resolution images that are unnecessarily large in file size can drastically slow down page speed. Why upload image files which are HUGE (e.g. &amp;gt; 1MB) and slow down your page when it’s possible to reduce image size without losing it’s quality.&lt;/p&gt;
+
+&lt;p&gt;The good news is there are a couple of good plugins which you can use to help with image optimizationa and thereby speed of the wordpress site.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The free version of &lt;a href=&quot;https://wordpress.org/plugins/wp-smushit/&quot; title=&quot;Wordpress Image Optimization for speed&quot;&gt;WP Smush.it&lt;/a&gt;, lets you compress images up to 1MB in size, while the pro version smushes images up to 5MB in size. The plugins work by stripping meta data from JPEG files, optimizing JPEG compression, converting certain GIFs to indexed PNGs and stripping the un-used colours from indexed images. In summary, the plugin strips hidden, bulky information from your images, reducing the file size without losing quality.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wordpress.org/plugins/ewww-image-optimizer/&quot; title=&quot;Wordpress Image compression to load pages faster&quot;&gt;EWWW Image Optimizer&lt;/a&gt; uses lossless optimization techniques, so your image quality will be exactly the same before and after the optimization. The only thing that will change is your file size. The one small exception to this is GIF animations. While the optimization is technically lossless, you will not be able to properly edit the animation again without performing an –unoptimize operation with gifsicle. The gif2png and jpg2png conversions are also lossless but the png2jpg process is not lossless.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wordpress.org/plugins/cw-image-optimizer/&quot; title=&quot;Linux littleutils for wordpress image compression&quot;&gt;CW Image Optimizer&lt;/a&gt; is another plugin that automatically and losslessly optimizes your images as you upload them to your site, and can optimize images previously uploaded. This plugin is based on WP Smush.it, though unlike the WPMU DEV plugin which uses the Yahoo! Inc. Smush.it service, CW Image Optimizer uses the Linux littleutils image optimization tools. This means your images never leave your server.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Another think to consider is Lazy loading. This &lt;a href=&quot;https://wordpress.org/plugins/bj-lazy-load/&quot; title=&quot;Loading images faster for wordpress&quot;&gt;Lazy loading plugin&lt;/a&gt; replaces all your post images, post thumbnails and content iframes with a placeholder and loads the content as it gets close to enter the browser window when the visitor scrolls the page. Also works with text widgets.&lt;/p&gt;
+
+&lt;h3 id=&quot;make-sure-your-gravatar-image-is-not-bloated-and-cached&quot;&gt;9. Make sure your Gravatar image is not Bloated and Cached&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Every gravatar image is a new HTTP request.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Even if the same image is loaded, a page with 100 comments would have 100 additional HTTP requests. Unfortunately, Gravatar images do not contain expire headers. &lt;a href=&quot;https://wordpress.org/plugins/fv-gravatar-cache/&quot; title=&quot;gravatar image speeding up&quot;&gt;FV Gravatar cache&lt;/a&gt; helps with caching gravatars with WordPress cron job, caching gravatars on comment submission and maintaining a single copy of the default gravatar instead of downloading it again and again for all the email addresses with no gravatar associated.&lt;/p&gt;
+
+&lt;h3 id=&quot;reduce-repeated-php-script-execution&quot;&gt;10. Reduce Repeated PHP Script execution&lt;/h3&gt;
+
+&lt;p&gt;If you examine your theme’s Header.php file in your Presentation &amp;gt; Theme Editor tab in the control panel you will find some lines that look somewhat like the following:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bloginfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;name&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bloginfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;description&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;shortcut icon&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image/x-ico&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&amp;amp;lt?php bloginfo(&#39;template_url&#39;); ?&amp;gt;/favicon.jpg&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/css&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;screen&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bloginfo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;stylesheet_url&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;We can eliminate those 5 PHP executions and replace them with plain HTML which is atleast 10 times faster.&lt;/p&gt;
+
+&lt;p&gt;Now, all we need to do is replace that original PHP code with the already processed code and save the Header.php file. When a blog gets some heavy traffic that adds up pretty quickly. Do this also with other commonly used scripts like the Footer.php .&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;Optimal.io - your web optimization site&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;shorcut icon&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;image/x-ico&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://optimal.io/wp-content/themes/speed-site/favicon.jpg&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;type=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/css&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;media=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;screen&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://optimal.io/wp-content/themes/speed-site/style.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+...&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;disable-pingbacks-and-trackbacks&quot;&gt;11. Disable pingbacks and trackbacks&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Pingbacks are inefficient&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;There is often a very small chance of Pingbacks being legitimate and being used in the way they were intended. With that in mind, in nearly all cases, it’s preferable to disable the notifications, and therefore avoid publishing them altogether.&lt;/p&gt;
+
+&lt;p&gt;Thankfully, turning off the trackback and pingback notifications in WordPress is very straightforward. However it is worth pointing out that turning off this feature only applies to new posts, rather than it working retroactively. This means it’s best to take this action early on, rather than ignoring the issue while you continue to add content to your site.&lt;/p&gt;
+
+&lt;p&gt;To disable notifications for trackbacks and pingbacks on your WordPress site, simply login to the admin dashboard. Then go to Settings &amp;gt; Discussion and uncheck the ‘Allow link notifications from other blogs (pingbacks and trackbacks)’ option.&lt;/p&gt;
+
+&lt;h3 id=&quot;get-smarter-and-faster-themes&quot;&gt;12. Get smarter and faster themes&lt;/h3&gt;
+
+&lt;p&gt;When we refer to smart - what we refer to is things like social icons using image sprites instead of doing multiple requests. Simplified minified single css and javascript files. All this while maintaining SEO and mobile optimized layouts. There is a &lt;a href=&quot;https://85ideas.com/wordpress/fastest-wordpress-themes/&quot;&gt;good review&lt;/a&gt; here of some fast performing themes.&lt;/p&gt;
+
+</description>
+                <link>/A-full-list-of-ways-to-speed-up-wordpress/</link>
+                <guid>/A-full-list-of-ways-to-speed-up-wordpress</guid>
+                <pubDate>2016-02-07T00:00:00-08:00</pubDate>
+        </item>
 
         <item>
                 <title>How to create a smooth scrolling experience for your web application</title>

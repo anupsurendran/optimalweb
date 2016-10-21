@@ -5,10 +5,367 @@
         <description>Optimal.io - Smitha K</description>
         <link></link>
         <link></link>
-        <lastBuildDate>2016-02-14T10:33:10-08:00</lastBuildDate>
-        <pubDate>2016-02-14T10:33:10-08:00</pubDate>
+        <lastBuildDate>2016-10-20T21:34:55-07:00</lastBuildDate>
+        <pubDate>2016-10-20T21:34:55-07:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>What are Global Resources in Google Cloud ? (With Examples)</title>
+                <description>&lt;h2 id=&quot;global-resources&quot;&gt;6 Global Resources&lt;/h2&gt;
+
+&lt;p&gt;Global resources are accessible by any resource in any zone within the same project. When you create a global resource, you do not need to provide a scope specification. Global resources include:&lt;/p&gt;
+
+&lt;h3 id=&quot;images&quot;&gt;1. Images&lt;/h3&gt;
+
+&lt;h3 id=&quot;snapshots&quot;&gt;2. Snapshots&lt;/h3&gt;
+
+&lt;h3 id=&quot;network&quot;&gt;3. Network&lt;/h3&gt;
+
+&lt;h3 id=&quot;firewalls&quot;&gt;4. Firewalls&lt;/h3&gt;
+
+&lt;h3 id=&quot;routes&quot;&gt;5. Routes&lt;/h3&gt;
+
+&lt;h3 id=&quot;global-operations-operations-on-global-resources&quot;&gt;6. Global Operations (operations on global resources)&lt;/h3&gt;
+
+</description>
+                <link>/Google-Cloud-Global-Resources/</link>
+                <guid>/Google-Cloud-Global-Resources</guid>
+                <pubDate>2016-10-18T00:00:00-07:00</pubDate>
+        </item>
+
+        <item>
+                <title>How to change the name of a Google Cloud project ?</title>
+                <description>&lt;h2 id=&quot;simple-steps-to-rename--a-google-cloud-project&quot;&gt;5 simple steps to rename  a Google Cloud Project&lt;/h2&gt;
+
+&lt;h3 id=&quot;use-the-hamburger-menu-in-the-top-left-to-switch-to-the-iam--admin-section&quot;&gt;1. Use the hamburger menu in the top left to switch to the “IAM &amp;amp; Admin” section&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/google-cloud-home-settings.png&quot; alt=&quot;Google Cloud Home Hamburger Menu&quot; title=&quot;Google Cloud Platform Home Settings&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/google-cloud-iam-admin-settings.png&quot; alt=&quot;Google Cloud IAM settings&quot; title=&quot;Google Cloud Platform IAM Admin Settings&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;click-settings&quot;&gt;2. Click Settings&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/google-cloud-project-settings.png&quot; alt=&quot;Google Cloud Project settings&quot; title=&quot;Google Cloud Platform Project Settings&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;type-the-new-name&quot;&gt;3. Type the new name&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/google-cloud-project-rename.png&quot; alt=&quot;Google Cloud Project Rename&quot; title=&quot;Google Cloud Platform Project Rename&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;press-save&quot;&gt;4. Press Save&lt;/h3&gt;
+
+&lt;h3 id=&quot;reload-the-page&quot;&gt;5. Reload the page&lt;/h3&gt;
+
+</description>
+                <link>/How-to-change-name-of-project-Google-Cloud/</link>
+                <guid>/How-to-change-name-of-project-Google-Cloud</guid>
+                <pubDate>2016-09-28T00:00:00-07:00</pubDate>
+        </item>
+
+        <item>
+                <title>Mapping of AWS and Google Cloud Terminologies</title>
+                <description>&lt;p&gt;This is a full list of services from Google and Amazon side by side.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Concept&lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Service&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;AWS Term&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt;Google Cloud Term&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Data Center Cluster&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Grouping of Data Centers&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Region&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Region&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Abstracted Data Center&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Data Center&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Availability Zone&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Zone&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Edge Caching&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Content Caching&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;CloudFront&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Points of Presence (Multiple Services)&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Computing&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;IaaS&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon Elastic Compute Cloud&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Compute Engine&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Computing&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;PaaS&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;AWS Elastic Beanstalk&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google App Engine&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Computing&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Containers&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon Elastic Compute Cloud Container Service&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Container Engine&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Network&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Load Balancer&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Elastic Load Balancer&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Cloud Load Balancing&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Network&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Peering&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Direct Connect&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Cloud Interconnect&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Network&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;DNS&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon Route 53&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Cloud DNS&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Storage&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Object Storage&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon Simple Storage Service&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Cloud Storage&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Storage&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Block Storage&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon Elastic Block Store&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Compute Engine Persistent Disks&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Storage&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Cold Storage&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon Glacier&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Cloud Storage Nearline&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Storage&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;File Storage&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon Elastic File System&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;ZFS / Avere&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Database&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;RDBMS&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon Relational Database Service&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Cloud SQL&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Database&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;NoSQL: Key-value&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon DynamoDB&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Cloud Bigtable&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Database&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;NoSQL: Indexed&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon SimpleDB&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Cloud Datastore&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Big Data &amp;amp; Analytics&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Batch Data Processing&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon Elastic Map Reduce&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Cloud Dataproc, Google Cloud Dataflow&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Big Data &amp;amp; Analytics&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Stream Data Processing&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon Kinesis&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Cloud Dataflow&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Big Data &amp;amp; Analytics&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Stream Data Ingest&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon Kinesis&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Cloud Pub/Sub&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Big Data &amp;amp; Analytics&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Analytics&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon Redshift&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google BigQuery&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Application Services&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Messaging&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon Simple Notification Service&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Cloud Pub/Sub&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Management Services&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Monitoring&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Amazon CloudWatch&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Stackdriver Monitoring&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Management Services&lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Deployment&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;AWS CloudFormation&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Google Cloud Deployment Manager&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+</description>
+                <link>/Comparison-Google-Cloud-vs-Amazon-Web-Services/</link>
+                <guid>/Comparison-Google-Cloud-vs-Amazon-Web-Services</guid>
+                <pubDate>2016-09-22T00:00:00-07:00</pubDate>
+        </item>
 
         <item>
                 <title>Exhaustive list of Easy Ways to Speed up Wordpress</title>

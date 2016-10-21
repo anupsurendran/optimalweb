@@ -9,6 +9,9 @@
 /sitemap.txt
 /tags/
 
+/Google-Cloud-Global-Resources/
+/How-to-change-name-of-project-Google-Cloud/
+/Comparison-Google-Cloud-vs-Amazon-Web-Services/
 /A-full-list-of-ways-to-speed-up-wordpress/
 /How-to-get-smooth-scrolling-applications/
 /Tips-to-help-with-google-font-loading-speed/

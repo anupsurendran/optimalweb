@@ -46,4 +46,38 @@ If you look at the picture below - Google has combined the instances to get an i
 
 ![Google Cloud Inferred Instance for discounts]({{ site.baseurl }}/assets/img/google_cloud_inferred-instance.png "Google Cloud Inferred Instance for discounts")
 
+#### 7. How do you calculate uptime of a Compute Engine Instance ?
 
+Instance uptime is measured as the number of minutes between when you start an instance and when you stop an instance, the latter being when the instance state is TERMINATED. In some cases, your instance can suffer from a failure and be marked as TERMINATED by the system; in these cases, you will not be charged for usage after the instance reaches the TERMINATED state. If an instance is idle, but still has a state of RUNNING, it will be charged for instance uptime. The easiest way to determine the status of an instance is to use gcloud compute with the gcloud compute instances list command.
+
+
+#### 8. What are Google Network Pricing considerations ?
+
+A Network Ingress is No charge
+
+Egress to the same zone is No charge
+
+Egress to a different Google Cloud Platform service within the same region is No charge
+
+Egress to Google products (such as YouTube, Maps, Drive) is No charge
+
+Egress* between zones in the same region (per GB) is $0.01
+
+Egress between regions within the US (per GB) is $0.01
+
+Inter-continental Egress is charged At Internet egress rates
+
+#### 9. Are there Load Balancing or Protocol Forwarding rules ?
+
+Up to 5 forwarding rules you create are charged at $0.025/hour. For example, if you create one forwarding rule, you will be charged $0.025/hour. If you have 3 forwarding rules, you will still be charged $0.025/hour. However, if you have 10 rules, you will be charged:
+
+5 forwarding rules = $0.025/hour
+Each additional forwarding rule = $0.01/hour
+
+#### 10. Does google cloud offer VPN , if so how much does it cost ?
+
+Yes Google Cloud offers a VPN tunnel. It costs a tunnel (per hour) $0.050
+
+#### 11. Are Static IP address assigned but unused charged by Google Cloud ?
+
+Yes, assigned Static but unused IP addresses are charged at $0.010 and Static IP address (assigned and in use) have no charge. Also ephemeral IP address (attached to instance or forwarding rule) has No charge

@@ -80,4 +80,4 @@ Yes Google Cloud offers a VPN tunnel. It costs a tunnel (per hour) $0.050
 
 #### 11. Are Static IP address assigned but unused charged by Google Cloud ?
 
-Yes, assigned Static but unused IP addresses are charged at $0.010 and Static IP address (assigned and in use) have no charge. Also ephemeral IP address (attached to instance or forwarding rule) has No charge
+Yes, assigned Static but unused [IP addresses](../Google-Cloud-IP-Addresses/) are charged at $0.010 and Static IP address (assigned and in use) have no charge. Also ephemeral IP address (attached to instance or forwarding rule) has No charge

@@ -4,7 +4,7 @@ title: How to move Persistent Disk from one project to another on Google compute
 tags:
 - Google Cloud
 - CPO200
-- IP Address 
+- Persistent Disk 
 - Exam Preparation
 - FAQ
 ---

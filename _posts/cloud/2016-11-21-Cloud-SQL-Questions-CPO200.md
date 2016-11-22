@@ -17,18 +17,16 @@ will have further to travel between Compute Engine and Cloud SQL
 instances. A Compute Engine external IP address must be in the list of
 authorized networks to access a Cloud SQL instance.
 
-#### True or False? . Cloud SQL instances can only export data in mysqldump
-file format.
+#### True or False? . Cloud SQL instances can only export data in mysqldump file format.
 
 False. Cloud SQL also supports exporting data in CSV format.
 
-#### True or False? . Statements and functions related to files and plugins are
-not supported
+#### True or False? . Statements and functions related to files and plugins are not supported
 
 True. Examples for first generation are :
 
 - LOAD DATA INFILE
-Note that LOAD DATA LOCALINFILE is supported.
+( Please note that LOAD DATA LOCALINFILE is supported. )
 - SELECT ... INTO OUTFILE
 - SELECT ... INTO DUMPFILE
 - INSTALL PLUGIN ...

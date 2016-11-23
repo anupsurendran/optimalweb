@@ -368,3 +368,19 @@ Cross-region - Yes
 Protocols - HTTP(S) only
 
 Packet inspection - Not supported
+
+#### 23.  Investigate and identify the Cloud SDK command to list all images but excluding standard images that are supplied by Google and their partners.
+
+gcloud compute images list --no-standardimages
+
+#### 24. Investigate and identify the Cloud SDK command to deprecate an image in a project.
+
+gcloud compute images deprecate NAME --state STATE
+
+#### 25. True or false: Setting the state of an image to DELETED will also delete the image.
+
+It is false, setting the deprecation state to DELETED will not automatically delete an image
+
+#### 26. What is the command to create an instance with no scopes?
+
+gcloud compute instances create --noscopes <instancename>

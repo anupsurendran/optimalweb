@@ -384,3 +384,22 @@ It is false, setting the deprecation state to DELETED will not automatically del
 #### 26. What is the command to create an instance with no scopes?
 
 gcloud compute instances create --noscopes <instancename>
+
+#### 27. List some of the constraints and limitations of snapshots.
+
+○ Snapshots are subject to quotas, for example 1000 snapshots per project by default. For example, you
+could not take 1 snapshot per day of 3 instances over a 1 year period.
+
+○ Snapshots can't be shared across projects.
+
+○ Disks must be quiesced prior to snapshot.
+
+#### 28. Can you identify any backup related use cases where snapshots are not the preferred choice?
+
+○ Snapshots cannot be used to perform disaster recovery tests in a separate project.
+
+○ Snapshots are not a good fit for relational database backups due to the downtime they incur.
+
+○ Snapshots are not a good fit for scenarios where disks cannot be quiesced.
+
+

@@ -53,4 +53,16 @@ gcloud compute disks snapshot <diskname> --snapshotname <snapshotname> \
 --zone $ZONE
 {% endhighlight %}
 
+##### 8. How can you authorize and IP address to access the sql instance ?
+
+{% highlight bash %}
+gcloud sql instances patch mysqlinstancename --authorizednetworks $IP
+{% endhighlight %}
+
+##### 9. What is the command to describe the project-wide configuration data including metadata ?
+
+{% highlight bash %}
+gcloud compute projectinfo describe
+{% endhighlight %}
+
 

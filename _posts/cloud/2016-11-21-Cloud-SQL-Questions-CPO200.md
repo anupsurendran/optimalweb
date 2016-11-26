@@ -39,5 +39,25 @@ True. Examples for first generation are :
 
 True.
 
+#### can you identify a sequence of steps to export the data from your Cloud SQL instance using Google Cloud Storage?
+
+- Create a Durable Reduced Availability bucket:
+
+{% highlight bash %}
+gsutil mb -cDRA -l <nearbyregion> gs://<exportbucket>
+{% endhighlight %}
+
+
+-  Export your Cloud SQL data to your new bucket:
+
+{% highlight bash %}
+gcloud sql instances export yoursqlinstance gs://<exportbucket>
+{% endhighlight %}
+
+Optionally, copy the exported data to your local filesystem:
+
+{% highlight bash %}
+gsutil -m cp -r gs://<exportbucket>/* .
+{% endhighlight %}
 
 

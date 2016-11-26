@@ -46,3 +46,11 @@ gcloud compute firewall-rules create default-allowhttp --allow tcp:80 --target-t
 gcloud compute instances create guestbook --image guestbook-1 --tags http --zone $ZONE --address <externalipaddress>
 {% endhighlight %}
 
+##### 7. How can you give a snapshot name to your snapshot ?
+
+{% highlight bash %}
+gcloud compute disks snapshot <diskname> --snapshotname <snapshotname> \
+--zone $ZONE
+{% endhighlight %}
+
+
